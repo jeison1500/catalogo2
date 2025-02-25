@@ -5,6 +5,7 @@ from telegram.ext import Application, MessageHandler, CallbackContext
 from telegram.ext.filters import PHOTO
 from telegram.request import HTTPXRequest
 
+
 # Configuración del bot
 IMAGES_FOLDER = "images"
 HTML_OUTPUT = "index.html"  # Aseguramos que siempre sea index.html
@@ -157,11 +158,11 @@ def update_html():
 </html>
     """
 
-    # Eliminar `catalogo.html` si aún existe
+    # Eliminar catalogo.html si aún existe
     if os.path.exists("catalogo.html"):
         os.remove("catalogo.html")
 
-    # Guardar el archivo como `index.html`
+    # Guardar el archivo como index.html
     with open(HTML_OUTPUT, "w", encoding="utf-8", errors="replace") as file:
         file.write(html_content)
     print(f"✅ Catálogo actualizado correctamente en {HTML_OUTPUT}")
