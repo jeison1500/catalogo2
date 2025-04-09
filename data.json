@@ -1636,5 +1636,38 @@
       "AgACAgEAAxkBAAIX8Gf18jntbtS-6Z2LxkKVg3VH9waMAAItsDEbekioR2j-O5qMYVzOAQADAgADeQADNgQ.jpg"
     ],
     "descripcion": "Conjunto falda y blusa \nAlgodón lino grabado \nTalla S M L \nRef 8336 \nPrecio 85.000"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAxkBAAIX52f18jk1gxHwr13Za_n6mbFxH-c3AAImsDEbekioR7u6_lbSQPy7AQADAgADeQADNgQ.jpg",
+      "AgACAgEAAxkBAAIX6Gf18jmzrEudiKgh4F1z8caV3UfqAAInsDEbekioR2Ga4k3aCaIOAQADAgADeQADNgQ.jpg",
+      "AgACAgEAAxkBAAIX6Wf18jkiRwkeYeEJElLjSuS7VqG8AAIosDEbekioR2AnVyZieDPMAQADAgADeQADNgQ.jpg"
+    ],
+    "descripcion": "Conjunto pantalón y chaleco \nTela dril liviano \nTalla S M L \nRef 2564 \nPrecio 82.000",
+    "categoria": "Sin categoría"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAxkBAAIX62f18jmN6cQ7V6VFGv8cef_zg9FMAAIpsDEbekioR5fTcjY57W6DAQADAgADeQADNgQ.jpg",
+      "AgACAgEAAxkBAAIX7Gf18jkblOlo2Np9rr6I3lMCZ28YAAIqsDEbekioR1oAAa0RX1mMjQEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Conjunto short y blusa \nTalla S M L \nRef 8020 \nTela algodón poliéster \nPrecio 72.000\nCategoria conjuntos",
+    "categoria": "Sin categoría"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAxkBAAIX62f18jmN6cQ7V6VFGv8cef_zg9FMAAIpsDEbekioR5fTcjY57W6DAQADAgADeQADNgQ.jpg",
+      "AgACAgEAAxkBAAIX7Gf18jkblOlo2Np9rr6I3lMCZ28YAAIqsDEbekioR1oAAa0RX1mMjQEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Conjunto short y blusa \nTalla S M L \nRef 8020 \nTela algodón poliéster \nPrecio 72.000\nCategoria conjuntos",
+    "categoria": "Sin categoría"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAxkBAAIX52f18jk1gxHwr13Za_n6mbFxH-c3AAImsDEbekioR7u6_lbSQPy7AQADAgADeQADNgQ.jpg",
+      "AgACAgEAAxkBAAIX6Gf18jmzrEudiKgh4F1z8caV3UfqAAInsDEbekioR2Ga4k3aCaIOAQADAgADeQADNgQ.jpg",
+      "AgACAgEAAxkBAAIX6Wf18jkiRwkeYeEJElLjSuS7VqG8AAIosDEbekioR2AnVyZieDPMAQADAgADeQADNgQ.jpg"
+    ],
+    "descripcion": "Conjunto pantalón y chaleco \nTela dril liviano \nTalla S M L \nRef 2564 \nPrecio 82.000"
   }
 ]
