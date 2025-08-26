@@ -447,5 +447,26 @@ a:hover{text-decoration:underline}
   }
 }
 
+@media (max-width: 768px) {
+  .modal-body {
+    display: block !important; /* cambia de grid a bloque */
+  }
+
+  .modal-media {
+    width: 100%;
+    height: auto;
+    aspect-ratio: unset;
+  }
+
+  .modal-media img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .modal-info {
+    padding: 16px;
+  }
+}
 
 
