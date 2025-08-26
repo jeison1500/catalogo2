@@ -1,0 +1,388 @@
+:root{
+  --bg:#0b0c10;        /* fondo oscuro elegante */
+  --card:#111217;      /* tarjetas */
+  --text:#e5e7eb;      /* texto principal */
+  --muted:#9ca3af;     /* texto secundario */
+  --brand:#22c55e;     /* acento verde */
+  --brand-2:#3b82f6;   /* acento azul */
+  --border:#1f232e;    /* bordes discretos */
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.45;
+}
+img{max-width:100%; display:block;}
+a{color:var(--brand-2); text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1200px; margin:0 auto; padding:0 16px}
+
+/* Header / Nav */
+.site-header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(11,12,16,.75); backdrop-filter: blur(8px);
+  border-bottom:1px solid var(--border)
+}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{height:44px; width:auto}
+.brand-text{display:flex; flex-direction:column; font-size:14px}
+.brand-text strong{font-size:16px}
+.main-nav{display:flex; align-items:center; gap:16px}
+.main-nav a{padding:8px 10px; border-radius:10px}
+
+/* Botones */
+.btn-primary{
+  background:var(--brand); color:#0b0c10;
+  padding:10px 14px; border-radius:12px; font-weight:600
+}
+.btn-primary.big{padding:14px 18px; font-size:18px}
+.btn-primary:hover{text-decoration:none; filter:brightness(1.05)}
+.btn-secondary{border:1px solid var(--border); color:var(--text); padding:10px 14px; border-radius:12px}
+.btn-link{background:none; border:none; color:var(--brand-2); padding:0; cursor:pointer}
+
+/* Hero */
+.hero{
+  background:linear-gradient(180deg, rgba(34,197,94,.08), transparent 40%);
+  border-bottom:1px solid var(--border)
+}
+.hero-inner{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; padding:40px 0}
+.hero-copy h1{font-size:38px; margin:4px 0 10px}
+.hero-copy p{color:var(--muted); max-width:52ch}
+.hero-actions{display:flex; gap:12px; margin-top:14px}
+.hero-image img{border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,.35)}
+
+/* Layout principal */
+.layout{display:grid; grid-template-columns:280px 1fr; gap:20px; padding:32px 0}
+.sidebar .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px; margin-bottom:16px}
+.sidebar h3{margin:0 0 10px}
+.sidebar input, .sidebar select{
+  width:100%; background:#0f1015; color:var(--text);
+  border:1px solid var(--border); border-radius:12px;
+  padding:10px; margin:6px 0 12px
+}
+
+/* Grid de productos (único y consistente) */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap:16px;
+}
+
+/* Tarjeta base */
+.card,
+.card.product{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+/* IMÁGENES UNIFORMES (mismo tamaño visual) */
+.card .media,
+.card.product .media,
+.product .media{
+  position: relative;
+  aspect-ratio: 4 / 5;    /* cámbialo a 1 / 1 si quieres cuadradas */
+  background:#0f1015;
+}
+.card .media img,
+.card.product .media img,
+.product .media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;        /* llena sin deformar */
+  object-position:center;
+}
+
+/* Cuerpo de la tarjeta */
+.product .body, .card .body{padding:12px}
+.product .title, .card .title{font-weight:600; margin:0 0 4px}
+.product .meta, .card .meta{
+  display:flex; align-items:center; justify-content:space-between;
+  color:var(--muted); font-size:14px
+}
+.price{font-size:18px; font-weight:700; color:var(--text)}
+.card .chip{border:1px solid var(--border); padding:3px 8px; border-radius:999px; font-size:12px; color:var(--muted)}
+.product .actions, .card .actions{display:flex; gap:8px; margin:10px 0 6px}
+
+/* Estadística y paginación */
+.content .stats{color:var(--muted); margin-bottom:10px}
+.pagination{display:flex; gap:8px; align-items:center; justify-content:center; margin:20px 0}
+.page-btn{background:#0f1015; color:var(--text); border:1px solid var(--border); padding:8px 12px; border-radius:10px}
+.page-btn[disabled]{opacity:.5}
+
+/* Secciones inferiores */
+.band{border-top:1px solid var(--border); padding:36px 0}
+.band.alt{background:#0f1015}
+.steps{display:grid; gap:8px; padding-left:16px}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--border)}
+.footer-inner{display:flex; align-items:center; justify-content:space-between; padding:20px 0; color:var(--muted)}
+
+/* Modal */
+.modal{border:none; padding:0; background:transparent}
+.modal::backdrop{background:rgba(0,0,0,.6)}
+.modal-card{
+  width:min(920px, 96vw);
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px; overflow:hidden
+}
+.modal-body{display:grid; grid-template-columns:1fr 1fr; gap:0}
+.modal-media{background:#0f1015}
+.modal-media img{width:100%; height:100%; object-fit:cover; aspect-ratio:4/5}
+.modal-info{padding:16px}
+.modal-info h3{margin-top:0}
+.modal-close{
+  position:absolute; margin:10px; right:6px; top:6px;
+  border:none; background:#0f1015; color:var(--text);
+  width:36px; height:36px; border-radius:10px; font-size:22px; cursor:pointer
+}
+.muted{color:var(--muted)}
+
+/* Responsive */
+@media (max-width: 980px){
+  .hero-inner{grid-template-columns:1fr}
+  .layout{grid-template-columns:1fr}
+}
+@media (max-width: 560px){
+  .grid{grid-template-columns:1fr}
+}
+
+
+/* =============================
+   UX Responsive – Mejores vistas móvil
+   Pegar al FINAL de assets/styles.css
+   ============================= */
+
+/* Toolbar pegada y legible */
+.toolbar{
+  position: sticky;
+  top: 64px;                /* ajusta si tu header es más alto */
+  z-index: 40;
+  background: rgba(11,12,16,.85);
+  backdrop-filter: blur(8px);
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* Grid más flexible según ancho */
+.grid{
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+@media (min-width: 640px){
+  .grid{ grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:16px; }
+}
+@media (min-width: 1024px){
+  .grid{ grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+}
+
+/* Tarjetas: tipografía y altura consistente del cuerpo */
+.card .body{ display:flex; flex-direction:column; gap:8px; min-height: 160px; }
+
+/* Título con 2 líneas máximo */
+.title{
+  font-size: clamp(14px, 2.6vw, 18px);
+  line-height: 1.2;
+  overflow: hidden;
+
+  /* Estándar moderno */
+  line-clamp: 2;
+
+  /* Soporte WebKit/Blink */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Fallback si el navegador no soporta line-clamp */
+@supports not ((-webkit-line-clamp: 2) or (line-clamp: 2)) {
+  .title{
+    display: block;
+    /* 2 líneas x line-height */
+    max-height: calc(1.2em * 2);
+  }
+}
+
+
+/* Precio más protagonista en móvil */
+.price{ font-size: clamp(16px, 2.8vw, 20px); }
+
+/* Botones y chips */
+.pagination .page-btn{ padding:12px 14px; border-radius:12px; }
+@media (hover:hover){
+  .card{ transition: transform .2s ease, box-shadow .2s ease; }
+  .card:hover{ transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,.35); }
+}
+
+/* Mantener imágenes uniformes y fácil de ajustar por variable */
+:root{ --card-aspect: 4 / 5; } /* cambia a 1 / 1 si quieres cuadradas */
+.card .media, .card.product .media, .product .media{ aspect-ratio: var(--card-aspect); }
+.modal-media img{ aspect-ratio: var(--card-aspect); }
+
+/* Vista compacta en pantallas pequeñas */
+@media (max-width: 580px){
+  .meta .chip{ display:none; }                 /* oculta categoría para reducir ruido */
+  .card .actions a, .card .actions button{ flex:1; }  /* botones a lo ancho */
+  .card .actions{ margin-top:6px; }
+  .modal-card{ width:min(720px, 96vw); }
+}
+
+/* Modal en una columna en tablet/móvil */
+@media (max-width: 980px){
+  .modal-body{ grid-template-columns: 1fr; }
+}
+
+/* Opcional: realzar botones de carrusel al pasar el mouse */
+.card .media:hover button { filter: brightness(1.15); }
+
+
+/* ===== Fix: el contenedor del modal debe tener altura ===== */
+:root{ --card-aspect: 4 / 5; } /* usa 1 / 1 si quieres cuadradas */
+
+.modal-media{
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--card-aspect);  /* << le da altura */
+  background: #0f1015;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.modal-body{ align-items: stretch; } /* que la columna de la foto se estire */
+
+/* === Modal visible, con altura y texto blanco === */
+:root{ --card-aspect: 4 / 5; } /* usa 1 / 1 si prefieres cuadradas */
+
+.modal{ border:none; padding:0; background:transparent; }
+.modal::backdrop{ background:rgba(0,0,0,.65); }
+
+.modal-card{ color:#fff; }           /* texto blanco en el modal */
+.modal-info{ color:#fff; }           /* asegura blanco en la columna de info */
+.modal-info a{ color:#fff; }         /* links dentro del modal */
+
+.modal-media{
+  position:relative;
+  width:100%;
+  aspect-ratio:var(--card-aspect);   /* da altura al carrusel */
+  background:#0f1015;
+  overflow:hidden;
+  border-radius:12px;
+}
+
+.modal-close{
+  position:absolute; right:10px; top:10px;
+  width:40px; height:40px; border-radius:12px;
+  border:1px solid rgba(255,255,255,.25);
+  background:rgba(0,0,0,.4); color:#fff; font-size:22px;
+  display:grid; place-items:center; cursor:pointer;
+  z-index:5;
+}
+
+.modal-body{ align-items:stretch; }
+/* ===== Responsive específico (móvil) ===== */
+
+/* 2 columnas fijas en pantallas chicas */
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr) !important; /* fuerza 2 columnas */
+    gap: 12px;
+  }
+}
+
+/* Si el teléfono es MUY angosto (opcional), baja a 1 columna */
+@media (max-width: 380px){
+  .grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Acciones en columna: "Ver detalle" arriba y "WhatsApp" debajo */
+@media (max-width: 768px){
+  .card .actions{
+    display: flex;
+    flex-direction: column;   /* apila los botones */
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .card .actions .page-btn,
+  .card .actions .whatsapp{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Estilo de botón para WhatsApp (si aún no lo tienes) */
+.card .actions .whatsapp{
+  display: block;
+  background: var(--brand);      /* verde */
+  color: #0b0c10;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.card .actions .whatsapp:hover{
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+/* ===== Arreglar conflicto del encabezado ===== */
+/* Si tu encabezado usa .grid, neutralízalo sin afectar el #grid de productos */
+.shop-header {            /* pon esta clase en el bloque del encabezado */
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+}
+/* (opcional) si no puedes cambiar el HTML y ese bloque está dentro del #grid: */
+#grid .shop-header { grid-column: 1 / -1; } /* ocupa toda la fila */
+
+/* ===== Grilla de productos: 2 columnas en responsive ===== */
+#grid{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* 2 columnas hasta 1024px */
+@media (max-width: 1024px){
+  #grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  /* Botones apilados: Ver detalle arriba, WhatsApp abajo */
+  #grid .card .actions{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  #grid .card .actions .page-btn,
+  #grid .card .actions .whatsapp{
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* 1 columna en teléfonos muy angostos */
+@media (max-width: 380px){
+  #grid{ grid-template-columns: 1fr !important; }
+}
+
+/* Por si alguna tarjeta pone anchos mínimos */
+#grid .card{ min-width: 0 !important; }
+
+
+

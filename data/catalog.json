@@ -1,0 +1,388 @@
+{
+  "products": [
+    {
+      "id": "759efe05-d379-419b-8869-bbcfacaa8ecd",
+      "title": "✨ *CHALECO SELE*",
+      "price": 53000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsOmij5oLffLgwCzW604K9znrx9jQSAAL5rjEbnoEBRQ3CesxfTFOYAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsO2ij5oJzE8kd0gLOuhqWOMbqou5OAAL6rjEbnoEBRX12tUz3RSeQAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsPGij5oKDxC5s-XJAneb9rDMsiRbIAAL7rjEbnoEBRWJTcimBq2AeAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsPWij5oJnJDt_p8oV2aoJZ7CpZUExAAL8rjEbnoEBRQxY_i6qZz7AAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsOmij5oLffLgwCzW604K9znrx9jQSAAL5rjEbnoEBRQ3CesxfTFOYAQADAgADeQADNgQ.jpg",
+      "description": "✨ *CHALECO SELE*\n✅ precio 53.000\n🫶🏻 SM  ML LXL.\n🧶 TELA CREPÉ.\nREF. 4643.",
+      "created_at": "2025-08-26T04:33:30+00:00"
+    },
+    {
+      "id": "ef5048f0-90fe-42ba-ba05-fdaf4090f2e3",
+      "title": "✨ *PANTALÓN MILA 88*",
+      "price": 40000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsM2ij5oIChj9cFeFz_dhb3HvTEEUMAALzrjEbnoEBRbR5sN2GxYgVAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsNGij5oKenSlk6bz1Cn5jlREqTQvEAALyrjEbnoEBRYKAx8xZtKXtAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsNWij5oLy6hKu7ghMTXdUm5-dmPJ1AAL0rjEbnoEBRfl6ysv8A18rAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsNmij5oLnAeoMqScNlHEZwhbFNW9sAAL1rjEbnoEBRfDPgQb5tgABWwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIsN2ij5oJ7IjzAKAdswcY0eSZVpEwLAAL2rjEbnoEBRS9vhlgwEWJ3AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsOGij5oJCZPPv2CMhynGO-HbeQUstAAL3rjEbnoEBRZ9VMno_NjGmAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsM2ij5oIChj9cFeFz_dhb3HvTEEUMAALzrjEbnoEBRbR5sN2GxYgVAQADAgADeQADNgQ.jpg",
+      "description": "✨ *PANTALÓN MILA 88*\n✅ precio 40.000\n🫶🏻 TALLA ÚNICA.\n🧶 TELA GEORGETTE.\nREF. 4647.",
+      "created_at": "2025-08-26T04:33:30+00:00"
+    },
+    {
+      "id": "5ee1e0cb-1535-4d58-a959-c0ce23c02a21",
+      "title": "✨ *CONJUNTO MIA*",
+      "price": 68000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsKmij5oI73xurF3k6C2aB2Di4zBrsAALqrjEbnoEBRTmUsMGsPwhfAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsK2ij5oIfGRnt9EXyMesZgBRtgcgzAALrrjEbnoEBRVwNmYT7S_fbAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsLGij5oKKBQyJy8llN-5wQHwCoWCwAALtrjEbnoEBRXm5QK_8m0yRAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsLWij5oKos0Gl4ZYbiZ06IOQvZ3FqAALsrjEbnoEBRfTRKGIvAos1AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsLmij5oJ14orpmieRi8ZSAAHAg9VWZQAC764xG56BAUWIX3AgwPTRJwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIsL2ij5oK6NLwb9a9jSB9fuGiWs3ZcAALurjEbnoEBRVFUr1vzafJUAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsMGij5oIUXkVXJXLAAXDcwoXIeXssAALwrjEbnoEBRSge_cJCGtyGAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsMWij5oKPkMPkdBZvoTwOehtFOebdAALxrjEbnoEBRZVoZrMOJpzIAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsKmij5oI73xurF3k6C2aB2Di4zBrsAALqrjEbnoEBRTmUsMGsPwhfAQADAgADeQADNgQ.jpg",
+      "description": "✨ *CONJUNTO MIA*\n✅ precio 68.000\n🫶🏻 SM ML LXL.\n🧶 TELA LINO.\nREF. 4645.",
+      "created_at": "2025-08-26T04:33:30+00:00"
+    },
+    {
+      "id": "e56cf2bf-0b91-4c7f-b02d-d331a60b17e3",
+      "title": "✨ *CONJUNTO NARA*",
+      "price": 69000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsJGij5oIE5WRFXrNeR9erRhu6q46RAALlrjEbnoEBRczr9tnIyXW0AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsJWij5oL8bK8H20K1--wYxYbxxA7nAALnrjEbnoEBRYiU_QABOZkNlAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIsJ2ij5oJ8Pe0itzCxgtblfekBMmcwAALmrjEbnoEBRXhFjycltyMoAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsKGij5oLc5UKZ1Dg0hWNQDYBqBXUgAALorjEbnoEBRTru3mJwRFvGAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsJGij5oIE5WRFXrNeR9erRhu6q46RAALlrjEbnoEBRczr9tnIyXW0AQADAgADeQADNgQ.jpg",
+      "description": "✨ *CONJUNTO NARA*\n✅ precio 69.000\n🫶🏻 SM ML LXL.\n🧶 SEDA + LINO.\nREF. 4640.",
+      "created_at": "2025-08-26T04:33:30+00:00"
+    },
+    {
+      "id": "0ba34a75-65eb-465e-998f-31a9243b19d8",
+      "title": "Lindo Vestido Largo Estampado Material Chalis Tallas Sm Y Ml Disponibilidad De C",
+      "price": 59000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdmZopVQ6Cj7jTLnCpvFId9oAAaLvcAMAAhWvMRvJ6SBF32CMxIV0gBwBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAxkBAAIss2itN9P_mWgAARqsx4AgnMkruf_AwAACFq8xG8npIEXS8_HNGlt_NgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIstGitN9MRx-jtL8hlcC-0FkDD9An1AAIXrzEbyekgRWtJwdc41pkRAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIstWitN9OjjXfKGD8N6y0GFPBk6iEzAAIYrzEbyekgRRBHJf95utSrAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIstmitN9MxItwRd9bKw5o0jNbwx7uxAAIZrzEbyekgRebH9XlTYqrPAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIst2itN9MawQQvW3U9sDrIdfIVyIOsAAIarzEbyekgRaVHJO4aVgrXAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsuGitN9OLv0muwnwkQY4Jlq2FqgE0AAIbrzEbyekgRQ9q3T20Q_Z7AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsuWitN9OU-PIfYuQ05j3hM3F0ddheAAIcrzEbyekgRXP8tpZVDA75AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsumitN9M16-Yl0bfRPj5Zj0rjFh1gAAIdrzEbyekgRS83_vz2PsqCAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsu2itN9PhK94Z3jU55BvKCr3ANrpYAAIerzEbyekgRdrcTqlS6TiiAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdmZopVQ6Cj7jTLnCpvFId9oAAaLvcAMAAhWvMRvJ6SBF32CMxIV0gBwBAAMCAAN5AAM2BA.jpg",
+      "description": "Lindo Vestido Largo Estampado Material Chalis Tallas Sm Y Ml Disponibilidad De Colores $59.000",
+      "created_at": "2025-08-26T04:28:03+00:00"
+    },
+    {
+      "id": "1ead3c96-3694-40e7-a7e5-4b7aac53a108",
+      "title": "✨ *CONJUNTO XIMENA*",
+      "price": 55000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsSmij5pOGgsVlpcglUYZI0AsekimfAAIGrzEbnoEBRdzpfZAebTtfAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsS2ij5pNGK-PiHhHOskyNPIgjdmTyAAIHrzEbnoEBRas7NUYAARjTQAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIsTGij5pMjgVYFIguYPVGJvDBh2K1EAAIIrzEbnoEBRU4HFImbsnE2AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsTWij5pPh-x3WNIC_5I7_6uPRSQftAAIJrzEbnoEBRT9juHKNBW-sAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsTmij5pM4JfQECRXF0Bz9x6bEhVeaAAIKrzEbnoEBRUz2c28RMpbFAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsSmij5pOGgsVlpcglUYZI0AsekimfAAIGrzEbnoEBRdzpfZAebTtfAQADAgADeQADNgQ.jpg",
+      "description": "✨ *CONJUNTO XIMENA*\n✅ precio 55.000\n🫶🏻 SM ML LXL.\n🧶 TELA GEORGETTE.\nREF. 4644.",
+      "created_at": "2025-08-26T04:28:03+00:00"
+    },
+    {
+      "id": "3a055de3-35fd-41bd-a48e-75b2badb5a54",
+      "title": "✨ *JEANS CARGO 25297*",
+      "price": 25297,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsRmij5pPXkOQa8riQeJYEmZWoKzFVAAIDrzEbnoEBRTyle5fPbldCAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsR2ij5pMN8QnRElE2C77r9BMCZ_CFAAIErzEbnoEBRc3bk5sSHGC7AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsSGij5pNy0uXx1inrgcL4Q6HdeqyXAAIFrzEbnoEBRf510wdSjIzRAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsRmij5pPXkOQa8riQeJYEmZWoKzFVAAIDrzEbnoEBRTyle5fPbldCAQADAgADeQADNgQ.jpg",
+      "description": "✨ *JEANS CARGO 25297*\n✅ precio 84.000\n🫶🏻 6 8 10 12 14.\n🧶 RÍGIDO. \nREF. 4649.",
+      "created_at": "2025-08-26T04:28:03+00:00"
+    },
+    {
+      "id": "8732d4ef-7ffb-4f7d-98a8-f6adc423a37c",
+      "title": "✨ *PANTALÓN LUCY M235*",
+      "price": 41000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsQGij5pNh0wkdkhhtuZzkCMIsEM_8AAL9rjEbnoEBRbPF3hESN6NyAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsQWij5pMcyeTcMH0k8ZD0AAHdq_BBAAP-rjEbnoEBRfywdo6FqRdYAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsQmij5pMDI4Ad0zV5qpUCgrpNXTCCAAL_rjEbnoEBRWBwSXaN6daLAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsQ2ij5pPdamQPWgABKm0tb1-kYsOpjgADrzEbnoEBRR6Y_Zv_k78jAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsRGij5pPjQuhKJCKh-CcpRBNcw3X0AAIBrzEbnoEBRT6kHq8KmPZPAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsQGij5pNh0wkdkhhtuZzkCMIsEM_8AAL9rjEbnoEBRbPF3hESN6NyAQADAgADeQADNgQ.jpg",
+      "description": "✨ *PANTALÓN LUCY M235*\n✅ precio 41.000\n🫶🏻TALLA ÚNICA \n🧶 TELA CREPÉ.\nREF. 4646.",
+      "created_at": "2025-08-26T04:28:03+00:00"
+    },
+    {
+      "id": "49a19e7f-dbb3-4e0c-b4a3-29ac78aee93f",
+      "title": "Hermoso blaizwr en paño",
+      "price": 2123,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdndop3HgTlqOF96rkiTqSVMbwclQ3AACzK4xG5L9QUWImv_rWkmwWQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnhop3HgunJ3mTfABS4P35esgJBOwgACya4xG5L9QUUOowiogl1QtQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnlop3Hg2Pil2by8A_eAMC_a_aAkCQACy64xG5L9QUVe09QAAQpF8Y0BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnpop3HgyiklVBnq9qcdvkaMQZ-PCwACyq4xG5L9QUXWnNdeZv74YQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdntop3HgFshxhPsy20DgYSZBJbwR2QACza4xG5L9QUWKP3ZhZRtfpAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdndop3HgTlqOF96rkiTqSVMbwclQ3AACzK4xG5L9QUWImv_rWkmwWQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso blaizwr en paño \nTalla SM Ml Lxl \nCalidad americano \nRef 2123 \nPrecio 96.000",
+      "created_at": "2025-08-26T04:21:34+00:00"
+    },
+    {
+      "id": "2a82ad8a-3f35-4fa9-bedc-84a5eb9bc505",
+      "title": "Falda larga resortada",
+      "price": 1343,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdnFopNBJoYKpbmhTlxjhD7SVsXaquAACIa8xG8npIEUXYcxecq56tgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnJopNBJFy_R7t7qIeBaKf9AxZbEDgACIq8xG8npIEU81vGTtvazWQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnNopNBJOQlBu6yhQz4AAUAc9uS2xrQAAiOvMRvJ6SBFk3O8NpSO0MoBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnRopNBJoFWNz9N0tGKscMQxAZHp7gACJa8xG8npIEWVcuZxCotRbAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnVopNBJePu6s3MpknzRhfBFjbENxgACJK8xG8npIEVhrusrJKLW3wEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdnFopNBJoYKpbmhTlxjhD7SVsXaquAACIa8xG8npIEUXYcxecq56tgEAAwIAA3kAAzYE.jpg",
+      "description": "Falda larga resortada \nTalla única ajusta S M L XL \nRef 1343 \nPrecio 59.000",
+      "created_at": "2025-08-26T04:21:34+00:00"
+    },
+    {
+      "id": "44058e85-a876-4719-a80f-a72e93296e64",
+      "title": "Hermoso blaizwr en paño",
+      "price": 2123,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdndop3HgTlqOF96rkiTqSVMbwclQ3AACzK4xG5L9QUWImv_rWkmwWQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnhop3HgunJ3mTfABS4P35esgJBOwgACya4xG5L9QUUOowiogl1QtQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnlop3Hg2Pil2by8A_eAMC_a_aAkCQACy64xG5L9QUVe09QAAQpF8Y0BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdnpop3HgyiklVBnq9qcdvkaMQZ-PCwACyq4xG5L9QUXWnNdeZv74YQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdntop3HgFshxhPsy20DgYSZBJbwR2QACza4xG5L9QUWKP3ZhZRtfpAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdndop3HgTlqOF96rkiTqSVMbwclQ3AACzK4xG5L9QUWImv_rWkmwWQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso blaizwr en paño \nTalla SM Ml Lxl \nCalidad americano \nRef 2123 \nPrecio 96.000",
+      "created_at": "2025-08-26T03:02:54+00:00"
+    },
+    {
+      "id": "a86aec3f-1a31-44eb-9b5b-431da35a5b44",
+      "title": "Braga tipo enterizo bengalina",
+      "price": 84000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdppop3Z2IUvLoMK2OKE0pLgN6RGBnQAC7K4xG5L9QUVm527QQ-CopAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdptop3Z2-5PzcdFo1W9HcQTnc2nUNQAC7a4xG5L9QUWTVb3eWDv39AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpxop3Z2v8jOgvhEYqRI7nfYPxvAJwAC7q4xG5L9QUUsC30jYtxjhgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdp1op3Z2Fqebb1gIsWR3vYXa-wW25AAC764xG5L9QUUXCbsr2tejDwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdppop3Z2IUvLoMK2OKE0pLgN6RGBnQAC7K4xG5L9QUVm527QQ-CopAEAAwIAA3kAAzYE.jpg",
+      "description": "Braga tipo enterizo bengalina \nLicrado talla unica ( Ajuste perfecto a todas las talla ) \nRef FE42\nPrecio 84.000",
+      "created_at": "2025-08-26T02:55:03+00:00"
+    },
+    {
+      "id": "37dd70a4-3349-4f49-b07b-c3590ce4ccf1",
+      "title": "Conjunto palazzo en noche de Viena",
+      "price": 329,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdpVop3YSMMQX2cDNoShOTCAJB7dn6gAC6K4xG5L9QUVF_GeI4TOEOAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpZop3YSublPnJBK3kts7LYeEOIFNQAC6a4xG5L9QUUJpK8alI_R-wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpdop3YSl4CpCbeH39IuIVtWkzPWUwAC6q4xG5L9QUVr3X6mUMwjrwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdphop3YSaSw01c4AAUfzM8yA8n5oXDYAAuuuMRuS_UFFP3QnmrVYUsIBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdpVop3YSMMQX2cDNoShOTCAJB7dn6gAC6K4xG5L9QUVF_GeI4TOEOAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto palazzo en noche de Viena \nTalla única ajusta 6/8/10/12 \nLicrado camisa y pantalón \nRef 0329\nPrecio 99.000",
+      "created_at": "2025-08-26T02:55:02+00:00"
+    },
+    {
+      "id": "bd3da774-a4f2-4c61-97c0-33e2ae9f9b34",
+      "title": "Conjunto palazzo en noche de Viena",
+      "price": 329,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdpVop3YSMMQX2cDNoShOTCAJB7dn6gAC6K4xG5L9QUVF_GeI4TOEOAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpZop3YSublPnJBK3kts7LYeEOIFNQAC6a4xG5L9QUUJpK8alI_R-wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpdop3YSl4CpCbeH39IuIVtWkzPWUwAC6q4xG5L9QUVr3X6mUMwjrwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdphop3YSaSw01c4AAUfzM8yA8n5oXDYAAuuuMRuS_UFFP3QnmrVYUsIBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdpVop3YSMMQX2cDNoShOTCAJB7dn6gAC6K4xG5L9QUVF_GeI4TOEOAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto palazzo en noche de Viena \nTalla única ajusta 6/8/10/12 \nLicrado camisa y pantalón \nRef 0329\nPrecio 99.000",
+      "created_at": "2025-08-26T02:05:31+00:00"
+    },
+    {
+      "id": "ab071d5b-6311-49b4-9a8e-fe8328a641ac",
+      "title": "Chaqueta peluche con gamuza",
+      "price": 2035,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdo9op3Tc3jw-SAfdQHfbagABczIhND0AAuauMRuS_UFFnzDwTBbae0MBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpBop3TcInh2fRJV5Wvxn_1vpD9pIQAC5K4xG5L9QUVSBvG8Gaxq8gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpFop3Tc84HjVOVR3slmqn67hK6jsgAC5a4xG5L9QUVVlsE9KDqghAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpJop3TcvRBtCL7_89mGRd_FIlAVEwAC564xG5L9QUUCOS_-eavhHQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdo9op3Tc3jw-SAfdQHfbagABczIhND0AAuauMRuS_UFFnzDwTBbae0MBAAMCAAN5AAM2BA.jpg",
+      "description": "Chaqueta peluche con gamuza \nCalidad tipo Zara \nTalla SM ML LXL\nRef 2035\nPrecio 81.000",
+      "created_at": "2025-08-26T02:05:31+00:00"
+    },
+    {
+      "id": "fc2d685f-c74b-4444-a410-8277e2154015",
+      "title": "Braga bengalina",
+      "price": 84000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdp9op3djacnlpODOxKF5Ug2xFjn4eAAC8K4xG5L9QUViYfgsxcbX_QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqBop3djdXCIfAPnZvF8455q9xmAIgAC8a4xG5L9QUWxLZz5VYbmcQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqFop3dj43aMVMyiCqA_UbrmV-FR7AAC8q4xG5L9QUUZyT9O7zTz7QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqJop3djkWxCCiQlwyH9iCG_a_JcVQAC864xG5L9QUVqurGdUcAfaQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdp9op3djacnlpODOxKF5Ug2xFjn4eAAC8K4xG5L9QUViYfgsxcbX_QEAAwIAA3kAAzYE.jpg",
+      "description": "Braga bengalina \nAbertura en la bota \nLicrado talla unica ( Ajuste perfecto a todas las talla ) \nRef FE43\nPrecio 84.000",
+      "created_at": "2025-08-26T01:56:26+00:00"
+    },
+    {
+      "id": "5f720e41-28fc-42b2-be79-cbe4e324b3bb",
+      "title": "Conjunto chaleco y pantalón",
+      "price": 1076,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdqRop3kUT1VnjOipvbBu-mAZHbKbpAAC9K4xG5L9QUWHCAhuhMV6hAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqVop3kUTxhqgGuw2rKSyNlHjedaDwAC9a4xG5L9QUWPwHjxYew_LQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqZop3kUX78NFS9O-bx2apJJkyeh4wAC9q4xG5L9QUVCDJdddNkAAfgBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqdop3kUM21ZPNljFnhuYc0AAQVMCpIAAveuMRuS_UFFYizFdhcruuYBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdqRop3kUT1VnjOipvbBu-mAZHbKbpAAC9K4xG5L9QUWHCAhuhMV6hAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto chaleco y pantalón \nTela algodón lino\nDetalle con encaje\nTalla SM ML LXL \nRef 1076\nPrecio 72.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    },
+    {
+      "id": "3e8aaae9-c51f-4544-aaf2-191a75008404",
+      "title": "Braga bengalina",
+      "price": 84000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdp9op3djacnlpODOxKF5Ug2xFjn4eAAC8K4xG5L9QUViYfgsxcbX_QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqBop3djdXCIfAPnZvF8455q9xmAIgAC8a4xG5L9QUWxLZz5VYbmcQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqFop3dj43aMVMyiCqA_UbrmV-FR7AAC8q4xG5L9QUUZyT9O7zTz7QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqJop3djkWxCCiQlwyH9iCG_a_JcVQAC864xG5L9QUVqurGdUcAfaQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdp9op3djacnlpODOxKF5Ug2xFjn4eAAC8K4xG5L9QUViYfgsxcbX_QEAAwIAA3kAAzYE.jpg",
+      "description": "Braga bengalina \nAbertura en la bota \nLicrado talla unica ( Ajuste perfecto a todas las talla ) \nRef FE43\nPrecio 84.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    },
+    {
+      "id": "97f85732-1b3e-49e0-8a5b-d2182feeb7e5",
+      "title": "Braga tipo enterizo bengalina",
+      "price": 84000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdppop3Z2IUvLoMK2OKE0pLgN6RGBnQAC7K4xG5L9QUVm527QQ-CopAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdptop3Z2-5PzcdFo1W9HcQTnc2nUNQAC7a4xG5L9QUWTVb3eWDv39AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpxop3Z2v8jOgvhEYqRI7nfYPxvAJwAC7q4xG5L9QUUsC30jYtxjhgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdp1op3Z2Fqebb1gIsWR3vYXa-wW25AAC764xG5L9QUUXCbsr2tejDwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdppop3Z2IUvLoMK2OKE0pLgN6RGBnQAC7K4xG5L9QUVm527QQ-CopAEAAwIAA3kAAzYE.jpg",
+      "description": "Braga tipo enterizo bengalina \nLicrado talla unica ( Ajuste perfecto a todas las talla ) \nRef FE42\nPrecio 84.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    },
+    {
+      "id": "22911269-f4c1-4274-8791-c276f6e839fa",
+      "title": "Conjunto palazzo en noche de Viena",
+      "price": 329,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdpVop3YSMMQX2cDNoShOTCAJB7dn6gAC6K4xG5L9QUVF_GeI4TOEOAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpZop3YSublPnJBK3kts7LYeEOIFNQAC6a4xG5L9QUUJpK8alI_R-wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpdop3YSl4CpCbeH39IuIVtWkzPWUwAC6q4xG5L9QUVr3X6mUMwjrwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdphop3YSaSw01c4AAUfzM8yA8n5oXDYAAuuuMRuS_UFFP3QnmrVYUsIBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdpVop3YSMMQX2cDNoShOTCAJB7dn6gAC6K4xG5L9QUVF_GeI4TOEOAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto palazzo en noche de Viena \nTalla única ajusta 6/8/10/12 \nLicrado camisa y pantalón \nRef 0329\nPrecio 99.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    },
+    {
+      "id": "77bcd72b-d929-4fdc-be58-608eb5feb3ed",
+      "title": "Chaqueta peluche con gamuza",
+      "price": 2035,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdo9op3Tc3jw-SAfdQHfbagABczIhND0AAuauMRuS_UFFnzDwTBbae0MBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpBop3TcInh2fRJV5Wvxn_1vpD9pIQAC5K4xG5L9QUVSBvG8Gaxq8gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpFop3Tc84HjVOVR3slmqn67hK6jsgAC5a4xG5L9QUVVlsE9KDqghAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpJop3TcvRBtCL7_89mGRd_FIlAVEwAC564xG5L9QUUCOS_-eavhHQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdo9op3Tc3jw-SAfdQHfbagABczIhND0AAuauMRuS_UFFnzDwTBbae0MBAAMCAAN5AAM2BA.jpg",
+      "description": "Chaqueta peluche con gamuza \nCalidad tipo Zara \nTalla SM ML LXL\nRef 2035\nPrecio 81.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    },
+    {
+      "id": "b794d2f9-175a-4161-8f09-9fcc7e8604f0",
+      "title": "Conjunto deportivo Prada",
+      "price": 2156,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdolop3QyzwyaLGRO4rdvr6eqshUcSAAC4a4xG5L9QUWGuq3X1HjWqwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdopop3QyzlFQ1t2w_dILyWud-GSdcQAC4K4xG5L9QUX9XAUTloUmeQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdotop3QyvKk-kDxmI6SM00gvJK65VwAC4q4xG5L9QUXwX-hS3ceWuQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdoxop3QyxG8cW__lHLvtaq2MyL9b2wAC464xG5L9QUUyWt4yu-hlQQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdolop3QyzwyaLGRO4rdvr6eqshUcSAAC4a4xG5L9QUWGuq3X1HjWqwEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto deportivo Prada \nTela poliéster algodón \nRef 2156\nTalla SM ML LXL\nPrecio 72.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    },
+    {
+      "id": "b4d9704c-7260-45db-84f8-0b06f770aa21",
+      "title": "Conjunto chaleco y short",
+      "price": 6714,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdoNop3PPx5q9Frh6R4ynaZeqhcEryAAC3K4xG5L9QUUziFzXB1X0VAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdoRop3PPwsaFcxUdLn3EQCxRrSywiAAC3a4xG5L9QUUDUx0el1gtigEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdoVop3PPORXhgUZOJQk-vgvZ1mlL0AAC3q4xG5L9QUWTdmWdSNCXzwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdoZop3PPayc6xKJFM10jQtwtlFQp-wAC364xG5L9QUW_tBAuG0MTjQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdoNop3PPx5q9Frh6R4ynaZeqhcEryAAC3K4xG5L9QUUziFzXB1X0VAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto chaleco y short \nTela lino forrado grabado en láser \nTalla SM ML LXL\nRef 6714\nPrecio 69.000",
+      "created_at": "2025-08-26T01:53:20+00:00"
+    }
+  ]
+}
