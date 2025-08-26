@@ -1,6 +1,77 @@
 {
   "products": [
     {
+      "id": "5407da87-effd-40ae-a6d9-dced23ae6081",
+      "title": "✨ *JEANS 5064*",
+      "price": 5064,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsFGij5oIN6geIbgW3YiDACgapkYzlAALWrjEbnoEBRWuqJYgsIJC1AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsFWij5oJp2NzPhP4_VDKNKBlV9vOcAALXrjEbnoEBRS-jRUiL-9VlAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsFmij5oKiwct1j4MuG9QzBR8ckHaRAALYrjEbnoEBRaoig70eztPkAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsF2ij5oKodibZiBoZJKhb47ThGPPzAALZrjEbnoEBRb6y6TbN8r5FAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsFGij5oIN6geIbgW3YiDACgapkYzlAALWrjEbnoEBRWuqJYgsIJC1AQADAgADeQADNgQ.jpg",
+      "description": "✨ *JEANS 5064*\n✅ precio 75.000\n🫶🏻 6 8 10 12 14 16.\n🧶 STRECH.\nREF. 4637.",
+      "created_at": "2025-08-26T05:23:05+00:00"
+    },
+    {
+      "id": "b5838e50-ea3f-4d19-bc85-d45fab2cabf9",
+      "title": "✨ *VESTIDO MAISON 36733*",
+      "price": 36733,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIsC2ij5oIGS028jZV5_P38AyefgMW7AALOrjEbnoEBRapU1KrIEBZQAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsDGij5oLoGRsNN7qPrscOarHNTmpwAALPrjEbnoEBRY5vCIXEqTyUAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsDWij5oIXwMxLpxcG2LaKWA-NJeCDAALQrjEbnoEBRQABnCIRfgu6YQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIsDmij5oLAyz-JEDhIyqLUQM9EJnW-AALRrjEbnoEBRQt0Rj7rWiZoAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsD2ij5oLQAqBliNoH1Jrj9EEemoRqAALSrjEbnoEBRTEBklyCXRw4AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsEGij5oLqapl8na3f-Ul4hhYroFhRAALTrjEbnoEBRa3NDjwOP--SAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsEWij5oKYiRrNEfcJC6rHOfaurAjnAALUrjEbnoEBRSIZwBo6dFLFAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIsC2ij5oIGS028jZV5_P38AyefgMW7AALOrjEbnoEBRapU1KrIEBZQAQADAgADeQADNgQ.jpg",
+      "description": "✨ *VESTIDO MAISON 36733*\n✅ precio 67.000\n🫶🏻 SM ML LXL.\n🧶 TELA GEORGETTE. \nREF. 4642",
+      "created_at": "2025-08-26T05:23:05+00:00"
+    },
+    {
+      "id": "8f85b20e-ae99-431d-a1f1-080da34a7804",
+      "title": "✨ *CONJUNTO KEY*",
+      "price": 74000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIr_Wij5oI1ouB8P_0mn_-GZbWkgBzDAALDrjEbnoEBRchlow4czOWvAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIr_mij5oK77HEaKJwOP-QyIUN0qo6ZAALErjEbnoEBRQKZUo8ULD8zAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIr_2ij5oKQCG_g0gR67jnhS3XJIJhgAALFrjEbnoEBRTgsND_Wu-TDAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsAAFoo-aCqSZzQIO5SW46D05KGC-KyQACxq4xG56BAUXq5fgLXcin9gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIsAWij5oIx6kCL_Ju4O8jd2H_r_M21AALHrjEbnoEBReebhT4bbIcUAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsAmij5oI9aCGH1yoSJYtb5WPaYqMGAALIrjEbnoEBRQ-Tdx3VsY2YAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIsA2ij5oI1Dpa2BzVgApf9t3aUjzcgAALJrjEbnoEBRUAhcg6GyKXgAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIr_Wij5oI1ouB8P_0mn_-GZbWkgBzDAALDrjEbnoEBRchlow4czOWvAQADAgADeQADNgQ.jpg",
+      "description": "✨ *CONJUNTO KEY* \n✅ precio 74.000\n🫶🏻 TALLA ÚNICA.\n🧶 TELA HILO.\nREF. 4629.",
+      "created_at": "2025-08-26T05:23:05+00:00"
+    },
+    {
+      "id": "5936a398-4ec5-499c-a7b2-10f4bcf9bf5e",
+      "title": "✨ *BLUSA OSO KL0112*",
+      "price": 112,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIr9mij5oI_ehvtDChcwSrejizOgFcdAALArjEbnoEBRYYy0Ylszb_eAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIr92ij5oKSQnN9hRKC6NGmJ4q83XTOAAK-rjEbnoEBRWIAAYcy_o2OcQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAxkBAAIr-Gij5oK9iJGP2DPoMGdhCRh_OJkdAAK_rjEbnoEBRZVDPbGMDzS-AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIr-mij5oJy7GG8WmrQ8V8aX1OQH_tUAALBrjEbnoEBRduPe5BGx4OaAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIr-2ij5oJEOvjo_QjzSodua6yecp0wAALCrjEbnoEBRTzGh-BZqWByAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIr9mij5oI_ehvtDChcwSrejizOgFcdAALArjEbnoEBRYYy0Ylszb_eAQADAgADeQADNgQ.jpg",
+      "description": "✨ *BLUSA OSO KL0112* \n✅ precio 44.000\n🫶🏻 SM ML. \n🧶 TELA ALGODÓN.\nREF. 4633.",
+      "created_at": "2025-08-26T05:23:05+00:00"
+    },
+    {
       "id": "759efe05-d379-419b-8869-bbcfacaa8ecd",
       "title": "✨ *CHALECO SELE*",
       "price": 53000,
