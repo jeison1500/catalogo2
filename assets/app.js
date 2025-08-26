@@ -507,3 +507,14 @@ document.addEventListener('visibilitychange', ()=>{
 fitPerPage();
 fetchCatalog(true);
 startGlobalTick();
+  if (M_WA) {
+    const imgURL = p.images?.[0] || PLACEHOLDER;
+    const message = `
+Hola, quiero este producto:
+
+📌 *${p.title}*
+💰 *Precio:* ${price ? formatCOP(price) : 'Consultar'}
+🖼️ Imagen: ${imgURL}
+`.trim();
+    M_WA.href = `https://wa.me/573127112369?text=${encodeURIComponent(message)}`;
+  }
