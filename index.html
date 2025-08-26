@@ -164,5 +164,14 @@
 </dialog>
 
 <script src="./assets/app.js" type="module"></script>
+<script>
+  window.addEventListener('load', () => {
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  });
+</script>
+
+
 </body>
 </html>
