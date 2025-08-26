@@ -18,7 +18,7 @@ body{
   background:var(--bg);
   line-height:1.45;
 }
-img{max-width:100%; display:block;}
+img{max-width:60%; display:block;}
 a{color:var(--brand-2); text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:1200px; margin:0 auto; padding:0 16px}
@@ -44,7 +44,14 @@ a:hover{text-decoration:underline}
 }
 .btn-primary.big{padding:14px 18px; font-size:18px}
 .btn-primary:hover{text-decoration:none; filter:brightness(1.05)}
-.btn-secondary{border:1px solid var(--border); color:var(--text); padding:10px 14px; border-radius:12px}
+.btn-secondary {
+  background: #000; /* fondo negro */
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
 .btn-link{background:none; border:none; color:var(--brand-2); padding:0; cursor:pointer}
 
 /* Hero */
@@ -56,7 +63,7 @@ a:hover{text-decoration:underline}
 .hero-copy h1{font-size:38px; margin:4px 0 10px}
 .hero-copy p{color:var(--muted); max-width:52ch}
 .hero-actions{display:flex; gap:12px; margin-top:14px}
-.hero-image img{border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.hero-image img{border-radius:16px; box-shadow:0 10px 10px rgba(0,0,0,.35)}
 
 /* Layout principal */
 .layout{display:grid; grid-template-columns:280px 1fr; gap:20px; padding:32px 0}
@@ -383,6 +390,62 @@ a:hover{text-decoration:underline}
 
 /* Por si alguna tarjeta pone anchos mínimos */
 #grid .card{ min-width: 0 !important; }
+
+.full-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none !important;
+  }
+}
 
 
 
