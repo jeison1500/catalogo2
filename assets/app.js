@@ -459,37 +459,56 @@ function closeModal(modal){
 
 
 function openModal(p){
-const MODAL = document.getElementById('productModal');
+ const MODAL = document.getElementById('productModal');
 
 function openModal() {
-  MODAL.classList.add('is-open');
+  if (!MODAL) return;
+
+  // Añade clase para bloquear scroll
   document.body.classList.add('modal-open');
 
-  // Añadir historial
-  if (!history.state || !history.state.modalOpen) {
-    history.pushState({ modalOpen: true }, '');
-  }
+  // Cierra cualquier modal abierto
+  try { MODAL.close(); } catch {}
 
-  window.addEventListener('popstate', onPopState);
+  // Abre modal
+  MODAL.showModal();
 
-  const closeBtn = document.getElementById('modalClose');
-  closeBtn?.addEventListener('click', () => closeModal(false));
+  // Empuja historial
+  history.pushState({ modal: true }, '');
+
+  // Escucha botón cerrar
+  const btn = MODAL.querySelector('#modalClose');
+  btn?.addEventListener('click', closeModal);
+
+  // Manejador del botón "atrás"
+  const onPop = () => {
+    if (MODAL.open) {
+      closeModal({ fromPopstate: true });
+    }
+  };
+
+  window.addEventListener('popstate', onPop);
+  MODAL._onPop = onPop;
 }
 
-function closeModal(fromPopState = false) {
-  MODAL.classList.remove('is-open');
+function closeModal({ fromPopstate = false } = {}) {
+  if (!MODAL) return;
+
+  // Elimina clase de scroll
   document.body.classList.remove('modal-open');
 
-  window.removeEventListener('popstate', onPopState);
+  // Cierra modal
+  try { MODAL.close(); } catch {}
 
-  if (!fromPopState && history.state?.modalOpen) {
-    history.back();
+  // Limpia evento
+  if (MODAL._onPop) {
+    window.removeEventListener('popstate', MODAL._onPop);
+    MODAL._onPop = null;
   }
-}
 
-function onPopState(e) {
-  if (MODAL.classList.contains('is-open')) {
-    closeModal(true);
+  // Si NO venimos de popstate, eliminamos el estado actual (evita ciclos)
+  if (!fromPopstate && history.state?.modal) {
+    history.back();
   }
 }
 
