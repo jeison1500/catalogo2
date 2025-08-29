@@ -10,7 +10,17 @@ const SWIPE_THRESHOLD = 30;
 
 
 // ===== ELEMENTOS =====
-const GRID = document.getElementById('grid');
+document.getElementById('grid')?.addEventListener('click', (e) => {
+  const card = e.target.closest('.card');
+  if (!card) return;
+
+  const isWhatsApp = e.target.closest('a.whatsapp');
+  if (isWhatsApp) return;
+
+  const id = card.getAttribute('data-id');
+  const p = STATE.filtered.find(x => x.id === id) || STATE.products.find(x => x.id === id);
+  if (p) openModal(p);
+});
 const STATS = document.getElementById('stats');
 const PAG = document.getElementById('pagination');
 const STATUS = document.getElementById('status');
@@ -359,6 +369,7 @@ card.addEventListener('click', (e) => {
   if (pFound) openModal(pFound);
 });
 
+
 // Accesibilidad: abrir con Enter/Espacio cuando la tarjeta tenga foco
 card.setAttribute('tabindex', '0');
 card.addEventListener('keydown', (e) => {
@@ -459,56 +470,37 @@ function closeModal(modal){
 
 
 function openModal(p){
- const MODAL = document.getElementById('productModal');
+const MODAL = document.getElementById('productModal');
 
 function openModal() {
-  if (!MODAL) return;
-
-  // Añade clase para bloquear scroll
+  MODAL.classList.add('is-open');
   document.body.classList.add('modal-open');
 
-  // Cierra cualquier modal abierto
-  try { MODAL.close(); } catch {}
-
-  // Abre modal
-  MODAL.showModal();
-
-  // Empuja historial
-  history.pushState({ modal: true }, '');
-
-  // Escucha botón cerrar
-  const btn = MODAL.querySelector('#modalClose');
-  btn?.addEventListener('click', closeModal);
-
-  // Manejador del botón "atrás"
-  const onPop = () => {
-    if (MODAL.open) {
-      closeModal({ fromPopstate: true });
-    }
-  };
-
-  window.addEventListener('popstate', onPop);
-  MODAL._onPop = onPop;
-}
-
-function closeModal({ fromPopstate = false } = {}) {
-  if (!MODAL) return;
-
-  // Elimina clase de scroll
-  document.body.classList.remove('modal-open');
-
-  // Cierra modal
-  try { MODAL.close(); } catch {}
-
-  // Limpia evento
-  if (MODAL._onPop) {
-    window.removeEventListener('popstate', MODAL._onPop);
-    MODAL._onPop = null;
+  // Añadir historial
+  if (!history.state || !history.state.modalOpen) {
+    history.pushState({ modalOpen: true }, '');
   }
 
-  // Si NO venimos de popstate, eliminamos el estado actual (evita ciclos)
-  if (!fromPopstate && history.state?.modal) {
+  window.addEventListener('popstate', onPopState);
+
+  const closeBtn = document.getElementById('modalClose');
+  closeBtn?.addEventListener('click', () => closeModal(false));
+}
+
+function closeModal(fromPopState = false) {
+  MODAL.classList.remove('is-open');
+  document.body.classList.remove('modal-open');
+
+  window.removeEventListener('popstate', onPopState);
+
+  if (!fromPopState && history.state?.modalOpen) {
     history.back();
+  }
+}
+
+function onPopState(e) {
+  if (MODAL.classList.contains('is-open')) {
+    closeModal(true);
   }
 }
 
