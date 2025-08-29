@@ -421,25 +421,40 @@ function renderPagination(){
 
 // ===== MODAL =====
 function closeModal(modal){
-  try{
+  try {
+    if (!modal) return;
+
+    // Quitar clase del body
     document.body.classList.remove('modal-open');
 
-    // Limpia el popstate del modal
+    // Remover evento popstate si estaba registrado
     if (modal._onPopstate) {
       window.removeEventListener('popstate', modal._onPopstate);
       modal._onPopstate = null;
     }
 
-    // Si empujamos historial y NO venimos de popstate, retrocede una vez
+    // Corregir historial: si se empujó estado y no viene de atrás, retrocede
     if (modal._pushedHistory && !modal._fromPopstate) {
+      modal._ignorePop = true; // ← evita rebote del back
       history.back();
     }
-    modal._pushedHistory = false;
-    modal._fromPopstate  = false;
 
-    if (typeof modal.close === 'function') modal.close();
-    else modal.removeAttribute('open');
-  }catch{}
+    modal._pushedHistory = false;
+    modal._fromPopstate = false;
+
+    // Cerrar visualmente el modal
+    if (typeof modal.close === 'function') {
+      modal.close();
+    } else {
+      modal.removeAttribute('open');
+    }
+
+    // Restaurar scroll (opcional si el modal cambia overflow)
+    document.body.style.overflow = '';
+
+  } catch (err) {
+    console.error('Error al cerrar modal:', err);
+  }
 }
 
 
@@ -551,11 +566,16 @@ history.pushState({ modal: true }, '');
 MODAL._pushedHistory = true;
 MODAL._fromPopstate = false;
 MODAL._onPopstate = () => {
+  if (MODAL._ignorePop) {
+    MODAL._ignorePop = false; // ← ya ignoramos este
+    return;
+  }
   if (MODAL.open || MODAL.hasAttribute('open')) {
-    MODAL._fromPopstate = true;       // marca que viene del 'atrás'
+    MODAL._fromPopstate = true;
     closeModal(MODAL);
   }
 };
+
 window.addEventListener('popstate', MODAL._onPopstate);
 
 // 4) (opcional) Escape también cierra
