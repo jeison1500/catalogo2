@@ -374,7 +374,7 @@ button, a.btn-primary, a.whatsapp {
 /* Header sticky y nav legible */
 .site-header{
   position: sticky; top: 0; z-index: 50;
-  background: rgba(11,12,16,.75);
+  background: rgba(12, 12, 12, 0.75);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -934,3 +934,147 @@ main, .catalog-layout, .container{ overflow: visible; }
     font-size: 14px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.how-to-buy h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+.step {
+  background: #1e293b;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: scale(1.02);
+}
+
+.step .icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.step p {
+  margin: 0;
+  color: #f1f5f9;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.contact-section {
+  padding: 2rem 0;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin: 0.4rem 0;
+}
+
+.contact-info a {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.contact-info strong {
+  color: #f8fafc;
+}
+
+.contact-cta .btn-primary {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .contact-info, .contact-cta {
+    flex: 1;
+  }
+
+  .contact-cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.3);
+}
+
