@@ -69,7 +69,7 @@
         Precio máx.
         <input id="maxPriceInput" type="number" min="0" placeholder="Ej: 40000" />
       </label> -->
-      <button id="clearFilters" class="btn-link">Quitar filtros</button>
+      <!-- <button id="clearFilters" class="btn-link">Quitar filtros</button> -->
     </div>
 
     <!-- <div class="card">
@@ -126,25 +126,32 @@
 <!-- Modal de producto -->
 <dialog id="productModal" class="modal">
   <article class="ml-modal">
-    <div class="ml-thumbs"></div>
-    <div class="ml-viewer">
-      <img id="modalImage" src="" alt="Producto" />
-    </div>
-    <div class="ml-info">
-      <h3 id="modalTitle" class="ml-title"></h3>
-      <div class="m-price-row">
-        <span id="modalPrice" class="ml-price"></span>
-        <!-- <span class="ml-chip">12% OFF</span> -->
+    <div class="m-header">
+      <h3 id="modalTitle" class="m-title">Título del producto</h3>
+        </div>
+
+    <div class="ml-scroll">
+      <div class="ml-viewer">
+        <img id="modalImage" src="" alt="Producto" />
       </div>
-      <p id="modalSku" class="ml-meta"></p>
-      <p id="modalDesc" class="ml-desc"></p>
-     <div class="ml-actions">
-  <a id="modalWhatsApp" class="whatsapp" target="_blank" rel="noopener">Comprar por WhatsApp</a>
-  <button id="modalCloseBtn" class="btn-close-modal">Cerrar</button>
-</div>
+      <div class="ml-thumbs"></div>
+      <div class="ml-info">
+        <div class="m-price-row">
+          <span id="modalPrice" class="ml-price"></span>
+        </div>
+        <p id="modalSku" class="ml-meta"></p>
+        <p id="modalDesc" class="ml-desc"></p>
+      </div>
+    </div>
+
+    <div class="ml-actions">
+      <a id="modalWhatsApp" class="whatsapp" target="_blank" rel="noopener">Comprar por WhatsApp</a>
+     <button id="modalCloseBtn" class="btn-close-modal">Cerrar</button>
     </div>
   </article>
 </dialog>
+
+
 
 
 <script src="./assets/app.js" type="module"></script>

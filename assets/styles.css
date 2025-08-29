@@ -18,15 +18,59 @@
   --space: clamp(10px, 2.5vw, 16px);
 }
 
-html, body{
-  background: var(--bg);
-  color: var(--text);
-  font-size: clamp(14px, 1.9vw, 16px);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  margin: 0;
+
+/* Tipografía base */
+html {
+  font-size: 16px;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #f8f9f9;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/* Texto general */
+p, li, span, label {
+  font-size: 1.05rem;
+}
+
+/* Botones y acciones */
+button, a.btn-primary, a.whatsapp {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  text-transform: none;
+}
+
+/* Modal texto */
+.ml-desc, .ml-meta, .ml-price {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #ecf1fa;
+}
 /* ======================
    LAYOUT (mobile first)
    ====================== */
@@ -188,30 +232,7 @@ html, body{
    MODAL (<dialog>)
    ====================== */
 
-.modal::backdrop{
-  background: rgba(0,0,0,.55);
-  backdrop-filter: blur(2px);
-}
-.modal .modal-body{ padding: 12px; display: grid; gap: 10px; }
-.modal .modal-media{ width: 100%; aspect-ratio: var(--card-aspect); background: #0f1015; }
-.modal .modal-footer{
-  display: flex; justify-content: flex-end; gap: 10px;
-  padding: 10px 12px 14px;
-}
-#modalClose{
-  border: 1px solid var(--border); background: var(--card-2);
-  color: var(--text); border-radius: 10px; padding: 8px 12px; cursor: pointer;
-}
 
-/* Modal de pantalla completa en móvil */
-@media (max-width: 640px){
- 
-  .modal .modal-body{
-    height: 100%; display: grid; grid-template-rows: auto 1fr auto;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-  }
-  .modal .modal-media{ aspect-ratio: 3/4; }
-}
 
 /* ======================
    ACCESIBILIDAD / PERF
@@ -650,7 +671,7 @@ main, .catalog-layout, .container{ overflow: visible; }
   /* título centrado con clamping */
   .card .title{
     justify-self: center;
-    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+    display: -webkit-box; -webkit-box-orient: vertical; 
     overflow: hidden; text-overflow: ellipsis;
   }
 
@@ -700,752 +721,216 @@ main, .catalog-layout, .container{ overflow: visible; }
 /* Centrado y ancho coherente con las tarjetas en móvil */
 .cta-center{ display:flex; justify-content:center; }
 @media (max-width: 640px){
-  .whatsapp{ width: 100%; max-width: 320px; }
+  .whatsapp{ width: 100%; max-width: 400px; }
 }
 
 
 
-/* ===== Modal estilo “ficha de producto” ===== */
-.modal{ width:min(1100px,96vw); max-height:90vh; }
 
 
 
 
 
-.modal .ml-title{ font-size:clamp(18px,2.2vw,22px); line-height:1.2; margin:0; }
-.modal .ml-price{ font-size:clamp(22px,3vw,28px); font-weight:800; letter-spacing:.2px; }
-.modal .ml-meta{ color:#9aa3b2; font-size:14px; }
-.modal .ml-chip{
-  display:inline-flex; align-items:center; justify-content:center;
-  height:28px; padding:0 10px; border:1px solid #2b3241; border-radius:999px;
-  background:#1f2937; color:#cbd5e1; font-size:12px; width:max-content;
-}
-.modal .ml-actions{ display:grid; gap:10px; margin-top:6px; }
-.modal .ml-actions .btn{
-  display:inline-flex; align-items:center; justify-content:center; min-height:44px;
-  border-radius:12px; border:1px solid #2a3141; color:#e5e7eb; background:#171a22;
-}
-.modal .ml-actions .btn:hover{ filter:brightness(1.06); }
-.modal .ml-actions .whatsapp{
-  border:1px solid rgba(34,197,94,.35);
-  background:rgba(34,197,94,.13); color:#86efac; font-weight:700;
-}
-.modal .ml-desc{ color:#9aa3b2; font-size:14px; line-height:1.5; }
-
-/* Responsive */
-@media (max-width: 980px){
- 
-
- 
-}
-@media (max-width: 640px){
-  .modal{
-    width:100vw; height:100dvh; max-height:none; border-radius:0; margin:0;
-  }
-  
-
- 
-}
-
-
-/* ===========================
-   MODAL – UX móvil mejorada
-   =========================== */
-@media (max-width: 640px){
-  .modal{
-    width: 100vw; height: 100dvh; max-height: none;
-    margin: 0; border-radius: 0; padding: 0;
-  }
-
-  /* Estructura de la pantalla */
-  .ml-modal{
-    display: grid;
-    grid-template-rows: auto auto auto 1fr auto; /* header | viewer | thumbs | info | actions */
-    gap: 10px;
-    height: 100%;
-    background: #0b0c10;
-  }
-
-  /* Header fijo con título + X */
-  .m-header{
-    position: sticky; top: 0; z-index: 3;
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 8px; padding: 12px;
-    background: rgba(11,12,16,.85);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid #232633;
-  }
-  .m-title{
-    font-size: 16px; line-height: 1.2; margin: 0; flex: 1 1 auto;
-    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;
-    overflow: hidden; text-overflow: ellipsis;
-  }
-  .m-close{
-    width: 36px; height: 36px; border-radius: 10px; border: 1px solid #2a3141;
-    background: #111420; color: #e5e7eb;
-  }
-
-  
- 
-
-  
-  /* Información limpia */
-  .ml-info{
-    padding: 0 12px; display: grid; gap: 8px; align-content:start;
-  }
-  .m-price-row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-  .ml-price{ font-size: 22px; font-weight: 800; }
-  .ml-chip{
-    height: 28px; padding: 0 10px; border-radius: 999px;
-    border: 1px solid #2b3241; background:#1f2937; color:#cbd5e1; font-size: 12px;
-    display:inline-flex; align-items:center; justify-content:center;
-  }
-  .ml-desc{
-    color:#9aa3b2; font-size:14px; line-height:1.45;
-    display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp: 3;
-    overflow:hidden; text-overflow:ellipsis;
-  }
-  .m-more{
-    background:none; border:none; color:#93c5fd; text-align:left; padding:0; width:max-content;
-  }
-  .m-more[aria-expanded="true"] + .ml-desc{
-    -webkit-line-clamp: unset; overflow: visible;
-  }
-
-  /* Acciones pegadas abajo con safe-area */
-  .ml-actions{
-    position: sticky; bottom: 0; z-index: 3;
-    padding: 10px 12px calc(10px + env(safe-area-inset-bottom,0px));
-    background: linear-gradient(180deg, rgba(11,12,16,0), rgba(11,12,16,.65) 40%, rgba(11,12,16,.92) 100%);
-    border-top: 1px solid #232633;
-    display: grid; gap: 8px;
-  }
-  .ml-actions .btn,
-  .ml-actions .whatsapp{ width: 100%; min-height: 46px; }
-
-  /* Evita que el fondo haga scroll cuando el modal está abierto */
-body.modal-open {
-  overflow: hidden;
-}
-}
-
-
-/* ===== Modal MÓVIL: scroll real para ver la descripción ===== */
-@media (max-width: 640px){
-  .modal{
-    width: 100vw; height: 100dvh; max-height: none;
-    margin: 0; border-radius: 0;
-    overflow: hidden;                /* IMPORTANT: el scroll vive dentro */
-  }
-  .modal .modal-body{
-    padding: 0 !important;
-    height: 100%;                    /* para que .ml-modal pueda medir el 100% */
-  }
-  .ml-modal{
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;   /* header | SCROLL | actions */
-    gap: 0;
-    background: #0b0c10;
-  }
-
-  /* Área desplazable (viewer + thumbs + info) */
-  .ml-scroll{
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;   /* inercia iOS */
-    touch-action: pan-y;
-    padding: 12px;
-    display: grid;
-    gap: 12px;
-    /* evita que el CTA tape la última línea del texto */
-    padding-bottom: calc(90px + env(safe-area-inset-bottom,0px));
-  }
-
-  /* Cabecera fija */
-  .m-header{
-    position: sticky; top: 0; z-index: 3;
-    display:flex; align-items:center; justify-content:space-between; gap:8px;
-    padding:12px; background:rgba(11,12,16,.85);
-    backdrop-filter: blur(6px);
-    border-bottom:1px solid #232633;
-  }
-  .m-title{ margin:0; font-size:16px; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:1; overflow:hidden; }
-  .m-close{ width:36px; height:36px; border-radius:10px; border:1px solid #2a3141; background:#111420; color:#e5e7eb; }
 
 
 
-  /* Info */
-  .ml-info{ display:grid; gap:8px; }
-  .m-price-row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-  .ml-price{ font-size:22px; font-weight:800; }
-  .ml-desc{ color:#9aa3b2; font-size:14px; line-height:1.45; }
-
-  /* Acciones pegadas abajo */
-  .ml-actions{
-    position: sticky; bottom: 0; z-index: 3;
-    padding: 10px 12px calc(10px + env(safe-area-inset-bottom,0px));
-    background: linear-gradient(180deg, rgba(11,12,16,0), rgba(11,12,16,.65) 40%, rgba(11,12,16,.92) 100%);
-    border-top: 1px solid #232633;
-    display: grid; gap: 8px;
-    min-height: 78px;
-  }
-  .ml-actions .whatsapp, .ml-actions .btn{ width:100%; min-height:46px; }
-}
-
-/* Evita scroll del documento cuando el modal está abierto */
-body.modal-open {
-  overflow: hidden;
-}
 
 
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-}
 
 
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
-}
 
 
-dialog.modal {
-  padding: 0;
-  border: none;
-  border-radius: 12px;
-  max-width: 600px;
-  width: 90%;
-  margin: auto;
-  background: transparent;
-}
 
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
-}
 
-dialog[open] {
+
+
+/* Miniaturas en fila horizontal con scroll de derecha a izquierda */
+.ml-thumbs {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-
-
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  background: none;
-  border: none;
+.ml-thumbs img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
   cursor: pointer;
-  color: #333;
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
 
-.modal-media img {
+.ml-thumbs img.active {
+  border-color: #3483fa;
+}
+
+/* Botón de cerrar igual al botón de WhatsApp */
+.btn-close-modal {
+  background: #3483fa;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
-.modal-info {
+.ml-actions {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
-.modal-actions {
-  margin-top: 15px;
+
+
+
+
+
+
+
+
+
+
+/* MINIATURAS HORIZONTALES */
+.ml-thumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-.modal-actions a {
-  display: inline-block;
-  text-align: center;
-  padding: 10px 20px;
-  background: #10b981;
+.ml-thumbs img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.ml-thumbs img.active {
+  border-color: #3483fa;
+}
+
+/* BOTONES DE ACCIÓN UNIFORMES */
+.btn-buy,
+.btn-close-modal {
+  background: #3483fa;
   color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+  display: block;
+  width: auto;
+  max-width: 100%;
 }
 
+.ml-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
 
+/* RESPONSIVE */
 @media (max-width: 640px) {
-  .ml-modal {
+  .ml-ml-style {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .ml-left,
+  .ml-right {
+    width: 100%;
+  }
+
+  .ml-thumbs {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+
+  .ml-thumbs img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ml-viewer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ml-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .ml-price {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .ml-old-price,
+  .ml-discount,
+  .ml-cuotas {
+    text-align: center;
+  }
+
+  .ml-actions {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-  }
-
-
-
-
-  .ml-info {
-    order: 3;
-    width: 100%;
-    text-align: center;
-  }  
-}
-
-
-
-
-
-.btn-close-modal {
-  margin-top: 10px;
-  background: #eee;
-  color: #333;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.btn-close-modal:hover {
-  background: #ddd;
-}
-
-
-
-
-/* ===== DESKTOP (≥ 980px): layout limpio modal ===== */
-@media (min-width: 980px){
-  /* Grid principal del modal: thumbs | viewer | info */
- 
-
-  /* Viewer centrado, con alto máximo (no invade) y separación a thumbs */
-
-
-  /* Columna de miniaturas a la izquierda, independiente del viewer */
-  .modal .ml-thumbs{
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-
-    /* que NO crezca infinito; su propio scroll */
-    max-height: 72vh !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    padding-right: 4px !important;
-    /* separación visual del viewer */
-    margin: 0 !important;
-  }
-  .modal .ml-thumbs button{
-    width: 88px;
-    height: 88px;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #2a3141;
-    background: #0f1117;
-    flex: 0 0 auto;
-    cursor: pointer;
-    transition: border-color .15s ease, box-shadow .15s ease, filter .15s ease;
-  }
-  .modal .ml-thumbs button img{
-    width: 100%; height: 100%; object-fit: cover; display: block;
-  }
-  .modal .ml-thumbs button[aria-current="true"]{
-    border-color:#3b82f6; box-shadow:0 0 0 2px rgba(59,130,246,.35);
-  }
-
-  /* Columna de info a la derecha */
-  .modal .ml-info{
-    background:#12141a;
-    border:1px solid #232633;
-    border-radius:16px;
-    padding:16px;
-    display:grid; gap:12px; align-content:start;
-    max-height: 72vh;                  /* mismo límite que viewer */
-    overflow: auto;                    /* si el texto es largo */
-  }
-}
-
-/* ===== SEPARACIÓN extra en móviles (por si acaso) ===== */
-@media (max-width: 979px){
- 
-}
-
-
-/* ===== Modal tipo “galería” estilo e-commerce ===== */
-
-/* Dialog centrado */
-dialog.modal{
-  width: min(1120px, 96vw);
-  max-height: 92vh;
-  padding: 0;
-  border: none;
-  border-radius: 16px;
-  background: #0b0c10;          /* tu tema oscuro alrededor del contenido */
-}
-dialog.modal::backdrop{
-  background: rgba(0,0,0,.6);
-}
-
-/* Lienzo: rail de miniaturas (izq) + visor (der) */
-
-
-/* ========= Columna de miniaturas (izquierda) ========= */
-.modal .ml-thumbs{
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-  max-height: 82vh !important;        /* scroll propio, no del dialog */
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  padding-right: 4px !important;
-}
-
-.modal .ml-thumbs button{
-  width: 92px;
-  height: 92px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
-  border: 2px solid transparent;
-  box-shadow: 0 1px 6px rgba(0,0,0,.18);
-  cursor: pointer;
-  flex: 0 0 auto;
-  transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
-}
-.modal .ml-thumbs button:hover{ transform: translateY(-1px); }
-.modal .ml-thumbs button img{
-  width: 100%; height: 100%; object-fit: cover; display: block;
-}
-
-/* Miniatura seleccionada = borde azul tipo marketplace */
-.modal .ml-thumbs button[aria-current="true"]{
-  border-color: #3b82f6;               /* azul selección */
-  box-shadow: 0 0 0 2px rgba(59,130,246,.25);
-}
-
-/* ========= Visor grande (derecha) ========= */
-
-
-/* ========= Responsive: móvil (thumbs abajo en carrusel) ========= */
-@media (max-width: 768px){
- 
-  
-  .modal .ml-thumbs{
-    flex-direction: row !important;           /* thumbs horizontales */
-    max-height: none !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    padding: 4px 2px !important;
-    gap: 10px !important;
-  }
-  .modal .ml-thumbs button{
-    width: 78px; height: 78px;
-  }
-  .modal .ml-thumbs::-webkit-scrollbar{ height: 6px; }
-}
-
-/* (Opcional) estiliza scrollbar en desktop */
-.modal .ml-thumbs::-webkit-scrollbar{ width: 6px; }
-.modal .ml-thumbs::-webkit-scrollbar-thumb{
-  background: #5b6170; border-radius: 3px;
-}
-
-
-
-/* ===== FIX modal: layout estable sin solapes ni doble scroll ===== */
-
-/* El dialog no hace scroll; lo hacen sus columnas internas */
-dialog.modal[open]{
-  overflow: hidden !important;
-}
-.modal-card{
-  overflow: visible !important;  /* quita el scroll vertical del contenedor */
-  background: #0b0c10;           /* tu tema oscuro */
-  border-radius: 14px;
-  padding: 0;
-}
-
-/* Lienzo principal del modal */
-.modal .ml-modal{
-  display: grid !important;
-  grid-template-columns: 112px minmax(380px, 540px) minmax(300px, 1fr); /* thumbs | viewer | info */
-  gap: 18px !important;
-  padding: 18px !important;
-  align-items: stretch !important;
-  height: min(86vh, 820px) !important;     /* altura fija del lienzo */
-  box-sizing: border-box;
-}
-
-/* === Miniaturas (columna izquierda) === */
-.modal .ml-thumbs{
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-  overflow-y: auto !important;     /* SOLO aquí hay scroll vertical */
-  overflow-x: hidden !important;
-  padding-right: 4px !important;
-  max-height: 100% !important;
-  margin: 0 !important;
-}
-.modal .ml-thumbs button{
-  width: 92px; height: 92px; flex: 0 0 auto;
-  border-radius: 12px; overflow: hidden;
-  background: #fff; border: 2px solid transparent;
-  box-shadow: 0 1px 6px rgba(0,0,0,.18);
-  cursor: pointer;
-}
-.modal .ml-thumbs button[aria-current="true"]{
-  border-color:#3b82f6; box-shadow:0 0 0 2px rgba(59,130,246,.25);
-}
-
-/* === Visor (columna central) === */
-.modal .ml-viewer{
-  background:#eef0f3;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  display: grid; place-items: center;
-  padding: 14px;
-  overflow: hidden;          /* sin scroll aquí */
-  height: 100% !important;   /* ocupa toda la altura del lienzo */
-  min-height: 360px;
-}
-.modal .ml-viewer img{
-  max-width: 100%; max-height: 100%;
-  object-fit: contain !important;
-}
-
-/* === Info (columna derecha) === */
-.modal .ml-info{
-  background:#0f1117;
-  border:1px solid #232633;
-  border-radius: 12px;
-  padding: 16px;
-  display: grid; gap: 12px;
-  align-content: start;
-  overflow: auto !important;    /* scroll solo del texto si es largo */
-  max-height: 100% !important;
-}
-
-/* Separación clara entre imagen grande y miniaturas cuando las thumbs van abajo */
-@media (max-width: 980px){
-  .modal .ml-modal{
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto auto auto;
-    gap: 12px !important;
-    height: auto !important;
-    max-height: 92vh !important;
-  }
-  .modal .ml-viewer{
-    height: auto !important;
-    max-height: 60vh !important;
-    margin-bottom: 10px !important;   /* separación con thumbs */
-  }
-  .modal .ml-thumbs{
-    flex-direction: row !important;
-    overflow-x: auto !important; overflow-y: hidden !important;
-    gap: 10px !important; padding: 4px 2px !important;
-  }
-  .modal .ml-thumbs button{ width: 78px; height: 78px; }
-}
-
-/* ====== MODAL – Desktop sólido (≥1024px) ====== */
-dialog.modal{
-  width: min(1200px, 96vw);
-  max-height: 92vh;
-  padding: 0;
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;                 /* el dialog no scrollea */
-  background: transparent;
-}
-.modal-card{
-  background: #0b0c10;
-  border-radius: 16px;
-  padding: 0;
-  overflow: visible;                /* nada de doble scroll aquí */
-}
-
-/* Lienzo principal */
-@media (min-width: 1024px){
-  .modal .ml-modal{
-    display: grid !important;
-    grid-template-columns: 1fr 380px;     /* VISOR | INFO */
-    gap: 22px !important;
-    padding: 22px !important;
-    align-items: stretch;
-    height: min(88vh, 820px);             /* altura fija del lienzo */
-    box-sizing: border-box;
-  }
-
-  /* Si tienes miniaturas a la izquierda, activa esta variante:
-     .modal .ml-modal.thumbs { grid-template-columns: 112px 1fr 380px; } */
-
-  /* VISOR grande */
-  .modal .ml-viewer{
-    background: #eef0f3;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    padding: 16px;
-    display: grid;
-    place-items: center;
-    height: 100%;                        /* ocupa todo el alto del lienzo */
-    min-height: 420px;
-    overflow: hidden;
-  }
-  .modal .ml-viewer img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain !important;
-  }
-
-  /* PANEL derecho (título, precio, desc, botones) */
-  .modal .ml-info{
-    background: #0f1117;
-    border: 1px solid #232633;
-    border-radius: 14px;
-    padding: 18px;
-    display: grid;
-    gap: 14px;
-    align-content: start;
-    overflow: auto;                     /* solo aquí hay scroll */
-    max-height: 100%;
-  }
-
-  /* Miniaturas (si las usas debajo o a la izquierda) */
-  .modal .ml-thumbs{
-    margin-top: 12px;                   /* separación clara respecto al visor */
-    display: flex;
     gap: 10px;
-    overflow-x: auto;
-    padding: 6px 2px;
-  }
-  .modal .ml-thumbs button{
-    flex: 0 0 auto;
-    width: 82px; height: 82px;
-    border-radius: 12px;
-    background: #fff;
-    border: 2px solid transparent;
-    box-shadow: 0 1px 6px rgba(0,0,0,.18);
-    cursor: pointer;
-  }
-  .modal .ml-thumbs button[aria-current="true"]{
-    border-color:#3b82f6; box-shadow:0 0 0 2px rgba(59,130,246,.25);
-  }
-}
-
-/* ====== Móvil/Tablet: thumbs abajo y bien separados ====== */
-@media (max-width: 1023px){
-  .modal .ml-modal{
-    display: grid !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;   /* viewer | thumbs | info */
-    gap: 12px !important;
-    padding: 14px !important;
-    height: auto;
-    max-height: 92vh;
-  }
-  .modal .ml-viewer{
-    background: #eef0f3;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    padding: 12px;
-    aspect-ratio: 3/4;
-    max-height: 60vh;
-  }
-  .modal .ml-thumbs{
-    margin-top: 8px;                      /* separación respecto a la grande */
-    display: flex; gap: 10px;
-    overflow-x: auto; padding: 4px 2px;
-  }
-  .modal .ml-thumbs button{ width: 72px; height: 72px; }
-}
-
-/* Botón Cerrar (por si quieres destacarlo) */
-.btn-close-modal{
-  width: 100%;
-  min-height: 44px;
-  border-radius: 10px;
-  border: 1px solid #2a3141;
-  background: #111420;
-  color: #e5e7eb;
-  font-weight: 600;
-}
-.btn-close-modal:hover{ filter: brightness(1.06); }
-
-/* ====== FIX: que se vean descripción y botones en móviles ====== */
-@media (max-width: 640px){
-  /* El <dialog> no scrollea; lo hace el contenido */
-  dialog.modal[open]{ overflow: hidden !important; }
-
-  /* El “lienzo” del modal ocupa toda la altura y reparte filas:
-     viewer | thumbs | info (scroll) */
-  .modal-card{
-    height: 100dvh;               /* clave para cálculos internos */
-    overflow: hidden;             /* sin doble scroll */
-  }
-  .modal .ml-modal{
-    height: 100%;                 /* usa toda la altura disponible */
-    display: grid !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr; /* <- la info se queda con el 1fr */
-    gap: 12px !important;
-    padding: 12px !important;
+    margin-top: 16px;
   }
 
-  /* Visor grande limitado: no tapa lo de abajo */
-  .modal .ml-viewer{
-    max-height: 55dvh;            /* ajusta si quieres 60dvh */
-    border-radius: 14px;
-    padding: 10px;
-    overflow: hidden;
+  .btn-buy,
+  .btn-close-modal {
+    font-size: 15px;
+    width: auto;
+    padding: 12px 24px;
   }
 
-  /* Miniaturas con scroll horizontal y separación */
-  .modal .ml-thumbs{
-    margin-top: 4px;
-    display: flex; gap: 10px;
-    overflow-x: auto; overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding: 2px 4px;
-  }
-  .modal .ml-thumbs button{ flex: 0 0 auto; width: 70px; height: 70px; }
-
-  /* —— AQUÍ ESTÁ EL ARREGLO —— */
-  .modal .ml-info{
-    min-height: 0 !important;     /* permite que el 1fr haga scroll */
-    overflow: auto !important;     /* scroll de la descripción si es larga */
-    display: grid; gap: 10px;
-    align-content: start;
-    padding-bottom: 96px;          /* hueco para los botones pegados abajo */
+  .ml-desc-extra {
+    margin-top: 20px;
+    padding-top: 12px;
   }
 
-  /* Botones pegados abajo siempre visibles */
-  .modal .ml-actions{
-    position: sticky; bottom: 0; z-index: 2;
-    display: grid; gap: 8px;
-    padding: 10px 0 10px;
-    background:
-      linear-gradient(180deg, rgba(11,12,16,0), rgba(11,12,16,.85) 60%);
-    /* evita que los botones tapen el último renglón */
-    margin-top: 8px;
+  .ml-desc-extra h3 {
+    text-align: center;
+    font-size: 16px;
   }
-  .modal .ml-actions .whatsapp,
-  .modal .ml-actions .btn,
-  .btn-close-modal{
-    width: 100%;
-    min-height: 46px;
-    border-radius: 10px;
+
+  .ml-desc-extra p {
+    font-size: 14px;
   }
 }
-
-
-
-
-
-
-

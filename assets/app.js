@@ -437,6 +437,7 @@ function openModal(p) {
   const modalDesc = document.getElementById('modalDesc');
   const modalWhatsApp = document.getElementById('modalWhatsApp');
   const thumbsContainer = MODAL.querySelector('.ml-thumbs');
+  
 
   // Mostrar datos
   modalTitle.textContent = p.title;
@@ -607,8 +608,23 @@ GRID.addEventListener('click', (e) => {
   const isWhatsApp = e.target.closest('a.whatsapp');
   if (isWhatsApp) return;
 
+
+
+
+
+
+
+
+
   const id = card.getAttribute('data-id');
   const p = STATE.filtered.find(prod => prod.id === id) || STATE.products.find(prod => prod.id === id);
   if (p) openModal(p);
 });
+
+
+
+
+
+
+
 
