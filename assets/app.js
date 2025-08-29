@@ -10,17 +10,7 @@ const SWIPE_THRESHOLD = 30;
 
 
 // ===== ELEMENTOS =====
-document.getElementById('grid')?.addEventListener('click', (e) => {
-  const card = e.target.closest('.card');
-  if (!card) return;
-
-  const isWhatsApp = e.target.closest('a.whatsapp');
-  if (isWhatsApp) return;
-
-  const id = card.getAttribute('data-id');
-  const p = STATE.filtered.find(x => x.id === id) || STATE.products.find(x => x.id === id);
-  if (p) openModal(p);
-});
+const GRID = document.getElementById('grid');
 const STATS = document.getElementById('stats');
 const PAG = document.getElementById('pagination');
 const STATUS = document.getElementById('status');
@@ -341,14 +331,10 @@ function buildCard(p) {
       </p>
       <div class="actions">
         <button type="button" class="page-btn open-modal" data-id="${p.id}">Ver detalle</button>
-       <a class="whatsapp"
-   target="_blank" rel="noopener"
-   data-title="${p.title}"
-   data-price="${price != null ? formatCOP(price) : ''}"
-   data-img="${(p.images && p.images[0]) || p.image || PLACEHOLDER}"
-   href="https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price ? ` | ${formatCOP(price)}` : ''}`)}">
-   WhatsApp
-</a>
+        <a class="whatsapp" target="_blank" rel="noopener"
+           href="https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price ? ` | ${formatCOP(price)}` : ''}`)}">
+           WhatsApp
+        </a>
       </div>
     </div>
   `;
@@ -368,7 +354,6 @@ card.addEventListener('click', (e) => {
   const pFound = STATE.filtered.find(prod => prod.id === id) || STATE.products.find(prod => prod.id === id);
   if (pFound) openModal(pFound);
 });
-
 
 // Accesibilidad: abrir con Enter/Espacio cuando la tarjeta tenga foco
 card.setAttribute('tabindex', '0');
@@ -432,78 +417,15 @@ function renderPagination(){
 
 // ===== MODAL =====
 function closeModal(modal){
-  try {
-    if (!modal) return;
-
-    // Quitar clase del body
-    document.body.classList.remove('modal-open');
-
-    // Remover evento popstate si estaba registrado
-    if (modal._onPopstate) {
-      window.removeEventListener('popstate', modal._onPopstate);
-      modal._onPopstate = null;
-    }
-
-    // Corregir historial: si se empujó estado y no viene de atrás, retrocede
-    if (modal._pushedHistory && !modal._fromPopstate) {
-      modal._ignorePop = true; // ← evita rebote del back
-      history.back();
-    }
-
-    modal._pushedHistory = false;
-    modal._fromPopstate = false;
-
-    // Cerrar visualmente el modal
-    if (typeof modal.close === 'function') {
-      modal.close();
-    } else {
-      modal.removeAttribute('open');
-    }
-
-    // Restaurar scroll (opcional si el modal cambia overflow)
-    document.body.style.overflow = '';
-
-  } catch (err) {
-    console.error('Error al cerrar modal:', err);
-  }
+  try{
+    if(modal._tickId){ clearInterval(modal._tickId); modal._tickId = null; }
+    if(typeof modal.close === 'function') modal.close(); else modal.removeAttribute('open');
+  }catch{}
 }
-
 
 function openModal(p){
-const MODAL = document.getElementById('productModal');
-
-function openModal() {
-  MODAL.classList.add('is-open');
-  document.body.classList.add('modal-open');
-
-  // Añadir historial
-  if (!history.state || !history.state.modalOpen) {
-    history.pushState({ modalOpen: true }, '');
-  }
-
-  window.addEventListener('popstate', onPopState);
-
-  const closeBtn = document.getElementById('modalClose');
-  closeBtn?.addEventListener('click', () => closeModal(false));
-}
-
-function closeModal(fromPopState = false) {
-  MODAL.classList.remove('is-open');
-  document.body.classList.remove('modal-open');
-
-  window.removeEventListener('popstate', onPopState);
-
-  if (!fromPopState && history.state?.modalOpen) {
-    history.back();
-  }
-}
-
-function onPopState(e) {
-  if (MODAL.classList.contains('is-open')) {
-    closeModal(true);
-  }
-}
-
+  const MODAL = document.getElementById('productModal');
+  if(!MODAL){ console.error('Modal no encontrado (#productModal)'); return; }
 
   // Construcción del layout tipo ficha
   MODAL.innerHTML = `
@@ -529,20 +451,8 @@ function onPopState(e) {
 
   const imgs = Array.isArray(p.images) && p.images.length ? p.images : [p.image || PLACEHOLDER];
   const price = smartPrice(p);
+  const main = MODAL.querySelector('#mlMain');
   const thumbs = MODAL.querySelector('#mlThumbs');
-const main   = MODAL.querySelector('#mlMain');
-thumbs.addEventListener('click', (e) => {
-  const btn = e.target.closest('button');
-  if (!btn) return;
-  e.stopPropagation();                 // evita que burbujee a otros listeners
-  const idx = [...thumbs.children].indexOf(btn);
-  if (idx >= 0) {
-    main.src = imgs[idx];              // muestra en grande
-    [...thumbs.children].forEach(b => b.setAttribute('aria-current','false'));
-    btn.setAttribute('aria-current','true');
-  }
-});
-
 
   // Título / precio / categoría / desc
   MODAL.querySelector('#mlTitle').textContent = p.title || 'Producto';
@@ -550,21 +460,6 @@ thumbs.addEventListener('click', (e) => {
   MODAL.querySelector('#mlCategory').textContent = p.category || 'General';
   MODAL.querySelector('#mlDesc').textContent = p.description || '';
   const wa = MODAL.querySelector('#mlWA');
-  // Rellena dataset para compartir con imagen
-wa.dataset.title = p.title || 'Producto';
-wa.dataset.price = price != null ? formatCOP(price) : '';
-wa.dataset.img   = (imgs && imgs[0]) || PLACEHOLDER;
-
-// Si cambias de miniatura, actualiza la imagen a compartir
-thumbs.addEventListener('click', (e)=>{
-  const btn = e.target.closest('button'); if(!btn) return;
-  const idx = [...thumbs.children].indexOf(btn);
-  if (idx >= 0) {
-    const src = imgs[idx];
-    wa.dataset.img = src;
-  }
-});
-
   wa.href = `https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price?` | ${formatCOP(price)}`:''}`)}`;
 
   // Imágenes
@@ -609,16 +504,11 @@ history.pushState({ modal: true }, '');
 MODAL._pushedHistory = true;
 MODAL._fromPopstate = false;
 MODAL._onPopstate = () => {
-  if (MODAL._ignorePop) {
-    MODAL._ignorePop = false; // ← ya ignoramos este
-    return;
-  }
   if (MODAL.open || MODAL.hasAttribute('open')) {
-    MODAL._fromPopstate = true;
+    MODAL._fromPopstate = true;       // marca que viene del 'atrás'
     closeModal(MODAL);
   }
 };
-
 window.addEventListener('popstate', MODAL._onPopstate);
 
 // 4) (opcional) Escape también cierra
@@ -764,30 +654,4 @@ fitPerPage();
 fetchCatalog(true);
 startGlobalTick();
 
-// ===== Compartir en WhatsApp con imagen (si el navegador lo permite) =====
-async function shareWhatsAppWithImage({ phone, text, imageUrl }) {
-  try {
-    // Intenta Web Share API con archivos (Android/Chrome)
-    if (imageUrl && navigator.canShare && navigator.canShare({ files: [] })) {
-      const res = await fetch(imageUrl, { mode: 'cors' });  // si CORS falla, irá al catch
-      const blob = await res.blob();
-      const fileName = 'producto' + (/\.\w+$/.exec(imageUrl)?.[0] || '.jpg');
-      const file = new File([blob], fileName, { type: blob.type || 'image/jpeg' });
-
-      if (navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], text });
-        return; // listo: compartido con imagen
-      }
-    }
-  } catch (err) {
-    // Ignoramos y hacemos fallback abajo
-    console.debug('Web Share con imagen no disponible:', err?.message || err);
-  }
-
-  // Fallback universal: abrir wa.me con el texto + URL de la imagen (muestra preview)
-  const msg = imageUrl ? `${text}\n${imageUrl}` : text;
-  const to = (phone || '').replace(/[^\d]/g, '');   // solo dígitos
-  const url = `https://wa.me/${to}?text=${encodeURIComponent(msg)}`;
-  window.open(url, '_blank', 'noopener');
-}
 
