@@ -1,6 +1,107 @@
 {
   "products": [
     {
+      "id": "0479f922-8645-4de2-8996-32c86fd952d1",
+      "title": "Confjunto pantalón y blusa",
+      "price": 1893,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIrXWij5iAOMq7ZXPPq5P172-ZHXMzOAAK7rzEb35DgRDS8dpojkjlyAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrXmij5iBu3TvNHJTWvvv_bTxyRp03AAK5rzEb35DgROU5LaMtiQaVAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrX2ij5iBqlnq_EtGlkhYvtyxu_tUQAAK8rzEb35DgRAjp8GxS1pmWAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrYGij5iATuiPDjSXfboiAzAoFCQmYAAK6rzEb35DgRKDRWp447cIqAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrYWij5iDv8oR3n6CyCe2fC02AXMvyAAK9rzEb35DgRNe83Q0kvP2_AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrYmij5iC5n3u5l395S9q3gExhB3knAAK-rzEb35DgRF5ST9zkhMHiAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIrXWij5iAOMq7ZXPPq5P172-ZHXMzOAAK7rzEb35DgRDS8dpojkjlyAQADAgADeQADNgQ.jpg",
+      "description": "Confjunto pantalón y blusa \nTalla Sm Ml Lxl \nRef 1893 \nTela rayón romano \nPrecio 70.000",
+      "created_at": "2025-08-29T01:35:56+00:00"
+    },
+    {
+      "id": "1943973c-9b43-4468-8aba-9b2143d37a88",
+      "title": "Confjunto pantalón y blusa",
+      "price": 1893,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAxkBAAIrXWij5iAOMq7ZXPPq5P172-ZHXMzOAAK7rzEb35DgRDS8dpojkjlyAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrXmij5iBu3TvNHJTWvvv_bTxyRp03AAK5rzEb35DgROU5LaMtiQaVAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrX2ij5iBqlnq_EtGlkhYvtyxu_tUQAAK8rzEb35DgRAjp8GxS1pmWAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrYGij5iATuiPDjSXfboiAzAoFCQmYAAK6rzEb35DgRKDRWp447cIqAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrYWij5iDv8oR3n6CyCe2fC02AXMvyAAK9rzEb35DgRNe83Q0kvP2_AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAxkBAAIrYmij5iC5n3u5l395S9q3gExhB3knAAK-rzEb35DgRF5ST9zkhMHiAQADAgADeQADNgQ.jpg"
+      ],
+      "image": "images/AgACAgEAAxkBAAIrXWij5iAOMq7ZXPPq5P172-ZHXMzOAAK7rzEb35DgRDS8dpojkjlyAQADAgADeQADNgQ.jpg",
+      "description": "Confjunto pantalón y blusa \nTalla Sm Ml Lxl \nRef 1893 \nTela rayón romano \nPrecio 70.000",
+      "created_at": "2025-08-29T01:35:15+00:00"
+    },
+    {
+      "id": "71762ee2-2c0a-4674-9b17-fe05ffcab9c6",
+      "title": "Braga tipo enterizo bengalina",
+      "price": 84000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdppop3Z2IUvLoMK2OKE0pLgN6RGBnQAC7K4xG5L9QUVm527QQ-CopAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdptop3Z2-5PzcdFo1W9HcQTnc2nUNQAC7a4xG5L9QUWTVb3eWDv39AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdpxop3Z2v8jOgvhEYqRI7nfYPxvAJwAC7q4xG5L9QUUsC30jYtxjhgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdp1op3Z2Fqebb1gIsWR3vYXa-wW25AAC764xG5L9QUUXCbsr2tejDwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdppop3Z2IUvLoMK2OKE0pLgN6RGBnQAC7K4xG5L9QUVm527QQ-CopAEAAwIAA3kAAzYE.jpg",
+      "description": "Braga tipo enterizo bengalina \nLicrado talla unica ( Ajuste perfecto a todas las talla ) \nRef FE42\nPrecio 84.000",
+      "created_at": "2025-08-28T18:54:39+00:00"
+    },
+    {
+      "id": "ed0c1112-cd08-490f-b1c9-82e3779085c6",
+      "title": "Miren esta belleza 💗",
+      "price": 65000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdqlorySWxKyBbmUq7lfH4ddr1DnJEgACra4xGzBneUXciUDnF17L7wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqporySWLTBw1mHocE0h_3D2F5WifQACr64xGzBneUV1GPduGuElGwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqtorySWe84f0B4hI0X8mBe0juJsLAACrq4xGzBneUWpkr3LaJoqowEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqxorySWx8ESivELqdcFgUW-ghBbkgACsa4xGzBneUWYUSCew1vijwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdq1orySW1joXhPtMwfJ0a1PoQJSNAgACsK4xGzBneUVoRdSkJlYqrAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdqlorySWxKyBbmUq7lfH4ddr1DnJEgACra4xGzBneUXciUDnF17L7wEAAwIAA3kAAzYE.jpg",
+      "description": "Miren esta belleza 💗\n\nHermoso vestido largo unicolor con bello cinturón \nTela seda Armani \nTalla Sm ml Lxl( talla modelo Sm)\nDisponibilidad de colores \n$ detal 65.000\nMayor 55.000",
+      "created_at": "2025-08-28T18:09:47+00:00"
+    },
+    {
+      "id": "74de973f-843f-4751-abe3-9ba9940a260a",
+      "title": "Conjunto chaleco y pantalón",
+      "price": 1076,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdqRop3kUT1VnjOipvbBu-mAZHbKbpAAC9K4xG5L9QUWHCAhuhMV6hAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqVop3kUTxhqgGuw2rKSyNlHjedaDwAC9a4xG5L9QUWPwHjxYew_LQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqZop3kUX78NFS9O-bx2apJJkyeh4wAC9q4xG5L9QUVCDJdddNkAAfgBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqdop3kUM21ZPNljFnhuYc0AAQVMCpIAAveuMRuS_UFFYizFdhcruuYBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdqRop3kUT1VnjOipvbBu-mAZHbKbpAAC9K4xG5L9QUWHCAhuhMV6hAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto chaleco y pantalón \nTela algodón lino\nDetalle con encaje\nTalla SM ML LXL \nRef 1076\nPrecio 72.000",
+      "created_at": "2025-08-28T18:09:47+00:00"
+    },
+    {
+      "id": "d66aa761-043f-41ca-b138-f575d270d24a",
+      "title": "Braga bengalina",
+      "price": 84000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACdp9op3djacnlpODOxKF5Ug2xFjn4eAAC8K4xG5L9QUViYfgsxcbX_QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqBop3djdXCIfAPnZvF8455q9xmAIgAC8a4xG5L9QUWxLZz5VYbmcQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqFop3dj43aMVMyiCqA_UbrmV-FR7AAC8q4xG5L9QUUZyT9O7zTz7QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACdqJop3djkWxCCiQlwyH9iCG_a_JcVQAC864xG5L9QUVqurGdUcAfaQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACdp9op3djacnlpODOxKF5Ug2xFjn4eAAC8K4xG5L9QUViYfgsxcbX_QEAAwIAA3kAAzYE.jpg",
+      "description": "Braga bengalina \nAbertura en la bota \nLicrado talla unica ( Ajuste perfecto a todas las talla ) \nRef FE43\nPrecio 84.000",
+      "created_at": "2025-08-28T18:09:47+00:00"
+    },
+    {
       "id": "19872e25-e6ea-4f02-ae30-e348f84d3d86",
       "title": "Hermosa pijama tres piezas",
       "price": 28000,

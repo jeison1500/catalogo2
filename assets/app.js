@@ -1,15 +1,20 @@
+console.log("✅ app.js cargado correctamente");
+
+
 // ===== CONFIG =====
-const REFRESH_MS = 15000;                     // auto-actualizar catálogo
+const REFRESH_MS = 15000;
 const CATALOG_URL = "./data/catalog.json";
 const PLACEHOLDER = "./assets/placeholder.jpg";
-const SLIDE_MS = 3500;                        // tiempo entre diapositivas
-const SWIPE_THRESHOLD = 30;                   // px para swipe
+const SLIDE_MS = 3500;
+const SWIPE_THRESHOLD = 30;
+
 
 // ===== ELEMENTOS =====
 const GRID = document.getElementById('grid');
 const STATS = document.getElementById('stats');
 const PAG = document.getElementById('pagination');
 const STATUS = document.getElementById('status');
+
 
 const SEARCH = document.getElementById('searchInput');
 const CATEGORY = document.getElementById('categorySelect');
@@ -19,50 +24,75 @@ const PERPAGE = document.getElementById('perPageSelect');
 const CLEAR = document.getElementById('clearFilters');
 const REFRESH = document.getElementById('refreshBtn');
 
+
 // ===== ESTADO =====
 const STATE = {
-  raw: [],
-  products: [],
-  filtered: [],
-  categories: new Set(),
-  page: 1,
-  perPage: 12,
-  jsonHash: null
+raw: [],
+products: [],
+filtered: [],
+categories: new Set(),
+page: 1,
+perPage: 12,
+jsonHash: null
 };
 
+// // ===== UTILIDAD: Asignar categoría automáticamente =====
+// function assignCategory(p) {
+//   const text = `${p.title} ${p.description || ''}`.toLowerCase();
+//   if (text.includes('blusa')) return 'Blusa';
+//   if (text.includes('camiseta') || text.includes('camisa')) return 'Camiseta';
+//   if (text.includes('vestido')) return 'Vestido';
+//   if (text.includes('pantalon') || text.includes('pantalone')) return 'Pantalone';
+//   if (text.includes('jean')) return 'Jean';
+//   if (text.includes('falda')) return 'Falda';
+//   if (text.includes('short')) return 'Short';
+//   if (text.includes('conjunto')) return 'Conjunto';
+//   if (text.includes('pijama') || text.includes('dormir')) return 'Ropa de dormir / pijama';
+//   if (text.includes('chaqueta') || text.includes('abrigo')) return 'Chaqueta / abrigo';
+//   if (text.includes('set')) return 'Set';
+//   return 'General';
+// }
+
+
 // ===== CARRUSEL GLOBAL (para tarjetas) =====
-const CAROUSELS = new Set();   // carouseles en tarjetas (en sincronía)
+const CAROUSELS = new Set();   // carruseles en tarjetas (en sincronía)
 let tickId = null;
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
     const c = entry.target._carousel;
-    if(c) c.visible = entry.isIntersecting;   // sólo avanzar visibles
+    if (c) c.visible = entry.isIntersecting;
   });
 }, { root: null, threshold: 0.4 });
 
-function startGlobalTick(){
-  if(tickId) return;
-  tickId = setInterval(()=>{
+function startGlobalTick() {
+  if (tickId) return;
+  tickId = setInterval(() => {
     if (document.visibilityState !== 'visible') return;
-    CAROUSELS.forEach(c => { if(c.visible && !c.paused) c.next(); });
+    CAROUSELS.forEach(c => { if (c.visible && !c.paused) c.next(); });
   }, SLIDE_MS);
 }
-function stopGlobalTick(){
-  if(tickId){ clearInterval(tickId); tickId = null; }
+
+function stopGlobalTick() {
+  if (tickId) { clearInterval(tickId); tickId = null; }
 }
 
 // ===== UTILIDADES =====
-function formatCOP(n){
-  if(n == null || isNaN(Number(n))) return '';
-  return new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n);
+function formatCOP(n) {
+  if (n == null || isNaN(Number(n))) return '';
+  return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(n);
 }
-function hashString(str){
+function hashString(str) {
   let h = 0, i, chr;
-  for(i=0;i<str.length;i++){ chr=str.charCodeAt(i); h=((h<<5)-h)+chr; h|=0; }
+  for (i = 0; i < str.length; i++) {
+    chr = str.charCodeAt(i);
+    h = ((h << 5) - h) + chr;
+    h |= 0;
+  }
   return h;
 }
-function debounce(fn, ms=250){
-  let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), ms); };
+function debounce(fn, ms = 250) {
+  let t;
+  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
 }
 
 /** Extrae precio real (≥ 10.000) desde texto, evitando refs cortas. */
@@ -99,24 +129,57 @@ function smartPrice(p){
   return fromText != null ? fromText : null;
 }
 
-function normalize(data){
-  const arr = Array.isArray(data) ? data : (data.products || []);
-  return arr.map(p=>{
-    const imgs = (p.images && p.images.length ? p.images : (p.image ? [p.image] : [])) || [];
-    const created = p.created_at || p.date || '1970-01-01T00:00:00Z';
-    const rawNum = p.price!=null ? Number(String(p.price).replace(/[^\d]/g,'')) : null;
-    return {
-      id: p.id || (crypto?.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2)),
-      title: p.title || p.caption || 'Producto',
-      price: rawNum,
-      sku: p.sku || p.code || null,   // no lo mostramos
-      category: p.category || 'General',
-      images: imgs.length ? imgs : [PLACEHOLDER],
-      image: imgs[0] || PLACEHOLDER,
-      description: p.description || p.text || '',
-      created_at: created
-    };
-  });
+// ===== ASIGNAR CATEGORÍA AUTOMÁTICAMENTE =====
+function assignCategory(data){
+const arr = Array.isArray(data) ? data : (data.products || []);
+return arr.map(p=>{
+const imgs = (p.images && p.images.length ? p.images : (p.image ? [p.image] : [])) || [];
+const created = p.created_at || p.date || '1970-01-01T00:00:00Z';
+const rawNum = p.price!=null ? Number(String(p.price).replace(/[^\d]/g,'')) : null;
+
+
+const text = `${p.title} ${p.description || ''}`.toLowerCase();
+let category = 'General';
+if (text.includes('blusa')) category = 'Blusa';
+else if (text.includes('camiseta') || text.includes('camisa')) category = 'Camiseta';
+else if (text.includes('vestido')) category = 'Vestido';
+else if (text.includes('pantalon') || text.includes('pantalone')) category = 'Pantalone';
+else if (text.includes('jean')) category = 'Jean';
+else if (text.includes('falda')) category = 'Falda';
+else if (text.includes('short')) category = 'Short';
+else if (text.includes('conjunto')) category = 'Conjunto';
+else if (text.includes('pijama') || text.includes('dormir')) category = 'Ropa de dormir / pijama';
+else if (text.includes('chaqueta') || text.includes('abrigo')) category = 'Chaqueta / abrigo';
+else if (text.includes('set')) category = 'Set';
+
+
+return {
+id: p.id || (crypto?.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2)),
+title: p.title || p.caption || 'Producto',
+price: rawNum,
+sku: p.sku || p.code || null,
+category: (() => {
+  const text = `${p.title} ${p.description || ''}`.toLowerCase();
+  if (text.includes('blusa')) return 'Blusa';
+  if (text.includes('camiseta') || text.includes('camisa')) return 'Camiseta';
+  if (text.includes('vestido')) return 'Vestido';
+  if (text.includes('pantalon') || text.includes('pantalone')) return 'Pantalone';
+  if (text.includes('jean')) return 'Jean';
+  if (text.includes('falda')) return 'Falda';
+  if (text.includes('short')) return 'Short';
+  if (text.includes('conjunto')) return 'Conjunto';
+  if (text.includes('pijama') || text.includes('dormir')) return 'Ropa de dormir / pijama';
+  if (text.includes('chaqueta') || text.includes('abrigo')) return 'Chaqueta / abrigo';
+  if (text.includes('set')) return 'Set';
+  return 'General';
+})(),
+
+images: imgs.length ? imgs : [PLACEHOLDER],
+image: imgs[0] || PLACEHOLDER,
+description: p.description || p.text || '',
+created_at: created
+};
+});
 }
 
 // ===== CARRUSEL (tarjeta o modal) =====
@@ -242,18 +305,22 @@ function renderCategories(){
     opt.value = c; opt.textContent = c;
     CATEGORY.appendChild(opt);
   }
+  console.log("Categorías en el filtro:", Array.from(STATE.categories));
+
 }
 
-function buildCard(p){
+function buildCard(p) {
   const price = smartPrice(p);
   const card = document.createElement('article');
   card.className = 'card';
+  card.setAttribute('data-id', p.id); // ← importante
+
   card.innerHTML = `
     <div class="media"></div>
     <div class="body">
       <h4 class="title">${p.title}</h4>
       <div class="meta">
-        <span class="price">${price!=null ? formatCOP(price) : ''}</span>
+        <span class="price">${price != null ? formatCOP(price) : ''}</span>
         <span class="chip">${p.category}</span>
       </div>
       <p class="desc" style="
@@ -264,18 +331,49 @@ function buildCard(p){
       </p>
       <div class="actions">
         <button type="button" class="page-btn open-modal" data-id="${p.id}">Ver detalle</button>
-        <a class="whatsapp" target="_blank" rel="noopener"
-           href="https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price?` | ${formatCOP(price)}`:''}`)}">
-           WhatsApp
-        </a>
+       <a class="whatsapp"
+   target="_blank" rel="noopener"
+   data-title="${p.title}"
+   data-price="${price != null ? formatCOP(price) : ''}"
+   data-img="${(p.images && p.images[0]) || p.image || PLACEHOLDER}"
+   href="https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price ? ` | ${formatCOP(price)}` : ''}`)}">
+   WhatsApp
+</a>
       </div>
     </div>
   `;
+
   // Carrusel en tarjeta
   const media = card.querySelector('.media');
-  new Carousel(media, p.images, { register:true, showDots:true, allowSwipe:true });
+  new Carousel(media, p.images, { register: true, showDots: true, allowSwipe: true });
+
+ // Abre el modal al hacer clic en cualquier parte de la tarjeta,
+// excepto si el clic es en el enlace de WhatsApp (debe ir al chat).
+card.style.cursor = 'pointer';
+card.addEventListener('click', (e) => {
+  const isWhatsApp = e.target.closest('a.whatsapp');
+  if (isWhatsApp) return;
+
+  const id = card.getAttribute('data-id');
+  const pFound = STATE.filtered.find(prod => prod.id === id) || STATE.products.find(prod => prod.id === id);
+  if (pFound) openModal(pFound);
+});
+
+// Accesibilidad: abrir con Enter/Espacio cuando la tarjeta tenga foco
+card.setAttribute('tabindex', '0');
+card.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    const id = card.getAttribute('data-id');
+    const pFound = STATE.filtered.find(prod => prod.id === id) || STATE.products.find(prod => prod.id === id);
+    if (pFound) openModal(pFound);
+  }
+});
+
   return card;
 }
+
+
 
 function renderGrid(){
   GRID.innerHTML = '';
@@ -324,85 +422,172 @@ function renderPagination(){
 // ===== MODAL =====
 function closeModal(modal){
   try{
-    if(modal._tickId){ clearInterval(modal._tickId); modal._tickId = null; }
-    if(typeof modal.close === 'function') modal.close(); else modal.removeAttribute('open');
+    document.body.classList.remove('modal-open');
+
+    // Limpia el popstate del modal
+    if (modal._onPopstate) {
+      window.removeEventListener('popstate', modal._onPopstate);
+      modal._onPopstate = null;
+    }
+
+    // Si empujamos historial y NO venimos de popstate, retrocede una vez
+    if (modal._pushedHistory && !modal._fromPopstate) {
+      history.back();
+    }
+    modal._pushedHistory = false;
+    modal._fromPopstate  = false;
+
+    if (typeof modal.close === 'function') modal.close();
+    else modal.removeAttribute('open');
   }catch{}
 }
+
 
 function openModal(p){
   const MODAL = document.getElementById('productModal');
   if(!MODAL){ console.error('Modal no encontrado (#productModal)'); return; }
-  const M_TITLE = document.getElementById('modalTitle');
-  const M_PRICE = document.getElementById('modalPrice');
-  const M_DESC  = document.getElementById('modalDesc');
-  const M_WA    = document.getElementById('modalWhatsApp');
-  const M_SKU   = document.getElementById('modalSku'); // si existe, oculto
-  let MODAL_MEDIA = MODAL.querySelector('.modal-media');
 
-  if(!MODAL_MEDIA){
-    const body = MODAL.querySelector('.modal-body') || MODAL;
-    MODAL_MEDIA = document.createElement('div');
-    MODAL_MEDIA.className = 'modal-media';
-    body.prepend(MODAL_MEDIA);
-  }
+  // Construcción del layout tipo ficha
+  MODAL.innerHTML = `
+    <div class="modal-body">
+      <div class="ml-modal">
+        <div class="ml-thumbs" id="mlThumbs"></div>
+        <div class="ml-viewer"><img id="mlMain" alt="Imagen de producto"></div>
+        <aside class="ml-info">
+          <h2 class="ml-title" id="mlTitle"></h2>
+          <div class="ml-price" id="mlPrice"></div>
+          <div class="ml-meta">
+            <span class="ml-chip" id="mlCategory"></span>
+          </div>
+          <div class="ml-actions">
+            <a class="btn whatsapp" id="mlWA" target="_blank" rel="noopener">WhatsApp</a>
+            <button class="btn" id="modalClose">Cerrar</button>
+          </div>
+          <p class="ml-desc" id="mlDesc"></p>
+        </aside>
+      </div>
+    </div>
+  `;
 
+  const imgs = Array.isArray(p.images) && p.images.length ? p.images : [p.image || PLACEHOLDER];
   const price = smartPrice(p);
-  if (M_SKU){ M_SKU.textContent = ''; M_SKU.style.display = 'none'; }
-  if (M_TITLE) M_TITLE.textContent = p.title;
-  if (M_PRICE) M_PRICE.textContent = price!=null ? formatCOP(price) : '';
-  if (M_DESC)  M_DESC.textContent  = p.description || '';
-  if (M_WA)    M_WA.href = `https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price?` | ${formatCOP(price)}`:''}`)}`;
+  const thumbs = MODAL.querySelector('#mlThumbs');
+const main   = MODAL.querySelector('#mlMain');
+thumbs.addEventListener('click', (e) => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  e.stopPropagation();                 // evita que burbujee a otros listeners
+  const idx = [...thumbs.children].indexOf(btn);
+  if (idx >= 0) {
+    main.src = imgs[idx];              // muestra en grande
+    [...thumbs.children].forEach(b => b.setAttribute('aria-current','false'));
+    btn.setAttribute('aria-current','true');
+  }
+});
 
-  // Carrusel en el modal (auto-advance propio)
-  MODAL_MEDIA.innerHTML = '';
-  MODAL_MEDIA.style.position = 'relative';
-  MODAL_MEDIA.style.width = '100%';
-  MODAL_MEDIA.style.background = '#0f1015';
-  MODAL_MEDIA.style.aspectRatio = getComputedStyle(document.documentElement).getPropertyValue('--card-aspect') || '4 / 5';
-  MODAL_MEDIA.style.overflow = 'hidden';
 
-  const modalCarousel = new Carousel(MODAL_MEDIA, p.images, { register:false, showDots:true, allowSwipe:true });
-  if(MODAL._tickId){ clearInterval(MODAL._tickId); }
-  MODAL._tickId = setInterval(()=>{
-    if(document.visibilityState==='visible' && (MODAL.open || MODAL.hasAttribute('open')) && !modalCarousel.paused){
-      modalCarousel.next();
+  // Título / precio / categoría / desc
+  MODAL.querySelector('#mlTitle').textContent = p.title || 'Producto';
+  MODAL.querySelector('#mlPrice').textContent = price != null ? formatCOP(price) : '';
+  MODAL.querySelector('#mlCategory').textContent = p.category || 'General';
+  MODAL.querySelector('#mlDesc').textContent = p.description || '';
+  const wa = MODAL.querySelector('#mlWA');
+  // Rellena dataset para compartir con imagen
+wa.dataset.title = p.title || 'Producto';
+wa.dataset.price = price != null ? formatCOP(price) : '';
+wa.dataset.img   = (imgs && imgs[0]) || PLACEHOLDER;
+
+// Si cambias de miniatura, actualiza la imagen a compartir
+thumbs.addEventListener('click', (e)=>{
+  const btn = e.target.closest('button'); if(!btn) return;
+  const idx = [...thumbs.children].indexOf(btn);
+  if (idx >= 0) {
+    const src = imgs[idx];
+    wa.dataset.img = src;
+  }
+});
+
+  wa.href = `https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price?` | ${formatCOP(price)}`:''}`)}`;
+
+  // Imágenes
+  main.src = imgs[0] || PLACEHOLDER;
+  main.onerror = ()=>{ main.src = PLACEHOLDER; };
+  thumbs.innerHTML = imgs.map((src,i)=>`
+    <button type="button" aria-current="${i===0}">
+      <img src="${src}" alt="miniatura ${i+1}" onerror="this.src='${PLACEHOLDER}'">
+    </button>
+  `).join('');
+
+  thumbs.addEventListener('click', (e)=>{
+    const btn = e.target.closest('button'); if(!btn) return;
+    const idx = [...thumbs.children].indexOf(btn);
+    if (idx>=0){ main.src = imgs[idx]; }
+    [...thumbs.children].forEach(b=>b.setAttribute('aria-current','false'));
+    btn.setAttribute('aria-current','true');
+  });
+
+
+
+
+    // Bloquea el scroll del body mientras el modal está abierto
+  document.body.classList.add('modal-open');
+
+ // ———  CIERRE: solo con X o botón ATRÁS  ———
+
+// 1) elimina handlers antiguos de “cerrar por cualquier clic”
+if (MODAL._anyClickHandler) {
+  MODAL.removeEventListener('click', MODAL._anyClickHandler, { capture: true });
+  MODAL._anyClickHandler = null;
+}
+
+// 2) Cerrar con la X
+const btnClose = MODAL.querySelector('#modalClose');
+btnClose?.addEventListener('click', () => closeModal(MODAL));
+
+// 3) Soporte botón ATRÁS (Android/iOS)
+//   - empuja un estado al historial al abrir
+//   - al volver atrás, cerramos el modal
+history.pushState({ modal: true }, '');
+MODAL._pushedHistory = true;
+MODAL._fromPopstate = false;
+MODAL._onPopstate = () => {
+  if (MODAL.open || MODAL.hasAttribute('open')) {
+    MODAL._fromPopstate = true;       // marca que viene del 'atrás'
+    closeModal(MODAL);
+  }
+};
+window.addEventListener('popstate', MODAL._onPopstate);
+
+// 4) (opcional) Escape también cierra
+if (!MODAL._escBound) {
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && (MODAL.open || MODAL.hasAttribute('open'))) {
+      closeModal(MODAL);
     }
-  }, SLIDE_MS);
+  });
+  MODAL._escBound = true;
+}
 
-  // Botón cerrar
-  const MODAL_CLOSE = document.getElementById('modalClose');
-  if(MODAL_CLOSE) MODAL_CLOSE.onclick = ()=> closeModal(MODAL);
+// 5) IMPORTANTE: NO cerrar por clic dentro del modal.
+//    Si quieres cerrar al tocar el fondo del <dialog>, usa este patrón:
+// MODAL.addEventListener('click', (e) => { if (e.target === MODAL) closeModal(MODAL); });
 
-  // Cerrar con Esc (una sola vez)
-  if(!MODAL._escBound){
-    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && (MODAL.open || MODAL.hasAttribute('open'))) closeModal(MODAL); });
-    MODAL._escBound = true;
-  }
-  // Clic fuera de la tarjeta para cerrar (una sola vez)
-  if(!MODAL._outsideBound){
-    MODAL.addEventListener('click', (e)=>{
-      const card = MODAL.querySelector('.modal-card');
-      if(!card) return;
-      const r = card.getBoundingClientRect();
-      const inside = e.clientX>=r.left && e.clientX<=r.right && e.clientY>=r.top && e.clientY<=r.bottom;
-      if(!inside) closeModal(MODAL);
-    });
-    MODAL._outsideBound = true;
-  }
 
-  // Abrir
+    // Abrir
   if(typeof MODAL.showModal === 'function') MODAL.showModal();
   else MODAL.setAttribute('open','');
 }
 
-// Delegación de evento: abre modal
-GRID.addEventListener('click', (e)=>{
-  const btn = e.target.closest('.open-modal');
-  if(!btn) return;
-  const id = btn.getAttribute('data-id');
-  const p = STATE.filtered.find(x=>x.id===id) || STATE.products.find(x=>x.id===id);
-  if(p) openModal(p);
-});
+
+
+// // Delegación de evento: abre modal
+// GRID.addEventListener('click', (e)=>{
+//   const btn = e.target.closest('.open-modal');
+//   if(!btn) return;
+//   const id = btn.getAttribute('data-id');
+//   const p = STATE.filtered.find(x=>x.id===id) || STATE.products.find(x=>x.id===id);
+//   if(p) openModal(p);
+// });
 
 // ===== FILTROS =====
 function applyFilters(){
@@ -431,33 +616,38 @@ function applyFilters(){
 }
 
 // ===== CARGA Y AUTO-REFRESCO =====
+// Asegúrate de usar assignCategory en lugar de normalize en tu fetchCatalog
 async function fetchCatalog(force=false){
-  try{
-    if(STATUS) STATUS.textContent = 'Cargando…';
-    const url = `${CATALOG_URL}${force?`?t=${Date.now()}`:''}`;
-    const res = await fetch(url, { cache:'no-store' });
-    if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
+try{
+if(STATUS) STATUS.textContent = 'Cargando…';
+const url = `${CATALOG_URL}${force?`?t=${Date.now()}`:''}`;
+const res = await fetch(url, { cache:'no-store' });
+if(!res.ok) throw new Error(`HTTP ${res.status}`);
+const json = await res.json();
 
-    const serialized = JSON.stringify(json);
-    const h = hashString(serialized);
-    if(h !== STATE.jsonHash){
-      // limpiar carouseles de tarjetas antiguos
-      CAROUSELS.forEach(c=>c.destroy());
-      CAROUSELS.clear();
 
-      STATE.jsonHash = h;
-      STATE.raw = json;
-      STATE.products = normalize(json);
-      STATE.categories = new Set(STATE.products.map(p=>p.category || 'General'));
-      renderCategories();
-      applyFilters();
-    }
-    if(STATUS) STATUS.textContent = `Última actualización: ${new Date().toLocaleTimeString()}`;
-  }catch(err){
-    if(STATUS) STATUS.textContent = `Error: ${err.message}`;
-    console.error(err);
-  }
+const serialized = JSON.stringify(json);
+const h = hashString(serialized);
+if(h !== STATE.jsonHash){
+CAROUSELS.forEach(c=>c.destroy());
+CAROUSELS.clear();
+
+
+STATE.jsonHash = h;
+STATE.raw = json;
+STATE.products = assignCategory(json);
+
+STATE.categories = new Set(STATE.products.map(p=>p.category || 'General'));
+renderCategories();
+applyFilters();
+console.log("CATEGORÍAS EN SELECT:", Array.from(STATE.categories));
+}
+
+if(STATUS) STATUS.textContent = `Última actualización: ${new Date().toLocaleTimeString()}`;
+}catch(err){
+if(STATUS) STATUS.textContent = `Error: ${err.message}`;
+console.error(err);
+}
 }
 
 // ===== PER-PAGE ADAPTATIVO =====
@@ -503,7 +693,38 @@ document.addEventListener('visibilitychange', ()=>{
   }
 });
 
+
+
+
 // ===== PRIMERA CARGA =====
 fitPerPage();
 fetchCatalog(true);
 startGlobalTick();
+
+// ===== Compartir en WhatsApp con imagen (si el navegador lo permite) =====
+async function shareWhatsAppWithImage({ phone, text, imageUrl }) {
+  try {
+    // Intenta Web Share API con archivos (Android/Chrome)
+    if (imageUrl && navigator.canShare && navigator.canShare({ files: [] })) {
+      const res = await fetch(imageUrl, { mode: 'cors' });  // si CORS falla, irá al catch
+      const blob = await res.blob();
+      const fileName = 'producto' + (/\.\w+$/.exec(imageUrl)?.[0] || '.jpg');
+      const file = new File([blob], fileName, { type: blob.type || 'image/jpeg' });
+
+      if (navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], text });
+        return; // listo: compartido con imagen
+      }
+    }
+  } catch (err) {
+    // Ignoramos y hacemos fallback abajo
+    console.debug('Web Share con imagen no disponible:', err?.message || err);
+  }
+
+  // Fallback universal: abrir wa.me con el texto + URL de la imagen (muestra preview)
+  const msg = imageUrl ? `${text}\n${imageUrl}` : text;
+  const to = (phone || '').replace(/[^\d]/g, '');   // solo dígitos
+  const url = `https://wa.me/${to}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank', 'noopener');
+}
+

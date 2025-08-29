@@ -34,7 +34,11 @@
 <a href="#catalogo">Catálogo</a>
 <a href="#como-comprar">Cómo comprar</a>
 <a href="#contacto">Contacto</a>
-<a class="btn-primary" target="_blank" rel="noopener" href="https://wa.me/573127112369?text=Hola%20AngieFashion%2C%20quiero%20comprar%20al%20por%20mayor">WhatsApp</a>
+  <a class="whatsapp" target="_blank" rel="noopener"
+     href="https://wa.me/573127112369?text=Hola%20quiero%20más%20información">
+    WhatsApp
+  </a>
+</div>
 </nav>
 </div>
 </header>
@@ -57,58 +61,39 @@
     <h2>Catálogo</h2>
 
 
-    <!-- Controles opcionales -->
-    <!-- <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px">
-      <input id="searchInput" type="search" placeholder="Buscar por nombre o SKU..." />
+    <div class="catalog-layout">
+  <aside class="sidebar">
+    <div class="card">
+      <h3>Filtrar</h3>
+      <label>
+        Categoría
+        <select id="categorySelect"></select>
+      </label>
+      <!-- <label>
+        Precio máx.
+        <input id="maxPriceInput" type="number" min="0" placeholder="Ej: 40000" />
+      </label> -->
+      <button id="clearFilters" class="btn-link">Quitar filtros</button>
+    </div>
+
+    <!-- <div class="card">
+      <h3>Ordenar</h3>
       <select id="sortSelect">
         <option value="recientes">Más recientes</option>
         <option value="precio_asc">Precio: menor a mayor</option>
         <option value="precio_desc">Precio: mayor a menor</option>
         <option value="nombre_asc">Nombre A–Z</option>
       </select>
-      <button id="refreshBtn">Actualizar ahora</button>
-      <span id="status" style="opacity:.7"></span>
     </div> -->
+  </aside>
 
-     <!-- Aquí se pintan las tarjetas -->
-    <div id="grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px"></div>
-  </main>
-
-<!-- <aside class="sidebar">
-<div class="card">
-<h3>Buscar</h3>
-<input id="searchInput" type="search" placeholder="Buscar por nombre o SKU..." />
+  <section class="catalog-content">
+    <div id="stats" class="stats"></div>
+    <div id="grid" class="grid"></div>
+    <div id="pagination" class="pagination"></div>
+  </section>
 </div>
-<div class="card">
-<h3>Filtrar</h3>
-<label> -->
-<!-- Categoría -->
-<select id="categorySelect">
-<!-- <option value="">Todas</option> -->
-<!-- </select>
-</label>
-<label> -->
-<!-- Precio máx.
-<input id="maxPriceInput" type="number" min="0" placeholder="Ej: 40000" /> -->
-</label>
-<!-- <button id="clearFilters" class="btn-link">Quitar filtros</button> -->
-<!-- </div> -->
-<div class="card">
-<!-- <h3>Ordenar</h3> -->
-<select id="sortSelect">
-<!-- <option value="recientes">Más recientes</option>
-<option value="precio_asc">Precio: menor a mayor</option>
-<option value="precio_desc">Precio: mayor a menor</option>
-<option value="nombre_asc">Nombre A–Z</option> -->
-<!-- </select>
-</div> -->
-</aside>
 
-<section class="content">
-<div id="stats" class="stats"></div>
-<div id="grid" class="grid"></div>
-<div id="pagination" class="pagination"></div>
-</section>
 </main>
 
 
