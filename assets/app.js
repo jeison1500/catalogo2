@@ -459,8 +459,59 @@ function closeModal(modal){
 
 
 function openModal(p){
-  const MODAL = document.getElementById('productModal');
-  if(!MODAL){ console.error('Modal no encontrado (#productModal)'); return; }
+ const MODAL = document.getElementById('productModal');
+
+function openModal() {
+  if (!MODAL) return;
+
+  // Añade clase para bloquear scroll
+  document.body.classList.add('modal-open');
+
+  // Cierra cualquier modal abierto
+  try { MODAL.close(); } catch {}
+
+  // Abre modal
+  MODAL.showModal();
+
+  // Empuja historial
+  history.pushState({ modal: true }, '');
+
+  // Escucha botón cerrar
+  const btn = MODAL.querySelector('#modalClose');
+  btn?.addEventListener('click', closeModal);
+
+  // Manejador del botón "atrás"
+  const onPop = () => {
+    if (MODAL.open) {
+      closeModal({ fromPopstate: true });
+    }
+  };
+
+  window.addEventListener('popstate', onPop);
+  MODAL._onPop = onPop;
+}
+
+function closeModal({ fromPopstate = false } = {}) {
+  if (!MODAL) return;
+
+  // Elimina clase de scroll
+  document.body.classList.remove('modal-open');
+
+  // Cierra modal
+  try { MODAL.close(); } catch {}
+
+  // Limpia evento
+  if (MODAL._onPop) {
+    window.removeEventListener('popstate', MODAL._onPop);
+    MODAL._onPop = null;
+  }
+
+  // Si NO venimos de popstate, eliminamos el estado actual (evita ciclos)
+  if (!fromPopstate && history.state?.modal) {
+    history.back();
+  }
+}
+
 
   // Construcción del layout tipo ficha
   MODAL.innerHTML = `
