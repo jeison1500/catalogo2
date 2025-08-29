@@ -423,113 +423,62 @@ function closeModal(modal){
   }catch{}
 }
 
-function openModal(p){
+function openModal(p) {
   const MODAL = document.getElementById('productModal');
-  if(!MODAL){ console.error('Modal no encontrado (#productModal)'); return; }
-
-  // Construcción del layout tipo ficha
-  MODAL.innerHTML = `
-    <div class="modal-body">
-      <div class="ml-modal">
-        <div class="ml-thumbs" id="mlThumbs"></div>
-        <div class="ml-viewer"><img id="mlMain" alt="Imagen de producto"></div>
-        <aside class="ml-info">
-          <h2 class="ml-title" id="mlTitle"></h2>
-          <div class="ml-price" id="mlPrice"></div>
-          <div class="ml-meta">
-            <span class="ml-chip" id="mlCategory"></span>
-          </div>
-          <div class="ml-actions">
-            <a class="btn whatsapp" id="mlWA" target="_blank" rel="noopener">WhatsApp</a>
-            <button class="btn" id="modalClose">Cerrar</button>
-          </div>
-          <p class="ml-desc" id="mlDesc"></p>
-        </aside>
-      </div>
-    </div>
-  `;
-
-  const imgs = Array.isArray(p.images) && p.images.length ? p.images : [p.image || PLACEHOLDER];
-  const price = smartPrice(p);
-  const main = MODAL.querySelector('#mlMain');
-  const thumbs = MODAL.querySelector('#mlThumbs');
-
-  // Título / precio / categoría / desc
-  MODAL.querySelector('#mlTitle').textContent = p.title || 'Producto';
-  MODAL.querySelector('#mlPrice').textContent = price != null ? formatCOP(price) : '';
-  MODAL.querySelector('#mlCategory').textContent = p.category || 'General';
-  MODAL.querySelector('#mlDesc').textContent = p.description || '';
-  const wa = MODAL.querySelector('#mlWA');
-  wa.href = `https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price?` | ${formatCOP(price)}`:''}`)}`;
-
-  // Imágenes
-  main.src = imgs[0] || PLACEHOLDER;
-  main.onerror = ()=>{ main.src = PLACEHOLDER; };
-  thumbs.innerHTML = imgs.map((src,i)=>`
-    <button type="button" aria-current="${i===0}">
-      <img src="${src}" alt="miniatura ${i+1}" onerror="this.src='${PLACEHOLDER}'">
-    </button>
-  `).join('');
-
-  thumbs.addEventListener('click', (e)=>{
-    const btn = e.target.closest('button'); if(!btn) return;
-    const idx = [...thumbs.children].indexOf(btn);
-    if (idx>=0){ main.src = imgs[idx]; }
-    [...thumbs.children].forEach(b=>b.setAttribute('aria-current','false'));
-    btn.setAttribute('aria-current','true');
-  });
-
-
-
-
-    // Bloquea el scroll del body mientras el modal está abierto
-  document.body.classList.add('modal-open');
-
- // ———  CIERRE: solo con X o botón ATRÁS  ———
-
-// 1) elimina handlers antiguos de “cerrar por cualquier clic”
-if (MODAL._anyClickHandler) {
-  MODAL.removeEventListener('click', MODAL._anyClickHandler, { capture: true });
-  MODAL._anyClickHandler = null;
-}
-
-// 2) Cerrar con la X
-const btnClose = MODAL.querySelector('#modalClose');
-btnClose?.addEventListener('click', () => closeModal(MODAL));
-
-// 3) Soporte botón ATRÁS (Android/iOS)
-//   - empuja un estado al historial al abrir
-//   - al volver atrás, cerramos el modal
-history.pushState({ modal: true }, '');
-MODAL._pushedHistory = true;
-MODAL._fromPopstate = false;
-MODAL._onPopstate = () => {
-  if (MODAL.open || MODAL.hasAttribute('open')) {
-    MODAL._fromPopstate = true;       // marca que viene del 'atrás'
-    closeModal(MODAL);
+  if (!MODAL) {
+    console.error('❌ Modal no encontrado (#productModal)');
+    return;
   }
-};
-window.addEventListener('popstate', MODAL._onPopstate);
 
-// 4) (opcional) Escape también cierra
-if (!MODAL._escBound) {
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && (MODAL.open || MODAL.hasAttribute('open'))) {
-      closeModal(MODAL);
-    }
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalPrice = document.getElementById('modalPrice');
+  const modalSku = document.getElementById('modalSku');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalWhatsApp = document.getElementById('modalWhatsApp');
+  const thumbsContainer = MODAL.querySelector('.ml-thumbs');
+
+  // Mostrar datos
+  modalTitle.textContent = p.title;
+  modalPrice.textContent = formatCOP(smartPrice(p));
+  modalSku.textContent = p.sku ? `SKU: ${p.sku}` : '';
+  modalDesc.textContent = p.description || '';
+
+  // Link WhatsApp
+  modalWhatsApp.href = `https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}`)}`;
+
+  // Miniaturas (galería)
+  const imagenes = p.images || [p.image];
+  thumbsContainer.innerHTML = '';
+  imagenes.forEach((url, i) => {
+    const btn = document.createElement('button');
+    btn.innerHTML = `<img src="${url}" alt="Miniatura">`;
+    btn.setAttribute('aria-current', i === 0 ? 'true' : 'false');
+    btn.addEventListener('click', () => {
+      modalImage.src = url;
+      [...thumbsContainer.children].forEach(b => b.removeAttribute('aria-current'));
+      btn.setAttribute('aria-current', 'true');
+    });
+    thumbsContainer.appendChild(btn);
   });
-  MODAL._escBound = true;
+
+  // Imagen principal
+  modalImage.src = imagenes[0];
+
+  // Botón cerrar (✅ ¡DENTRO de la función!)
+  const closeBtn = document.getElementById('modalCloseBtn');
+  if (closeBtn) {
+    closeBtn.onclick = () => {
+      if (typeof MODAL.close === 'function') MODAL.close();
+      else MODAL.removeAttribute('open');
+    };
+  }
+
+  // Abrir modal
+  if (typeof MODAL.showModal === 'function') MODAL.showModal();
+  else MODAL.setAttribute('open', '');
 }
 
-// 5) IMPORTANTE: NO cerrar por clic dentro del modal.
-//    Si quieres cerrar al tocar el fondo del <dialog>, usa este patrón:
-// MODAL.addEventListener('click', (e) => { if (e.target === MODAL) closeModal(MODAL); });
-
-
-    // Abrir
-  if(typeof MODAL.showModal === 'function') MODAL.showModal();
-  else MODAL.setAttribute('open','');
-}
 
 
 
@@ -646,12 +595,20 @@ document.addEventListener('visibilitychange', ()=>{
   }
 });
 
-
-
-
 // ===== PRIMERA CARGA =====
 fitPerPage();
 fetchCatalog(true);
 startGlobalTick();
 
+GRID.addEventListener('click', (e) => {
+  const card = e.target.closest('.card');
+  if (!card) return;
+
+  const isWhatsApp = e.target.closest('a.whatsapp');
+  if (isWhatsApp) return;
+
+  const id = card.getAttribute('data-id');
+  const p = STATE.filtered.find(prod => prod.id === id) || STATE.products.find(prod => prod.id === id);
+  if (p) openModal(p);
+});
 

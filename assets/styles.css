@@ -187,11 +187,7 @@ html, body{
 /* ======================
    MODAL (<dialog>)
    ====================== */
-.modal{
-  border: none; padding: 0; background: var(--card); color: var(--text);
-  width: min(920px, 96vw); max-height: 90vh;
-  border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 18px 40px rgba(0,0,0,.45);
-}
+
 .modal::backdrop{
   background: rgba(0,0,0,.55);
   backdrop-filter: blur(2px);
@@ -209,11 +205,7 @@ html, body{
 
 /* Modal de pantalla completa en móvil */
 @media (max-width: 640px){
-  .modal{
-    width: 100vw; max-width: none;
-    height: 100dvh; max-height: 100dvh;
-    margin: 0; border-radius: 0;
-  }
+ 
   .modal .modal-body{
     height: 100%; display: grid; grid-template-rows: auto 1fr auto;
     padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
@@ -722,18 +714,7 @@ main, .catalog-layout, .container{ overflow: visible; }
   gap:16px;
   padding:14px;
 }
-.modal .ml-thumbs{
-  display:flex; flex-direction:column; gap:10px; overflow:auto; padding-right:4px;
-}
-.modal .ml-thumbs button{
-  width:78px; height:78px; border-radius:12px; overflow:hidden;
-  border:1px solid #2a3141; background:#0f1117; cursor:pointer;
-  transition:border-color .15s ease, box-shadow .15s ease, filter .15s ease;
-}
-.modal .ml-thumbs button img{ width:100%; height:100%; object-fit:cover; display:block; }
-.modal .ml-thumbs button[aria-current="true"]{
-  border-color:#3b82f6; box-shadow:0 0 0 2px rgba(59,130,246,.35);
-}
+
 
 .modal .ml-viewer{
   background:#0f1015; border:1px solid #232633; border-radius:16px;
@@ -773,7 +754,7 @@ main, .catalog-layout, .container{ overflow: visible; }
       "thumbs viewer"
       "info   info";
   }
-  .modal .ml-thumbs{ grid-area: thumbs; }
+
   .modal .ml-viewer{ grid-area: viewer; aspect-ratio: 4 / 5; }
   .modal .ml-info{ grid-area: info; }
 }
@@ -789,8 +770,7 @@ main, .catalog-layout, .container{ overflow: visible; }
       "info";
     gap:12px; padding:12px;
   }
-  .modal .ml-thumbs{ flex-direction:row; overflow:auto; }
-  .modal .ml-thumbs button{ width:72px; height:72px; }
+
   .modal .ml-viewer{ aspect-ratio: 3 / 4; }
 }
 
@@ -840,21 +820,7 @@ main, .catalog-layout, .container{ overflow: visible; }
   }
   .ml-viewer img{ width:100%; height:100%; object-fit: contain; }
 
-  /* Miniaturas en carrusel horizontal */
-  .ml-thumbs{
-    padding: 0 12px 2px; display: flex; gap: 10px; overflow-x: auto;
-    -webkit-overflow-scrolling: touch; scrollbar-width: none;
-  }
-  .ml-thumbs::-webkit-scrollbar{ display:none; }
-  .ml-thumbs button{
-    flex: 0 0 auto; width: 72px; height: 72px; border-radius: 12px;
-    border: 1px solid #2a3141; background:#0f1117; overflow: hidden;
-  }
-  .ml-thumbs img{ width:100%; height:100%; object-fit: cover; display:block; }
-  .ml-thumbs button[aria-current="true"]{
-    border-color:#3b82f6; box-shadow:0 0 0 2px rgba(59,130,246,.35);
-  }
-
+  
   /* Información limpia */
   .ml-info{
     padding: 0 12px; display: grid; gap: 8px; align-content:start;
@@ -941,10 +907,6 @@ body.modal-open {
   /* Viewer + thumbs */
   .ml-viewer{ border:1px solid #232633; border-radius:14px; background:#0f1015; display:grid; place-items:center; aspect-ratio:3/4; overflow:hidden; }
   .ml-viewer img{ width:100%; height:100%; object-fit:contain; }
-  .ml-thumbs{ display:flex; gap:10px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-bottom:2px; }
-  .ml-thumbs::-webkit-scrollbar{ display:none; }
-  .ml-thumbs button{ flex:0 0 auto; width:72px; height:72px; border-radius:12px; border:1px solid #2a3141; background:#0f1117; overflow:hidden; }
-  .ml-thumbs button[aria-current="true"]{ border-color:#3b82f6; box-shadow:0 0 0 2px rgba(59,130,246,.35); }
 
   /* Info */
   .ml-info{ display:grid; gap:8px; }
@@ -980,13 +942,169 @@ body.modal-open {
   align-items: center;
 }
 
-.modal.is-open {
-  display: flex;
-}
 
 .modal-content {
   background: white;
   padding: 20px;
   border-radius: 10px;
   max-width: 90%;
+}
+
+
+dialog.modal {
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  background: transparent;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog[open] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 100%;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 12px 40px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-actions {
+  margin-top: 15px;
+}
+
+.modal-actions a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background: #10b981;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+@media (max-width: 640px) {
+  .ml-modal {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+  .ml-viewer {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ml-info {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }  
+}
+
+
+
+
+
+.btn-close-modal {
+  margin-top: 10px;
+  background: #eee;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-close-modal:hover {
+  background: #ddd;
+}
+.ml-thumbs {
+  display: flex;
+  gap: 10px;                /* Espacio entre miniaturas */
+  margin-top: 20px;         /* Separación desde la imagen principal */
+  overflow-x: auto;         /* Scroll horizontal si hay muchas */
+  padding: 6px 0;
+  scroll-behavior: smooth;  /* Desplazamiento suave */
+}
+
+
+.ml-thumbs {
+  display: flex;
+  gap: 10px;                       /* Espacio entre miniaturas */
+  margin-top: 20px;               /* Separación de la imagen grande */
+  overflow-x: auto;               /* Scroll horizontal */
+  padding: 6px 0;
+  scroll-behavior: smooth;        /* Deslizamiento suave */
+  -webkit-overflow-scrolling: touch;
+}
+
+.ml-thumbs::-webkit-scrollbar {
+  height: 6px;
+}
+.ml-thumbs::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 3px;
+}
+
+.ml-thumbs button {
+  flex: 0 0 auto;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.ml-thumbs img {
+  width: 56px;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.ml-thumbs button[aria-current="true"] img {
+  border-color: #22c55e; /* color de la imagen activa */
 }

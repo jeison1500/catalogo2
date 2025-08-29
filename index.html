@@ -34,11 +34,7 @@
 <a href="#catalogo">Catálogo</a>
 <a href="#como-comprar">Cómo comprar</a>
 <a href="#contacto">Contacto</a>
-  <a class="whatsapp" target="_blank" rel="noopener"
-     href="https://wa.me/573127112369?text=Hola%20quiero%20más%20información">
-    WhatsApp
-  </a>
-</div>
+<a class="btn-primary" target="_blank" rel="noopener" href="https://wa.me/573127112369?text=Hola%20AngieFashion%2C%20quiero%20comprar%20al%20por%20mayor">WhatsApp</a>
 </nav>
 </div>
 </header>
@@ -129,29 +125,27 @@
 
 <!-- Modal de producto -->
 <dialog id="productModal" class="modal">
-  <div>
-    <p>Contenido del modal</p>
-    <button id="modalClose">Cerrar</button>
-  </div>
+  <article class="ml-modal">
+    <div class="ml-thumbs"></div>
+    <div class="ml-viewer">
+      <img id="modalImage" src="" alt="Producto" />
+    </div>
+    <div class="ml-info">
+      <h3 id="modalTitle" class="ml-title"></h3>
+      <div class="m-price-row">
+        <span id="modalPrice" class="ml-price"></span>
+        <!-- <span class="ml-chip">12% OFF</span> -->
+      </div>
+      <p id="modalSku" class="ml-meta"></p>
+      <p id="modalDesc" class="ml-desc"></p>
+     <div class="ml-actions">
+  <a id="modalWhatsApp" class="whatsapp" target="_blank" rel="noopener">Comprar por WhatsApp</a>
+  <button id="modalCloseBtn" class="btn-close-modal">Cerrar</button>
+</div>
+    </div>
+  </article>
 </dialog>
-<article class="modal-card">
-<button id="modalClose" class="modal-close" aria-label="Cerrar">×</button>
-<div class="modal-body">
-<div class="modal-media">
-<img id="modalImage" alt="Producto" />
-</div>
-<div class="modal-info">
-<h3 id="modalTitle"></h3>
-<p id="modalPrice" class="price"></p>
-<p id="modalSku" class="muted"></p>
-<p id="modalDesc"></p>
-<div class="modal-actions">
-<a id="modalWhatsApp" class="btn-primary" target="_blank" rel="noopener">Comprar por WhatsApp</a>
-</div>
-</div>
-</div>
-</article>
-</dialog>
+
 
 <script src="./assets/app.js" type="module"></script>
 <script>
