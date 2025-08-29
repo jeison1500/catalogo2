@@ -459,56 +459,54 @@ function closeModal(modal){
 
 
 function openModal(p){
- const MODAL = document.getElementById('productModal');
+const MODAL = document.getElementById('productModal');
 
+// FUNC: Abrir modal
 function openModal() {
   if (!MODAL) return;
 
-  // Añade clase para bloquear scroll
+  // Cerrar por si acaso
+  try { MODAL.close(); } catch {}
+
+  // Abrir modal
+  MODAL.showModal();
   document.body.classList.add('modal-open');
 
-  // Cierra cualquier modal abierto
-  try { MODAL.close(); } catch {}
-
-  // Abre modal
-  MODAL.showModal();
-
-  // Empuja historial
-  history.pushState({ modal: true }, '');
-
-  // Escucha botón cerrar
-  const btn = MODAL.querySelector('#modalClose');
-  btn?.addEventListener('click', closeModal);
-
-  // Manejador del botón "atrás"
-  const onPop = () => {
-    if (MODAL.open) {
-      closeModal({ fromPopstate: true });
-    }
-  };
-
-  window.addEventListener('popstate', onPop);
-  MODAL._onPop = onPop;
-}
-
-function closeModal({ fromPopstate = false } = {}) {
-  if (!MODAL) return;
-
-  // Elimina clase de scroll
-  document.body.classList.remove('modal-open');
-
-  // Cierra modal
-  try { MODAL.close(); } catch {}
-
-  // Limpia evento
-  if (MODAL._onPop) {
-    window.removeEventListener('popstate', MODAL._onPop);
-    MODAL._onPop = null;
+  // Añadir estado al historial (solo si no existe ya)
+  if (!history.state || !history.state.modalOpen) {
+    history.pushState({ modalOpen: true }, '');
   }
 
-  // Si NO venimos de popstate, eliminamos el estado actual (evita ciclos)
-  if (!fromPopstate && history.state?.modal) {
-    history.back();
+  // Evento para botón cerrar
+  const closeBtn = MODAL.querySelector('#modalClose');
+  closeBtn?.addEventListener('click', () => closeModal(false));
+
+  // Evento para botón "atrás"
+  window.addEventListener('popstate', onPopState);
+}
+
+// FUNC: Cerrar modal
+function closeModal(fromPopState = false) {
+  if (!MODAL) return;
+
+  // Cierra el diálogo
+  try { MODAL.close(); } catch {}
+
+  document.body.classList.remove('modal-open');
+
+  // Limpia el evento
+  window.removeEventListener('popstate', onPopState);
+
+  // Si el cierre NO viene de popstate, elimina ese estado
+  if (!fromPopState && history.state?.modalOpen) {
+    history.back(); // ← esto ahora es seguro
+  }
+}
+
+// FUNC: cuando el usuario toca "atrás"
+function onPopState(event) {
+  if (MODAL.open) {
+    closeModal(true);
   }
 }
 

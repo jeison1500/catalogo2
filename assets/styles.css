@@ -890,7 +890,9 @@ main, .catalog-layout, .container{ overflow: visible; }
   .ml-actions .whatsapp{ width: 100%; min-height: 46px; }
 
   /* Evita que el fondo haga scroll cuando el modal está abierto */
-  body.modal-open{ overflow: hidden; }
+body.modal-open {
+  overflow: hidden;
+}
 }
 
 
@@ -963,4 +965,6 @@ main, .catalog-layout, .container{ overflow: visible; }
 }
 
 /* Evita scroll del documento cuando el modal está abierto */
-body.modal-open{ overflow: hidden; }
+body.modal-open {
+  overflow: hidden;
+}
