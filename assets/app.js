@@ -461,51 +461,34 @@ function closeModal(modal){
 function openModal(p){
 const MODAL = document.getElementById('productModal');
 
-// FUNC: Abrir modal
 function openModal() {
-  if (!MODAL) return;
-
-  // Cerrar por si acaso
-  try { MODAL.close(); } catch {}
-
-  // Abrir modal
-  MODAL.showModal();
+  MODAL.classList.add('is-open');
   document.body.classList.add('modal-open');
 
-  // Añadir estado al historial (solo si no existe ya)
+  // Añadir historial
   if (!history.state || !history.state.modalOpen) {
     history.pushState({ modalOpen: true }, '');
   }
 
-  // Evento para botón cerrar
-  const closeBtn = MODAL.querySelector('#modalClose');
-  closeBtn?.addEventListener('click', () => closeModal(false));
-
-  // Evento para botón "atrás"
   window.addEventListener('popstate', onPopState);
+
+  const closeBtn = document.getElementById('modalClose');
+  closeBtn?.addEventListener('click', () => closeModal(false));
 }
 
-// FUNC: Cerrar modal
 function closeModal(fromPopState = false) {
-  if (!MODAL) return;
-
-  // Cierra el diálogo
-  try { MODAL.close(); } catch {}
-
+  MODAL.classList.remove('is-open');
   document.body.classList.remove('modal-open');
 
-  // Limpia el evento
   window.removeEventListener('popstate', onPopState);
 
-  // Si el cierre NO viene de popstate, elimina ese estado
   if (!fromPopState && history.state?.modalOpen) {
-    history.back(); // ← esto ahora es seguro
+    history.back();
   }
 }
 
-// FUNC: cuando el usuario toca "atrás"
-function onPopState(event) {
-  if (MODAL.open) {
+function onPopState(e) {
+  if (MODAL.classList.contains('is-open')) {
     closeModal(true);
   }
 }
