@@ -611,11 +611,6 @@ GRID.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
   const id = card.getAttribute('data-id');
   const p = STATE.filtered.find(prod => prod.id === id) || STATE.products.find(prod => prod.id === id);
   if (p) openModal(p);
