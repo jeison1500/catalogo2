@@ -310,10 +310,15 @@ function renderCategories(){
 }
 
 function buildCard(p) {
-  const price = smartPrice(p);
+  const price = smartPrice(p); // ✅ Solo una vez
   const card = document.createElement('article');
   card.className = 'card';
   card.setAttribute('data-id', p.id); // ← importante
+
+  const imagenURL = new URL(p.images?.[0] || p.image || PLACEHOLDER, location.origin).href;
+  const mensajeWP = `Hola, quiero este producto:\n🛍️ ${p.title}\n💰 ${price ? formatCOP(price) : ''}\n🖼️ Imagen: ${imagenURL}`;
+  const whatsappURL = `https://wa.me/573127112369?text=${encodeURIComponent(mensajeWP)}`;
+
 
   card.innerHTML = `
     <div class="media"></div>
@@ -331,10 +336,13 @@ function buildCard(p) {
       </p>
       <div class="actions">
         <button type="button" class="page-btn open-modal" data-id="${p.id}">Ver detalle</button>
-        <a class="whatsapp" target="_blank" rel="noopener"
-           href="https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}${price ? ` | ${formatCOP(price)}` : ''}`)}">
-           WhatsApp
-        </a>
+     <a class="whatsapp" target="_blank" rel="noopener" href="${whatsappURL}" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+    <path d="M12.04 2.003C6.507 2.003 2 6.506 2 12.038c0 1.95.511 3.815 1.482 5.465L2 22l4.6-1.46a10.002 10.002 0 0 0 5.44 1.501h.002C17.494 22.04 22 17.535 22 12.002c0-5.532-4.506-10-9.96-10h-.001zM12 20.019a8.002 8.002 0 0 1-4.077-1.124l-.292-.173-2.724.865.896-2.65-.178-.3A7.948 7.948 0 0 1 4 12.038c0-4.403 3.58-7.994 7.997-7.994 4.417 0 8.003 3.59 8.003 7.994 0 4.404-3.586 7.981-8 7.981h-.001zm4.35-5.654c-.237-.118-1.4-.692-1.617-.77-.217-.079-.375-.118-.533.118-.158.237-.612.77-.75.928-.138.158-.275.178-.512.06-.237-.119-1.001-.368-1.905-1.175-.704-.627-1.18-1.403-1.318-1.64-.137-.237-.015-.365.103-.482.106-.106.237-.275.355-.412.119-.138.158-.237.237-.395.079-.158.04-.296-.02-.414-.06-.119-.532-1.28-.73-1.751-.192-.462-.387-.399-.532-.406l-.453-.008c-.158 0-.414.06-.63.296-.217.237-.825.806-.825 1.964 0 1.158.846 2.277.964 2.434.119.158 1.664 2.55 4.035 3.574.564.243 1.004.388 1.348.497.567.18 1.082.154 1.49.094.454-.068 1.4-.57 1.597-1.121.197-.553.197-1.027.139-1.121-.06-.093-.217-.153-.454-.271z"/>
+  </svg>
+  WhatsApp
+</a>
+
       </div>
     </div>
   `;
@@ -475,8 +483,11 @@ modalImage.src = imagenes[0];
 
 // Asegurar que es una URL absoluta (aunque ya venga así del JSON)
 const imagenAbsoluta = new URL(imagenes[0], location.origin).href;
+
+
 const mensajeWP = `${imagenAbsoluta}\n\nHola, quiero este producto:\n🛍️ ${p.title}\n💰 ${formatCOP(smartPrice(p)) || ''}`;
 modalWhatsApp.href = `https://wa.me/573127112369?text=${encodeURIComponent(mensajeWP)}`;
+
 
 
 
