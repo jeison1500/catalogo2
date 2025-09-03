@@ -475,10 +475,9 @@ modalImage.src = imagenes[0];
 
 // Asegurar que es una URL absoluta (aunque ya venga así del JSON)
 const imagenAbsoluta = new URL(imagenes[0], location.origin).href;
-
-// Crear mensaje de WhatsApp con imagen
-const mensajeWP = `Hola, quiero este producto:\n🛍️ ${p.title}\n💰 ${formatCOP(smartPrice(p)) || ''}\n🖼️ Imagen: ${imagenAbsoluta}`;
+const mensajeWP = `${imagenAbsoluta}\n\nHola, quiero este producto:\n🛍️ ${p.title}\n💰 ${formatCOP(smartPrice(p)) || ''}`;
 modalWhatsApp.href = `https://wa.me/573127112369?text=${encodeURIComponent(mensajeWP)}`;
+
 
 
   // Botón cerrar (✅ ¡DENTRO de la función!)
