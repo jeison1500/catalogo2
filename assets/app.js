@@ -449,22 +449,37 @@ function openModal(p) {
   modalWhatsApp.href = `https://wa.me/573127112369?text=${encodeURIComponent(`Hola, quiero este producto: ${p.title}`)}`;
 
   // Miniaturas (galería)
-  const imagenes = p.images || [p.image];
-  thumbsContainer.innerHTML = '';
-  imagenes.forEach((url, i) => {
-    const btn = document.createElement('button');
-    btn.innerHTML = `<img src="${url}" alt="Miniatura">`;
-    btn.setAttribute('aria-current', i === 0 ? 'true' : 'false');
-    btn.addEventListener('click', () => {
-      modalImage.src = url;
-      [...thumbsContainer.children].forEach(b => b.removeAttribute('aria-current'));
-      btn.setAttribute('aria-current', 'true');
-    });
-    thumbsContainer.appendChild(btn);
+// Miniaturas (galería)
+const imagenes = p.images || [p.image];
+thumbsContainer.innerHTML = '';
+imagenes.forEach((url, i) => {
+  const btn = document.createElement('button');
+  btn.innerHTML = `<img src="${url}" alt="Miniatura">`;
+  btn.setAttribute('aria-current', i === 0 ? 'true' : 'false');
+  btn.addEventListener('click', () => {
+    modalImage.src = url;
+    [...thumbsContainer.children].forEach(b => b.removeAttribute('aria-current'));
+    btn.setAttribute('aria-current', 'true');
+    
+    // ACTUALIZAR link de WhatsApp si cambia imagen
+    const imgURL = new URL(url, location.origin).href;
+    const mensajeWP = `Hola, quiero este producto:\n🛍️ ${p.title}\n💰 ${formatCOP(smartPrice(p)) || ''}\n🖼️ Imagen: ${imgURL}`;
+    modalWhatsApp.href = `https://wa.me/573127112369?text=${encodeURIComponent(mensajeWP)}`;
   });
+  thumbsContainer.appendChild(btn);
+});
 
-  // Imagen principal
-  modalImage.src = imagenes[0];
+// Imagen principal
+// Imagen principal
+modalImage.src = imagenes[0];
+
+// Asegurar que es una URL absoluta (aunque ya venga así del JSON)
+const imagenAbsoluta = new URL(imagenes[0], location.origin).href;
+
+// Crear mensaje de WhatsApp con imagen
+const mensajeWP = `Hola, quiero este producto:\n🛍️ ${p.title}\n💰 ${formatCOP(smartPrice(p)) || ''}\n🖼️ Imagen: ${imagenAbsoluta}`;
+modalWhatsApp.href = `https://wa.me/573127112369?text=${encodeURIComponent(mensajeWP)}`;
+
 
   // Botón cerrar (✅ ¡DENTRO de la función!)
   const closeBtn = document.getElementById('modalCloseBtn');
