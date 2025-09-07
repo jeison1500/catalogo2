@@ -405,23 +405,34 @@ function renderStats(){
 function renderPagination(){
   PAG.innerHTML = '';
   const totalPages = Math.max(1, Math.ceil(STATE.filtered.length / STATE.perPage));
+
   const mk = (label, page, disabled=false)=>{
     const b = document.createElement('button');
-    b.className='page-btn'; b.textContent=label; b.disabled=disabled;
-    b.addEventListener('click', ()=>{
+    b.className = 'page-btn';
+    b.textContent = label;
+    b.disabled = disabled;
+    b.addEventListener('click', ()=> {
       STATE.page = page;
-      renderGrid(); renderStats(); renderPagination();
+      renderGrid();
+      renderStats();
+      renderPagination();
       window.scrollTo({top:0, behavior:'smooth'});
     });
     return b;
   };
-  PAG.appendChild(mk('«', 1, STATE.page===1));
-  PAG.appendChild(mk('‹', Math.max(1, STATE.page-1), STATE.page===1));
-  const span = document.createElement('span'); span.textContent = `${STATE.page} / ${totalPages}`; span.style.padding='8px 12px';
+
+  PAG.appendChild(mk('Primera', 1, STATE.page === 1));
+  PAG.appendChild(mk('Anterior', Math.max(1, STATE.page - 1), STATE.page === 1));
+
+  const span = document.createElement('span');
+  span.textContent = `Página ${STATE.page} de ${totalPages}`;
+  span.style.padding = '8px 12px';
   PAG.appendChild(span);
-  PAG.appendChild(mk('›', Math.min(totalPages, STATE.page+1), STATE.page===totalPages));
-  PAG.appendChild(mk('»', totalPages, STATE.page===totalPages));
+
+  PAG.appendChild(mk('Siguiente', Math.min(totalPages, STATE.page + 1), STATE.page === totalPages));
+  PAG.appendChild(mk('Última', totalPages, STATE.page === totalPages));
 }
+
 
 // ===== MODAL =====
 function closeModal(modal){
