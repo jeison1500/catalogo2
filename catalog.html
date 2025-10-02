@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo | AngieFashion</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="catalog.css" />
+  <meta name="description" content="Catálogo actualizado automáticamente desde Telegram.">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="./">AngieFashion</a>
+      <h1>Catálogo</h1>
+      <span id="count" class="muted">0 ítems</span>
+    </header>
+
+    <button class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="toolbar">
+      Filtros
+    </button>
+
+
+
+
+ <section class="toolbar" id="toolbar">
+    <input id="q" type="search" placeholder="Buscar por título, SKU o descripción…" autocomplete="off" />
+    <select id="category"></select>
+    <div class="price">
+      <label>$</label>
+      <input id="pmin" type="number" placeholder="Mín" min="0" />
+      <span>—</span>
+      <input id="pmax" type="number" placeholder="Máx" min="0" />
+    </div>
+    <select id="sort">
+      <option value="newest">Más nuevos primero</option>
+      <option value="price-asc">Precio: menor a mayor</option>
+      <option value="price-desc">Precio: mayor a menor</option>
+      <option value="alpha">A–Z</option>
+    </select>
+    <button id="clear" class="ghost">Limpiar</button>
+  </section>
+
+  <main id="grid" class="grid"></main>
+  <div id="sentinel" class="sentinel" aria-hidden="true"></div>
+
+  <main id="grid" class="grid"></main>
+    <div id="sentinel" class="sentinel" aria-hidden="true"></div>
+
+    <dialog id="preview"> … </dialog>
+
+    <footer class="footer"> … </footer>
+  </div>
+  <script src="catalog.js" defer></script>
+</body>
+</html>

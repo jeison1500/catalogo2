@@ -53,9 +53,82 @@ image_groups = _safe_load_json(DATA_JSON, default=[])
 products_store = _safe_load_json(CATALOG_JSON, default={}).get("products", [])
 
 # ------------------ Parsers ------------------
-PRICE_RX = re.compile(r"(?:\$|COP)?\s*([\d\.]{4,})")            # $40.000 | 40.000 | COP 40000
-SKU_RX   = re.compile(r"SKU[:\s\-]*([A-Z0-9\-\.]+)", re.IGNORECASE)
-CAT_RX   = re.compile(r"#([A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)")            # #Vestidos #blusas
+# SKU (acepta "SKU 123", "Ref 123", "Referencia 123", con guiones)
+SKU_RX = re.compile(r"(?i)\b(?:sku|ref(?:erencia)?)\s*[:\-]?\s*([a-z0-9\-\.]+)")
+# Categoría por hashtag: #Vestidos #blusas
+CAT_RX = re.compile(r"#([A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)")
+
+# --- NUEVO extractor de precio robusto ---
+# 1) Con keywords ($, COP, precio/valor/vale/costo)
+PRICE_KW_RX = re.compile(
+    r"(?i)(?:\$|cop|precio|vale|valor|costo)\s*[:\-]?\s*(?:\$?\s*)"
+    r"([0-9]{1,3}(?:[.\s]?[0-9]{3})+|[0-9]{5,})"
+)
+# 2) Con separadores de miles (1.234.567)
+PRICE_SEP_RX = re.compile(r"(?i)\b([0-9]{1,3}(?:[.\s][0-9]{3})+)\b")
+# 3) Números “largos” sin separadores (>= 5 dígitos, ej: 65000)
+PRICE_PLAIN_RX = re.compile(r"\b([0-9]{5,})\b")
+# 4) Atajo para “92k”, “150k”, etc.
+PRICE_K_RX = re.compile(r"(?i)(?:\$|cop|precio|valor|vale|costo)?\s*[:\-]?\s*([0-9]+)\s*k\b")
+
+def extract_price(text: str):
+    """
+    Devuelve un entero (COP) o None. Prefiere coincidencias con keywords
+    (precio/valor/vale/costo/$/COP). Evita capturar REF/Referencia/SKU.
+    Maneja formatos: 76.000  |  76000  |  $ 76.000  |  92k
+    """
+    if not text:
+        return None
+
+    # “92k” → 92000
+    mk = PRICE_K_RX.search(text)
+    if mk:
+        try:
+            return int(mk.group(1)) * 1000
+        except Exception:
+            pass
+
+    candidates = []
+
+    # 1) Con keywords (preferidos)
+    for m in PRICE_KW_RX.finditer(text):
+        val = int(re.sub(r"\D", "", m.group(1)))
+        candidates.append(("kw", val, m.start()))
+
+    # 2) Con separadores (evitando 'ref' o 'sku' cerca)
+    for m in PRICE_SEP_RX.finditer(text):
+        ctx = text[max(0, m.start()-8):m.start()].lower()
+        if "ref" in ctx or "sku" in ctx:
+            continue
+        val = int(re.sub(r"\D", "", m.group(1)))
+        candidates.append(("sep", val, m.start()))
+
+    # 3) Números largos (>= 5 dígitos), evitando 'ref' o 'sku' cerca
+    for m in PRICE_PLAIN_RX.finditer(text):
+        ctx = text[max(0, m.start()-8):m.start()].lower()
+        if "ref" in ctx or "sku" in ctx:
+            continue
+        val = int(m.group(1))
+        candidates.append(("plain", val, m.start()))
+
+    if not candidates:
+        return None
+
+    # Filtro de valores razonables (evita refs de 4 dígitos)
+    SENSIBLE_MIN = 20000   # ajusta si lo necesitas
+    sensible = [v for (_, v, _) in candidates if v >= SENSIBLE_MIN]
+
+    # Preferir keyword dentro de rango
+    kw = [v for (t, v, _) in candidates if t == "kw" and v >= SENSIBLE_MIN]
+    if kw:
+        return max(kw)
+
+    # Luego, el mayor sensible
+    if sensible:
+        return max(sensible)
+
+    # Último recurso: el mayor de todos
+    return max(v for (_, v, _) in candidates)
 
 def parse_caption(text: str):
     """Extrae title (1a línea), price, sku, category, description."""
@@ -63,11 +136,8 @@ def parse_caption(text: str):
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     title = lines[0][:80] if lines else "Producto"
 
-    price = None
-    m = PRICE_RX.search(text)
-    if m:
-        # deja solo dígitos -> 40000
-        price = int(re.sub(r"\D", "", m.group(1))) if m.group(1) else None
+    # --- nuevo: usar extractor robusto ---
+    price = extract_price(text)
 
     sku = None
     s = SKU_RX.search(text)
