@@ -5573,5 +5573,55 @@
     ],
     "descripcion": "Hermoso vestido corto plisado resortado en la cintura \nTallas SM ML y lxl \nRef 62986\nMayor 52.000\nDetal 68.000\nBodega: Barranquilla",
     "created_at": "2025-10-11T05:49:11+00:00"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAx0CXkx8pwACgJVo6nkCAlSQRE_Ys7h1S9al3fItmAACcgtrG2_XUEfoZ9DNMei6sQEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJZo6nkCaXOONlpFHr9RUBVuRrqCoQACdAtrG2_XUEdsiU0yXsa34wEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJdo6nkCWOW5cfKtsCfZk1DYYjY1JwACcwtrG2_XUEfa6TtBMmIEswEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJho6nkCLy5Kp0q4bFx_TZpdlmxSBgACdQtrG2_XUEdGSzCHfqmGOAEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJlo6nkCVfe-FuwF4hrdZfM7M5dnZQACdgtrG2_XUEe9Q69aaqmCcgEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Hermoso vestido largo \nTallas SM ML y lxl \nRef 12165\nMayor 52.000\nDetal 67.000\nBodega: Barranquilla",
+    "created_at": "2025-10-11T15:49:52+00:00"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAx0CXkx8pwACgJto6nmL4u8EBDzIaqtS298udd1RYQACdwtrG2_XUEcMgg5tUvezYQEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJxo6nmLaU8CBJJVuT186h4Vjf-g3gACeAtrG2_XUEckGc1HBnW7PgEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJ1o6nmLZAN2B7hPhjn8NEkwAfAK_AACeQtrG2_XUEc5tu7H8mS7jAEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgJ5o6nmL9LStXMx99o1FIPO3cDI98AACegtrG2_XUEd8vVKuBbRH9wEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Blusa básica en algodón\nSe vende talla única \nRef 12185\nMayor 28.000\nDetal 36.000\nBodega Barranquilla",
+    "created_at": "2025-10-11T15:49:52+00:00"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAx0CXkx8pwACgKBo6npwIcpM2Zh1TQVYkC8eTsv0YgACfAtrG2_XUEczCLphn-5xKwEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKFo6npwixKiO7mSJtRiisc1mgwbtQACewtrG2_XUEfyoHaiM_hRQQEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKJo6npwNBgdtoQdJu8zPwABSmenlCoAAn0Laxtv11BHncQOaDrKKuoBAAMCAAN5AAM2BA.jpg",
+      "AgACAgEAAx0CXkx8pwACgKNo6npwIWzGlXBOqOSJKB3ogM3QEgACfgtrG2_XUEeGVvmjAh2zqAEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Blusa básica en algodón\nTalla SM y Lxl \nRef 12177\nMayor 28.000\nDetal 38.000\nBodega Barranquilla",
+    "created_at": "2025-10-11T15:49:52+00:00"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAx0CXkx8pwACgKVo6nsbf6vKxKeIWuO6hb4MWVFlEgACfwtrG2_XUEfQN851T5DhlQEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKZo6nsbNrIKx_UunzhiqJdLuYWNugACgAtrG2_XUEcFmyUnHacz1wEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKdo6nsb62aj6dHnko8bgWEHBgl6BgACgQtrG2_XUEcVe2NybZDfcAEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Blusa básica en algodón\nTalla SM y Lxl \nRef 12187\nMayor 27.000\nDetal 35.000\nBodega Barranquilla",
+    "created_at": "2025-10-11T15:49:53+00:00"
+  },
+  {
+    "imagenes": [
+      "AgACAgEAAx0CXkx8pwACgKlo6nveIk6K6aFoRUeTNJ8UjXQw7wAChAtrG2_XUEcyqcNSpPhAWwEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKpo6nveBjY5T3luEXsCWz3fFcCMSQACggtrG2_XUEfU-MllmD5jOAEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKto6nve7E4DP36L4O-ZhWP0hOHlbAACgwtrG2_XUEc9x78rY85UYAEAAwIAA3kAAzYE.jpg",
+      "AgACAgEAAx0CXkx8pwACgKxo6nveYlt5_IsCTFReT0FFexvmVwAChQtrG2_XUEftr54_7gynwwEAAwIAA3kAAzYE.jpg"
+    ],
+    "descripcion": "Blusa básica en algodón\nTalla SM y Lxl \nRef 12178\nMayor 27.000\nDetal 34.000\nBodega Barranquilla",
+    "created_at": "2025-10-11T15:49:53+00:00"
   }
 ]
