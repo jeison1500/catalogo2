@@ -1,6 +1,167 @@
 {
   "products": [
     {
+      "id": "43e5a35b-799b-49a3-838b-de4f923cd4dc",
+      "title": "Hermoso vestido corto plisado resortado en la cintura",
+      "price": 68000,
+      "sku": "62986",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgI5o6U9BvX9s1R_Flcbs7pQcd-0jeAACMAtrG0nMUEdPFInOcHFnGgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgI9o6U9B_Fj3FsdE4baNYMmo-KzjFAACMQtrG0nMUEfCKrgbLQFrZAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgJBo6U9BAAE-rwVsiDsVZblHHGHr3sQAAjILaxtJzFBH8I1-dQN3BlsBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgJFo6U9B7RffPhq1TYZf9ONkhn_ZHgACMwtrG0nMUEelYVZsg9T4XwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgJJo6U9Bw3RbIF0JzQvKOkawNrCKGwACNAtrG0nMUEfJT0p1qM6GEAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgJNo6U9BuGG5sGRjxzC8Gpaxt0vIvwACNQtrG0nMUEdcgqXC8wJZBAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgI5o6U9BvX9s1R_Flcbs7pQcd-0jeAACMAtrG0nMUEdPFInOcHFnGgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido corto plisado resortado en la cintura \nTallas SM ML y lxl \nRef 62986\nMayor 52.000\nDetal 68.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:11+00:00"
+    },
+    {
+      "id": "c6d27fa1-944d-40a6-bba8-0a088a45829b",
+      "title": "Hermoso vestido largo redortado",
+      "price": 68000,
+      "sku": "61518",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgIZo6Utngzf_T9DDk76X61_tXlRIzgACKQtrG0nMUEeepcihlC5L5AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIdo6UtnotiMNw5F1T7wAastzirHiQACKwtrG0nMUEd09fqqAfGbnAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIho6UtndHu8R68wDbxtC065CBClMAACLAtrG0nMUEeant9DkrgmfQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIlo6Utns7L3gu_d7OS0u_jX--NLRgACLQtrG0nMUEcf45rGBvCR0gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIpo6UtnFvxMpyNJNaWwX65EoTwEeAACLgtrG0nMUEc7ytb-mQx1kwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIto6UtnwrE_lxcx1XoRshf50rrkSQACLwtrG0nMUEdKhP7UtJPYoAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgIZo6Utngzf_T9DDk76X61_tXlRIzgACKQtrG0nMUEeepcihlC5L5AEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo redortado \nTallas SM ML y lxl \nRef 61518\nMayor 52.000\nDetal 68.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:11+00:00"
+    },
+    {
+      "id": "79b42696-df7f-4e82-a6cc-3ad356fe5751",
+      "title": "Hermoso vestido largo estampado resortado",
+      "price": 68000,
+      "sku": "61516",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgHxo6UlEIpjpVcifeV1ukHnD1HlaLwACIAtrG0nMUEcjBtVRj0nhZwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgH1o6UlEhzUCL4btMxI3T82AKVfiIgACIQtrG0nMUEdnqIoJd_dEYQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgH5o6UlEcM8QuenLsJ225I1-sinEcQACIgtrG0nMUEdXc2zPPOgZUgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgH9o6UlEM16Jzfil9zKedfb0hZH0awACIwtrG0nMUEdesIjw74tqIwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIBo6UlEjBwFjyOeZ3e3cci8bFfwugACJAtrG0nMUEdwVkQ6fD2NvgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIFo6UlEctitFQNMgZOQyc57hvNc1AACJQtrG0nMUEfDKJGn_bhj9wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgIJo6UlEn09-9ijgoDtGgK8nqAc2yAACJgtrG0nMUEcWtXiW6T_reQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgHxo6UlEIpjpVcifeV1ukHnD1HlaLwACIAtrG0nMUEcjBtVRj0nhZwEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo estampado resortado \nTallas SM ML y lxl \nRef 61516\nMayor 52.000\nDetal 68.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:11+00:00"
+    },
+    {
+      "id": "d9be40c4-c1c7-4031-b96b-117f0d985b64",
+      "title": "Hermoso vestido largo",
+      "price": 80000,
+      "sku": "62984",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgHJo6UWZ8mGUn8be6O5myOXWnHPQZQACEQtrG0nMUEd7s-w4AluJ0QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHNo6UWZrRA4mSDgjfBgYBdkaxQ27wACEgtrG0nMUEeFGJAauY5zcwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHRo6UWZf4kQQbOW_duO85oPv1Z7GgACEwtrG0nMUEeHhxMEbop8zgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHVo6UWZAcJHHRwd-eAwPbQsl9dfIwACFAtrG0nMUEcH7BGRXIk0swEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHZo6UWZWZXyqx-7bDtn5Rpe4i2LUgACFQtrG0nMUEcocxBZeWh-JgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHdo6UWZNdOBsWJTy3QNuvExK-n0NAACFgtrG0nMUEcT4qxFwelCUgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHho6UWZx2kdllpEj2zaiaGrCVLhMAACFwtrG0nMUEfYqMDcTl8zCwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHlo6UWZbpV85Jh1dYOXbbXi5opXFAACGAtrG0nMUEfAP2CyBWRd5gEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgHJo6UWZ8mGUn8be6O5myOXWnHPQZQACEQtrG0nMUEd7s-w4AluJ0QEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nTallas SM ML y lxl \nRef 62984\nMayor 62.000\nDetal 80.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:11+00:00"
+    },
+    {
+      "id": "dc5f7c1e-2d2c-4017-ae04-c964a3decdcf",
+      "title": "Hermoso conjunto de falda",
+      "price": 72000,
+      "sku": "61515",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgGxo6UN4bpHPPFcO2PIzuWzMdZw2gAACCgtrG0nMUEfPEcr_9jm7OQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgG1o6UN4Ag81PWkoKAABb7AucvBnrzEAAgsLaxtJzFBHfoU-G-rZFhoBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgG5o6UN4C4M3bgvt1B-8-_jjREcMOwACDAtrG0nMUEez44TenoY28wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgG9o6UN4bykOfehUXEVDYpFyBA9L3QACDQtrG0nMUEcY5G7KnmX-agEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgHBo6UN4ruyc2jkRnaJgmlbUYTmEzgACDgtrG0nMUEcBW18NlXVhMQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgGxo6UN4bpHPPFcO2PIzuWzMdZw2gAACCgtrG0nMUEfPEcr_9jm7OQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso conjunto de falda\nTalla SM Ml Lxl \nRef 61515\nMayor 56.000\nDetal 72.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:11+00:00"
+    },
+    {
+      "id": "52917e78-21a6-421b-a41c-f387331c8fab",
+      "title": "Hermoso conjunto de falda",
+      "price": 77000,
+      "sku": "63344",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgGdo6TgEIil8uc7nAWiSZeD2MuqQeQACbgtrG0nMSEe0erJ1EaeLvwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGho6TgEkhRSk3NqWU11yKgN1tqWEgACbwtrG0nMSEconN5rseb2DAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGlo6TgEOShklg4VYRyuWB5-8eLdVQACcAtrG0nMSEdSGRwJHBF3ggEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGpo6TgE6TykGoKpXnJmLt3S7cG8SgACcQtrG0nMSEfS9a-fwwsAAeUBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgGdo6TgEIil8uc7nAWiSZeD2MuqQeQACbgtrG0nMSEe0erJ1EaeLvwEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso conjunto de falda\nTalla SM Ml Lxl \nRef 63344\nMayor 59.000\nDetal 77.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:10+00:00"
+    },
+    {
+      "id": "932a78bd-af49-4834-b560-ad02afd7a8df",
+      "title": "Hermoso vestido estampado",
+      "price": 62000,
+      "sku": "61492",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgF1o6TYtQ9Tv_EYTmtF1o18TKmBGfwACZQtrG0nMSEdZeLfmokO8ggEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgF5o6TYtkoGWwQKWqtfU2DSL3R7xgwACYQtrG0nMSEdr_STqycLbNAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgF9o6TYtxkG3CGQHPwxmuK-4rDLVIgACZAtrG0nMSEcOFfLuHLSwOgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGBo6TYtDYNIYTUHJbAUWxHzuuhclgACYwtrG0nMSEfuYzj3hAFTwAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGFo6TYtumfhYD2g-9Tq_DISv8VmLwACYgtrG0nMSEekC2PVaKpZsQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGJo6TYtqWgAAcJiFG9odpS1nQ7Aqw4AAmYLaxtJzEhHObjv4N3VoYwBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgGNo6TYtV1V6rg2P9ixFjniYuhX-QgACZwtrG0nMSEe2-hmBXTqy2AEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgF1o6TYtQ9Tv_EYTmtF1o18TKmBGfwACZQtrG0nMSEdZeLfmokO8ggEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido estampado\nTallas SM ML y lxl \nRef 61492\nMayor 48.000\nDetal 62.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:10+00:00"
+    },
+    {
+      "id": "842bbdc8-5b41-4245-8f29-75f453778328",
+      "title": "Vestido largo unicolor",
+      "price": 69000,
+      "sku": "62983",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgFZo6TTVlRIAAfK91AalCZ2u5XMowGIAAlwLaxtJzEhHzHHZwKc2IvsBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFdo6TTVw7VltpIfndq335Jueq5inQACWwtrG0nMSEcIZyHmFjDjsAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFho6TTVHoAyA2Nt5ZCzFSQR0rOQrQACXQtrG0nMSEe139FJ8mGDpAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFlo6TTVjEz4e7C5IGCB7DEmkroOtAACXgtrG0nMSEdN2ZCd2nZpOAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFpo6TTV4E3OSQPDmcNoF_5ZHoFifwACXwtrG0nMSEelRZHgmSyrowEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFto6TTVM9Q3d7s1xSNEyxFFW5Ln1QACYAtrG0nMSEe7VwK7R_IxxgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgFZo6TTVlRIAAfK91AalCZ2u5XMowGIAAlwLaxtJzEhHzHHZwKc2IvsBAAMCAAN5AAM2BA.jpg",
+      "description": "Vestido largo unicolor\nTalla SM Ml Lxl \nRef 62983\nTela algodón poliéster\nMayor 54.000\nDetal 69.000\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:10+00:00"
+    },
+    {
+      "id": "cad44ebf-ae48-4afd-94bb-190d3b3e857a",
+      "title": "Vestido largo estampado",
+      "price": 71000,
+      "sku": "61494",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgFBo6TMJZjeumgwbb4-n-j3jjH3-dAACVwtrG0nMSEdrh4xz3eJFnAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFFo6TMJ8WwdBvcbsf1TjgkgPlmIgAACWAtrG0nMSEdcrMkkg9rpoQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFJo6TMJ1cMG-Lfk4r3C1_B2tPEpxgACWgtrG0nMSEdxxGMDLz6CyQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgFNo6TMJt7vveP4yfrYcueVME36DEwACWQtrG0nMSEdfP4-sL0mLzAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgFBo6TMJZjeumgwbb4-n-j3jjH3-dAACVwtrG0nMSEdrh4xz3eJFnAEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo estampado \ntalla SM ML y lxl \nRef 61494\nmayor 55.000\nDetal 71.000💓\nBodega: Barranquilla",
+      "created_at": "2025-10-11T05:49:10+00:00"
+    },
+    {
       "id": "c6883de0-9e32-444d-bddf-61769ffe2e3c",
       "title": "Conjunto en hilo",
       "price": 90000,
