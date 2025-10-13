@@ -1,6 +1,135 @@
 {
   "products": [
     {
+      "id": "68f12b35-a031-4333-8d2a-0f8c618af135",
+      "title": "Hermoso bluson talego",
+      "price": 46000,
+      "sku": "02853",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgOJo7G4QfCu1Qx8R0WDCUJzE-UCWuwACQAtrGwuwYUczAV5Cfb1EZgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgONo7G4QEjT8wPznxeRPT-t9EdDxOQACQQtrGwuwYUfO19dMO3tvTgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgORo7G4QEKes5GQyLW_sKJ21-RVY4AACQgtrGwuwYUfGrsszzoiwFAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgOJo7G4QfCu1Qx8R0WDCUJzE-UCWuwACQAtrGwuwYUczAV5Cfb1EZgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso bluson talego\nTallas SM LXL \nRef 02853\nMayor 46.000\nDetal 60. 000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "a206beca-80a0-4dda-914f-09e83227704d",
+      "title": "Hermoso vestido largo",
+      "price": 66000,
+      "sku": "02360",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgN1o7G2PK2ivxlhFghPKb0i4xVfpoAACPAtrGwuwYUcOHnxf8TnoUgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgN5o7G2PkTmiko0r6j95JoVzto_DGgACPQtrGwuwYUd1zVdBzG9BVwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgN9o7G2PeMDTy5ulaRpVXVwWGOAuOQACPgtrGwuwYUe5NcStFuFBYgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgOBo7G2Pbv0yYpurfwn1znu_AYE9owACPwtrGwuwYUei3HXHZVeQ8wEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgN1o7G2PK2ivxlhFghPKb0i4xVfpoAACPAtrGwuwYUcOHnxf8TnoUgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nSolo disponible en talla S y M \nRef 02360\nMayor 55.000\nDetal 66.000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "a9df70bc-ed29-4984-a219-86c366da9730",
+      "title": "Hermoso vestido largo",
+      "price": 68000,
+      "sku": "02342",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgNho7G1KOIMwVpXWjFqspo3yVldFiQACOAtrGwuwYUd5fKfGW381fgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNlo7G1K7PKv_JuJX01qWmKqLB4mBgACOQtrGwuwYUdrLJqMTNnXTAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNpo7G1KD12SBiEPAAEWwi_N8zhzpzkAAjoLaxsLsGFHvfj26ho63t8BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNto7G1KYHQYTTqtg2SPG9hMnw4u7QACOwtrGwuwYUcz7TYYSmpOrQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgNho7G1KOIMwVpXWjFqspo3yVldFiQACOAtrGwuwYUd5fKfGW381fgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nSolo disponible en talla S \nRef 02342\nMayor 57\nDetal 68.000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "9248f5e4-5010-454b-b807-9091b27362c7",
+      "title": "Hermoso vestido largo",
+      "price": 45000,
+      "sku": "02254",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgNNo7Gy8pmcew79IpnaK4VT3BhYO3wACNAtrGwuwYUfKp_S5iKEXLAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNRo7Gy85z356j_0s7Xw0WUgStNB4gACNQtrGwuwYUfozV5qhV-bFQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNVo7Gy8fBZuR6tqmbxjGcb7720c_wACNgtrGwuwYUdOYwed6BUKFQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNZo7Gy8EAABEkkCwXvoe0KXQPHPafQAAjcLaxsLsGFHAd7Jxq01JwYBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgNNo7Gy8pmcew79IpnaK4VT3BhYO3wACNAtrGwuwYUfKp_S5iKEXLAEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nSolo disponible en talla S \nRef 02254\nMayor 45.000\nDetal 60. 000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "45b628c1-9ece-44c7-80ed-5171f6a29bd2",
+      "title": "Hermoso conjunto de shorts",
+      "price": 63000,
+      "sku": "38047",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgM1o6vYM0QaKqlM5VRGsrULal4mhegACOgtrG2_XWEeg0qaZmxyxGwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgM5o6vYM5TjUZEXZCon6u51m_yvOpQACOQtrG2_XWEeat4z5EkyMvAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgM9o6vYMvyq6UOJOhjZ3AdWf8-nPDwACOwtrG2_XWEfqHRJRvxPY6wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNBo6vYM3fRsmaeINXxZuDGMLJmN8gACPAtrG2_XWEf1cTGwjHJzHgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgNFo6vYMZJwWTgY4c6HIHPxsToYnQQACPQtrG2_XWEfq--D1UENvtQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgM1o6vYM0QaKqlM5VRGsrULal4mhegACOgtrG2_XWEeg0qaZmxyxGwEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso conjunto de shorts \ntalla SM ML y lxl \nRef 38047\nMayor 48.000\nDetal 63.000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "e1515e9f-4c86-47ea-a2e9-61d7c34a7b9f",
+      "title": "Hermoso vestido largo",
+      "price": 67000,
+      "sku": "12147",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgMdo6tx-ZR_WYphicJAMiUN4bBHYowACKQtrG2_XWEfg9cKNaLGMJgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMho6tx-dw5V9yVv4aO_fz_jYQJVawACKgtrG2_XWEe42JCkdyeNcAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMlo6tx-aQ2i2F6dPKy4Fx0ePnM82wACKwtrG2_XWEfpJ0MJYbzs-wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMpo6tx-qXqo2--erqtuArkYYyFy7gACLAtrG2_XWEdKXvOdUkJuCwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMto6tx-fxD67vRPnSZ3SFdScvml3gACLQtrG2_XWEegJ7_gxmX0ngEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgMdo6tx-ZR_WYphicJAMiUN4bBHYowACKQtrG2_XWEfg9cKNaLGMJgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo\ntalla SM ML y lxl \nRef 12147\nMayor 52.000\nDetal 67.000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "a7f8961e-195a-4f59-b1f9-2b339d7118c8",
+      "title": "Hermoso pantalón resortado en la cintura",
+      "price": 48000,
+      "sku": "36781",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgMJo6sJrn_jF30nS1k55YOsLDA6VfQACFgtrG2_XWEeqjB5_Y8LocAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMNo6sJrGj3fqIj-JeuqEvsKj4JTfAACFwtrG2_XWEeCQmXTWVoI_QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMRo6sJrb3s7XChnx5W-R5jn1zDW2AACGAtrG2_XWEfOCFJisP9bqgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgMVo6sJrSh5euorud4PFnMH_scYcWgACGQtrG2_XWEd-V12bI38AARQBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgMJo6sJrn_jF30nS1k55YOsLDA6VfQACFgtrG2_XWEeqjB5_Y8LocAEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso pantalón resortado en la cintura \ntalla 8- 10- 12\nRef 36781\nMayor 37.000\nDetal 48.000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
+      "id": "19f6a1c5-52b1-4c36-b245-d5c10cb143ba",
+      "title": "Hermoso body",
+      "price": 37000,
+      "sku": "11952",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgK5o6pgsnQKsFVNLcGJ7Hi31cNelqQAClgtrG2_XUEflxdMTD6hqMQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgK9o6pgs5v-d1bBHbhg7rjCNafEJVgAClQtrG2_XUEfGmaOrJ0CR_QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgLBo6pgsRibR8m2xCh0GvJlIlo1P0gAClwtrG2_XUEeg71qptZPa0QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgLFo6pgsaWvJ9etoFJgYcDp6fheYwgACmAtrG2_XUEcz47p9nfgdwQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgK5o6pgsnQKsFVNLcGJ7Hi31cNelqQAClgtrG2_XUEflxdMTD6hqMQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso body\nSe vende como talla unica\nRef 11952\nMayor 29.000\nDetal 37.000\nBodega: Barranquilla",
+      "created_at": "2025-10-13T03:30:36+00:00"
+    },
+    {
       "id": "144c88b3-35ae-4b19-8c10-5d5b96dd51d5",
       "title": "Blusa básica en algodón",
       "price": 34000,
