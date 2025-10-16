@@ -1,6 +1,108 @@
 {
   "products": [
     {
+      "id": "74166738-2839-4e71-b5ce-0fa0043d29a9",
+      "title": "Hermoso vestido largo",
+      "price": 65000,
+      "sku": "36741",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgRZo8HJ6LE_UfTMh6mhy2B6k8vu4GQACEwxrG6-QgEe2gPceLkiFOQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgQZo8FwN7DFkUoDh66uKZpHiZAG-xQAC9QtrG6-QgEddsWKlW1gJrgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgRho8HJ611YdXyFMiieF840lnt5LgQACFAxrG6-QgEdaBwfovAl_jwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgRlo8HJ65BO_gHk2Ht7xpybYbJ_WwgACFQxrG6-QgEcqRGX5oSkPrQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgRpo8HJ6hOCiRxZjRffvV0UGUs_JCwACFgxrG6-QgEdBuIX5_ic6RgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgRZo8HJ6LE_UfTMh6mhy2B6k8vu4GQACEwxrG6-QgEe2gPceLkiFOQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nTalla SM ML y lxl \nRef 36741\nMayor 50.000\nDetal 65.000\nBodega: Barranquilla",
+      "created_at": "2025-10-16T18:15:58+00:00"
+    },
+    {
+      "id": "473172fb-050d-4618-97c4-d8ee70be4829",
+      "title": "Hermoso vestido largo",
+      "price": 75000,
+      "sku": "12153",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgQNo8FwNsbt2o0-71WktmtEZZ_B6JQAC8gtrG6-QgEeB6l5J5kq-NwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgQVo8FwNFDj8scxZMfSHE592CTsheAAC9AtrG6-QgEclEulteBu5vAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgQdo8FwNjw-yG4-PXRSXhIcpo8z-pgAC9gtrG6-QgEcnhUjJcq7ZigEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgQRo8FwNG28S3A1PgkJFAcYUfCpYgQAC8wtrG6-QgEd1uWg1qyWlHAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgRRo8Gx9TlpNiiSUJmKrD7gyaVbZPgACDgxrG6-QgEfITheNd-pSUAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgQNo8FwNsbt2o0-71WktmtEZZ_B6JQAC8gtrG6-QgEeB6l5J5kq-NwEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nTalla SM ML y lxl \nRef 12153\nMayor 58.000\nDetal 75.000\nBodega: Barranquilla",
+      "created_at": "2025-10-16T18:15:58+00:00"
+    },
+    {
+      "id": "26b2eaf5-6d62-4537-810d-3551d929cbf2",
+      "title": "Hermoso vestido largo",
+      "price": 65000,
+      "sku": "36740",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgP1o8FG20xHsXrJTtQRC3h-Z6P7E0QAC2gtrG6-QgEdaSRR5FbJIuwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgP5o8FG2g7-tghIOI0DP8LsUVjh8dwAC2QtrG6-QgEfRRPMYaLs-jAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgP9o8FG2ZR80bXW6v-tmqL9zvX6ABQAC2wtrG6-QgEeGPVNmY13bfgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgQABaPBRtnMROJOtr_GEA6Z4HLDgJooAAtwLaxuvkIBH1wyeOJ5GHH8BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgQFo8FG25K4l-zvhu1AHhZW1zWzg0QAC3QtrG6-QgEe2SeMkMHoC4QEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgP1o8FG20xHsXrJTtQRC3h-Z6P7E0QAC2gtrG6-QgEdaSRR5FbJIuwEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nTalla SM ML y lxl \nRef 36740\nMayor 50.000\nDetal 65.000\nBodega: Barranquilla",
+      "created_at": "2025-10-16T18:15:58+00:00"
+    },
+    {
+      "id": "b13b8184-1cea-4217-ac4a-8a96b69570e9",
+      "title": "Hermoso vestido largo plisado",
+      "price": 61000,
+      "sku": "Y250",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgPZo7qLGrRgnuojqWMb8Nx7RWnv3XwACcQtrG5e8cEeP19lConEFXAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPdo7qLGoIOpTU9fYmZBWpswk4NljAACcgtrG5e8cEcH4GftfHSTUQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPho7qLGJR5YSS7JgNoJFOYoVIY2eQACcwtrG5e8cEeSQ7tJXPk7aQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPlo7qLGI8neDsx0aceLAuzuw_G-8AACdAtrG5e8cEchxDguC_K3tgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPpo7qLG5qfjo5cVyPUsHi5cQuRLGgACdQtrG5e8cEcQFLmlsColBQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPto7qLGEL8QV461YdmHHOnA4zbxRgACdgtrG5e8cEfpqb2HmZgx3QEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgPZo7qLGrRgnuojqWMb8Nx7RWnv3XwACcQtrG5e8cEeP19lConEFXAEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo plisado\nTalla SM ML y lxl \nRef Y250\nMayor 47 000\nDetal 61.000\nBodega: Barranquilla",
+      "created_at": "2025-10-16T18:15:58+00:00"
+    },
+    {
+      "id": "84b4220e-c507-4b30-b347-3706bc3a03fc",
+      "title": "Hermoso vestido corto resortado",
+      "price": 60000,
+      "sku": "Y",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgPFo7qCJ4o9xhNam_VNwRvY10hkiFgACbAtrG5e8cEde1Ogofzv6DwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPJo7qCJ6EaSm7mLWPP2GyAAAfO8R2gAAm0LaxuXvHBH0DFXR9zOwK0BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPNo7qCJxz0kytQY9Jmu2UHrIhl5pQACbgtrG5e8cEd-5ztNAkCOyAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgPRo7qCJYmftl0QoSoLC9Mm62JRCKAACbwtrG5e8cEfoLtDadmP0SwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgPFo7qCJ4o9xhNam_VNwRvY10hkiFgACbAtrG5e8cEde1Ogofzv6DwEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido corto resortado\nTalla SM ML y lxl \nRef Y 171\nMayor 46.000\nDetal 60.000\nBodega: Barranquilla",
+      "created_at": "2025-10-16T18:15:58+00:00"
+    },
+    {
+      "id": "7a801bbe-0be6-47b0-a92d-48628df20fd4",
+      "title": "Hermoso vestido largo",
+      "price": 65000,
+      "sku": "MY68",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgOdo7n6kYbIk5BD8IO4TFDCSAc9uzwACUAtrG5e8cEdwD6EPaZe72AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgOlo7n6kwOILMt6FqMfRgkVwSiwoXwACUgtrG5e8cEfdjNCoi9Ek4AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgOZo7n6kCguvtUWyuS3Q33yWswYehwACTwtrG5e8cEf3cBMCrYPJ7gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgO5o7pBcZncCHFWyacD6b7-rSU4UOAACYAtrG5e8cEe2TJTBTJSKoAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgOho7n6kZ95fPDHpd1p6TjbYJFjMVgACUQtrG5e8cEd3tp8ssENY7wEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgOdo7n6kYbIk5BD8IO4TFDCSAc9uzwACUAtrG5e8cEdwD6EPaZe72AEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo \nTalla SM ML y lxl \nRef my68\nMayor 42.000\nDetal 65.000\nBodega: Barranquilla",
+      "created_at": "2025-10-16T18:15:58+00:00"
+    },
+    {
       "id": "68f12b35-a031-4333-8d2a-0f8c618af135",
       "title": "Hermoso bluson talego",
       "price": 46000,
