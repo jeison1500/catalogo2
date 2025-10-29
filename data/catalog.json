@@ -1,6 +1,88 @@
 {
   "products": [
     {
+      "id": "e06cd663-4f24-4177-aaaa-f38e8aad86dc",
+      "title": "Hermoso vestido largo estampado",
+      "price": 63000,
+      "sku": "Y282",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgexpAnZ6qFtTDs2jT3LTYzKU1TzyagACOwtrG3SsGURc_jM-Oa-ZJgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACge1pAnZ6RTWkWkgpASqP4_762Rk7wwACPAtrG3SsGUSOJ2iPPBkwMgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACge5pAnZ6x6eHEt8mrZk_BuBEnO9tZQACPQtrG3SsGURlPrgvRvW0vAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACge9pAnZ67G8NF9Pf8RIr-4yLqK85RwACPgtrG3SsGUTrgLiTDL73twEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgexpAnZ6qFtTDs2jT3LTYzKU1TzyagACOwtrG3SsGURc_jM-Oa-ZJgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo estampado \nRef Y282\nTallas SM ML y lxl\nMayor 45.000\nDetal 63.000\nBarranquilla",
+      "created_at": "2025-10-29T21:38:51+00:00"
+    },
+    {
+      "id": "ea8afc9b-fcde-40a1-902a-7c0aebcbb7f8",
+      "title": "Hermoso vestido largo estampado",
+      "price": 68000,
+      "sku": "H287",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgeZpAklJz89mEcUdbXe3qpybsSHPpAACEwtrG3SsGUS9s8mCx0wcMAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgedpAklJYwvGgwUysesGsQ9ZUcM5igACFAtrG3SsGUTB0X-cAeNgrgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgehpAklJiYAQlbL4dKBlwSLKB3YHiQACFQtrG3SsGUQzcoXhSwvCJgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgelpAklJCTfPgYdGyv4DQ863gHoQSQACFwtrG3SsGUSwbkFU9-RZnAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgeppAklJo25_amLD9UXwHwzgkmJC5AACFgtrG3SsGURuUeKQy9mJfgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgeZpAklJz89mEcUdbXe3qpybsSHPpAACEwtrG3SsGUS9s8mCx0wcMAEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo estampado\nRef H287\nTallas SM ML y lxl \nMayor 53.000\nDetal 68.000\nBarranquilla",
+      "created_at": "2025-10-29T21:38:51+00:00"
+    },
+    {
+      "id": "c9dc8363-9cc9-438d-b9fe-667e05b73f49",
+      "title": "Hermos conjunto pantalón",
+      "price": 76000,
+      "sku": "36793",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgeBpAkVPYe9WDIgBNJqGhHltaj6VzwACBwtrG3SsGURl8oj_uxrecQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgeFpAkVPs2JLK1ti1QQ4aBFLZ7LdKgACCAtrG3SsGUSruPk5xoNiewEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgeJpAkVPSQXbhzG2ooNGG-tUTJncmwACCQtrG3SsGUTG4k34TRpVRQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgeNpAkVPsIFEocoL0ay07P7e8gNdrQACCgtrG3SsGURELYRdmNJQOQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgeRpAkVPgC-4XDirIteqmdV4OkA6NwACCwtrG3SsGURDSdWeWQbfyQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgeBpAkVPYe9WDIgBNJqGhHltaj6VzwACBwtrG3SsGURl8oj_uxrecQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermos conjunto pantalón\nTallas SM ML y lxl \nRef 36793\nMayor 59.000\nDetal 76.000\nBarranquilla",
+      "created_at": "2025-10-29T21:38:51+00:00"
+    },
+    {
+      "id": "f6d943b3-efa2-47ba-9596-dc0f12fe9f4d",
+      "title": "Hermos vestido largo",
+      "price": 87000,
+      "sku": "12513",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgdlpAkAb0PwXE0Z2tcSDA1MiA7ZphAACpQtrG3SsEUR_kHLa89Dd_AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgdppAkAbQMJ1ju78PMJOXlMEma7voAACpgtrG3SsEUQN-7nJHN8HrgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgdtpAkAbOkkhsJy_QSyOVfy6s-IvzQACpwtrG3SsEUTPL0j-wFjTEwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgdxpAkAbVQmQurWGBleZOiZiL1fC8gACqQtrG3SsEUQgI7R28i9QQAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgd1pAkAb4j7atX1ki7CsrBb72VMTCwACqAtrG3SsEUSMS3G5ZwVB0wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgd5pAkAbQqZHwXuYwMgy2_eXVbmBfwACqgtrG3SsEUQn405AbaMfKQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgdlpAkAb0PwXE0Z2tcSDA1MiA7ZphAACpQtrG3SsEUR_kHLa89Dd_AEAAwIAA3kAAzYE.jpg",
+      "description": "Hermos vestido largo\nTela ojalillo\nRef 12513\nTalla SM Ml Lxl \nMayor 72.000\nDetal 87.000\nBarranquilla",
+      "created_at": "2025-10-29T21:38:51+00:00"
+    },
+    {
+      "id": "45deed7c-0ea8-4f54-8268-a3a23fb8444e",
+      "title": "Hermosos conjuntos estampado",
+      "price": 63000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgdZpAa4Mh1X_bEKxF7T-YQja1DjTgQACYAtrG3SsEUSv_tnyHtM6gQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgddpAa4MZcMeWNg5JnjL2tb9D2ZOVQACYQtrG3SsEUSbjXpuNAZnJQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgdZpAa4Mh1X_bEKxF7T-YQja1DjTgQACYAtrG3SsEUSv_tnyHtM6gQEAAwIAA3kAAzYE.jpg",
+      "description": "Hermosos conjuntos estampado\nTalla SM y lxl \nMayor 51.000\nDetal 63.000\nBarranquilla",
+      "created_at": "2025-10-29T21:38:51+00:00"
+    },
+    {
       "id": "cd7a51d9-d97c-4066-883b-220eb7ebca96",
       "title": "Hermoso vestido largo",
       "price": 80000,
