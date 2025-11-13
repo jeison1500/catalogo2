@@ -1,6 +1,700 @@
 {
   "products": [
     {
+      "id": "b43252ff-b99c-445b-9acf-f4b8313ec4dd",
+      "title": "Chaleco tipo blaizer  en paño",
+      "price": 86000,
+      "sku": "2432",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgxlpFUG405Jjrk8qE1GJtFC19MkMOQAC7AtrG6TGqUT8LY4RnioGngEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxppFUG4vx--tsb1TzVIwdc2YgiX6AAC7QtrG6TGqUTBxYVfQuxaqwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxtpFUG4Td4777pjjyEmV9POyUqwQgAC7gtrG6TGqURoRwJtPUpF_wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxxpFUG4mSMvkmuWTV2hydPWPhkzPQAC7wtrG6TGqUQCrEcORU6_lwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgx1pFUG41Zne7HnyRplficVIRZea9AAC8AtrG6TGqUQGk6M33qRWLAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgxlpFUG405Jjrk8qE1GJtFC19MkMOQAC7AtrG6TGqUT8LY4RnioGngEAAwIAA3kAAzYE.jpg",
+      "description": "Chaleco tipo blaizer  en paño \nTalla SM Ml Lxl \nRef 2432 \nmayor 67.000\nDetal 86.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "d5cd5c8a-2cec-4abc-85ad-564a7a40111c",
+      "title": "Pantalón con pretina",
+      "price": 68000,
+      "sku": "3219",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgxRpFUF6TYvixicJGqU-9O1ficdIGQAC6AtrG6TGqURWAAHpLgEo9gkBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxVpFUF6Jdh69bUzDE7SbZmM-poqmwAC6QtrG6TGqUQB8EOz4ZWSyAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxZpFUF6jZXkRTLAsYl3ocUbD8av3QAC6gtrG6TGqUTsEMTXduU1ugEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxdpFUF6gKY3e4RjGjDVHOKNV8sOIQAC6wtrG6TGqUStF7YzrLcCSwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgxRpFUF6TYvixicJGqU-9O1ficdIGQAC6AtrG6TGqURWAAHpLgEo9gkBAAMCAAN5AAM2BA.jpg",
+      "description": "Pantalón con pretina \nTalla SM Ml Lxl \nRef 3219 \nCalidad de la tela con caída \nmayor 49.00\nDetal 68.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "dbb5a613-b1cd-485e-84c4-2fbf6a8ac1e9",
+      "title": "Conjunto Pantalon y chaleco",
+      "price": 74000,
+      "sku": "8019",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgw1pFUFKhq1nY5C69BxdKyvYXI-ubgAC4gtrG6TGqUS8sEYSeYTm6gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgw5pFUFK1l-7xHRzOfsJp9enZ1EFygAC4wtrG6TGqUS5HY8AAaPVw7sBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgw9pFUFKQIf85bZF273uWt4vEig8QAAC5AtrG6TGqUSMd7kcf9v1zQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxBpFUFKsvBzmUnQOFp46SvjLB_W2AAC5QtrG6TGqUR4AAGhtna4cukBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxFpFUFKKmBBX3QUlYaymiovjI6wkQAC5gtrG6TGqUQrgNRDNZ37jAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgxJpFUFKfnDiVEvG3FpgvVjdg_kojwAC5wtrG6TGqUT6KauvHU8IKAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgw1pFUFKhq1nY5C69BxdKyvYXI-ubgAC4gtrG6TGqUS8sEYSeYTm6gEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto Pantalon y chaleco \nTela lino minie \nTalla SM Ml Lxl \nRef 8019\nmayor 55.000\nDetal 74.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "70597e35-5f2e-48c0-9296-05b0579402dd",
+      "title": "Vestido largo floral",
+      "price": 74000,
+      "sku": "2954",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgwdpFUEXv87KMIasaUCfw-hqIIVaKwAC3QtrG6TGqURTW86p__gZYgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwhpFUEXus3On1BPwggs0btMeDejTQAC3gtrG6TGqUSBYUI7NdHaowEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwlpFUEX6EQvys_ru8gxM2mbhZ9AtAAC3wtrG6TGqUSkoUVaoGuZGQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwppFUEXWM3FiqPpwf3A4z0-5-uPUQAC4AtrG6TGqURbYSxpetH4kAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwtpFUEXBJ3IRAWmDnXpel3826h8PQAC4QtrG6TGqUQK4Qklxv3BIgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgwdpFUEXv87KMIasaUCfw-hqIIVaKwAC3QtrG6TGqURTW86p__gZYgEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo floral \nTalla Sm Ml Lxl \nRef 2954 \nCalidad premium \nmayor 55.000\nDetal 74.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "3d13d8cb-9e4d-4797-91d0-0e48e27091fd",
+      "title": "Vestido corto estilo campesino",
+      "price": 64000,
+      "sku": "1531",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgwABaRVA0g_DJyvFAnAEp0QVwRtfq0sAAtcLaxukxqlE8_WG0MOQlBwBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwFpFUDSYhBYhjo5qWFV8nCmD71jDQAC2AtrG6TGqUQIklsbMPRFHwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwJpFUDSwQ-_1pchPHlQBbwDEzXngwAC2QtrG6TGqUS1pJ6R48OnJAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwNpFUDSMHpnHuAjWEEQ0MKnns3b8AAC2gtrG6TGqURTX2_w-u871AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwRpFUDS8at9j48Oqc5BZ9XKc17SNQAC2wtrG6TGqUSIRHHh0M4BZgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgwVpFUDSpC-bfhSy1CoE5RJdN8h2ZAAC3AtrG6TGqURmqyqkNo2-PwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgwABaRVA0g_DJyvFAnAEp0QVwRtfq0sAAtcLaxukxqlE8_WG0MOQlBwBAAMCAAN5AAM2BA.jpg",
+      "description": "Vestido corto estilo campesino \nTalla SM Ml Lxl \nTela suave \nRef 1531 \nmayor 45.000\nDetal 64.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "3270cddf-a03f-40f8-bd47-1aa4d6f8657c",
+      "title": "Blusón en pana",
+      "price": 76000,
+      "sku": "0213",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgvtpFUCObPE4HvMeY80PiCKuKeRNGAAC0wtrG6TGqUSAdVOF-OOeGAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgvxpFUCOHqahCMP8Wn2Px0ENXrgC8AAC1AtrG6TGqUQmaGstaHFgDQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgv1pFUCOCGxx7R2JTspwEeof7TM8ewAC1gtrG6TGqUSPQgbEHODZ1gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgv5pFUCO8mvM85dwGRbAUdXzUyu2wgAC1QtrG6TGqUSw4VhaKGq2ugEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgvtpFUCObPE4HvMeY80PiCKuKeRNGAAC0wtrG6TGqUSAdVOF-OOeGAEAAwIAA3kAAzYE.jpg",
+      "description": "Blusón en pana\nTalla Sm y Lxl \nCalidad premium \nRef 0213 \nmayor 57.000\nDetal 76.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "b90b7866-547c-4388-9f98-c874041631e3",
+      "title": "Falda larga combinada",
+      "price": 71000,
+      "sku": "2562",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgvRpFT2DLpnFTHjVN6urOafNKnGjRAACygtrG6TGqUSlrD-VmH6TdAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgvZpFT2DTkTnW5vnMmIHOd4h4qzLWgACywtrG6TGqUQ8yN3LFENZBAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgvdpFT2DfbD_Al-GdZvaDXm_25SvMgACzAtrG6TGqUSJ8NrmMWxptwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgvhpFT2Djse6RUhVxcmFxGf3dUsUdwACzQtrG6TGqUTxJ3A7vapCtwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgvlpFT2DSy8mqMktRm-l0Tz4YZSKFgACzgtrG6TGqURu6uIkbMCZJQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgvRpFT2DLpnFTHjVN6urOafNKnGjRAACygtrG6TGqUSlrD-VmH6TdAEAAwIAA3kAAzYE.jpg",
+      "description": "Falda larga combinada \nTalla SM Ml Lxl \nRef 2562 \nmayor 52.000\nDetal 71.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "e1610d23-d9fc-4e92-ab5e-010f3f7dcce2",
+      "title": "Hermoso bluson camisero",
+      "price": 66000,
+      "sku": "8026",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgu1pFT0Z-6QY5oCZR4ztPDfNohAe8QACxgtrG6TGqUTMD0GeQwvg9wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgu5pFT0Zr0YkXEaAYQP3Arx0GRsxvQACxwtrG6TGqUSrPAiAQwEEjgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgu9pFT0Z7-DxUYqcXrfButZ0lfzBzAACyAtrG6TGqUQWiN-_s8OYogEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgvBpFT0ZmOnMQLWaCc2Rm796LqK2igACyQtrG6TGqUQaavU4aSuzeAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgu1pFT0Z-6QY5oCZR4ztPDfNohAe8QACxgtrG6TGqUTMD0GeQwvg9wEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso bluson camisero \nTela algodón lino \nTalla S M L \nRef 8026 \nmayor 47.000\nDetal 66.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "f3e47970-2032-4a41-a0ca-c269040e6a1f",
+      "title": "Conjunto polo y pantalón",
+      "price": 91000,
+      "sku": "0058",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACguRpFTzCDZiXD3x1Y98vrPtFEhUBcwACvQtrG6TGqUQizekejXBvMgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACguVpFTzC0-RZ_PK6CyOPaeaKFaZUygACvgtrG6TGqUQEQ44n9Q2H3QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACguZpFTzCueslq25DhBuOgilRA8yQOAACvwtrG6TGqUTbBXdJhROx3wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgudpFTzCLzixZ1dCWAav1hBBzZqupwACwAtrG6TGqUS1XePxSucdDAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACguhpFTzC-UNDIJSEs30PipKyaZjT8AACwQtrG6TGqUQ5kM0NVYcQCwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgulpFTzCWxxmRKUknRmR1AonJg15_QACwgtrG6TGqUSshhVVxclbewEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACguppFTzC9Ocz53LfoOS-IsiU2-ozZgACwwtrG6TGqUT550OxypfZOAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgutpFTzCYQEnaJFbfe15OxGxRnxatwACxAtrG6TGqUR-6GdCtKrPFwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACguRpFTzCDZiXD3x1Y98vrPtFEhUBcwACvQtrG6TGqUQizekejXBvMgEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto polo y pantalón \nTela algodón y Jean \nAmericano, licrado \nTalla S M L resortado \nRef 0058\nMayor 72.000 \nDetal 91.000",
+      "created_at": "2025-11-13T02:33:02+00:00"
+    },
+    {
+      "id": "871483a8-82a7-418d-99b6-680393918e41",
+      "title": "Conjunto polo y pantalón",
+      "price": 92000,
+      "sku": "2965",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgtlpFTxWlutQ0vA2MIeluD3vIPFsqQACtAtrG6TGqUQUIbHQOkLPaQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgtppFTxWQX-_qv4xE2mEevXX3oxluQACtQtrG6TGqUQaYv36PqBVHgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgttpFTxWtT8jckA9yDpfNuf046faVwACtgtrG6TGqUSDgVRap1e9EgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgtxpFTxW-CLkeE7RRjiJM8TAMDii2QACtwtrG6TGqUT_PNiH-qn5SwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgt1pFTxW0ugvYrEhq33R50tTi0g0VwACuAtrG6TGqUSBIYd6bhoPigEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgt5pFTxWGETgblmBTZDMn_qdB1ATXgACuQtrG6TGqUR-e-8Sj4Ov1wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgt9pFTxWhg3ai5CIVkYFWgSfjxZBtQACugtrG6TGqUSQnvPtSt-S-QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACguBpFTxWA7wR1P1vo5bfsX8nlJbiGQACuwtrG6TGqUSjo8FeVlabhAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACguFpFTxWL7MI3XVAe4ywEv0iAAHMx6wAArwLaxukxqlESynaCs3SVgwBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgtlpFTxWlutQ0vA2MIeluD3vIPFsqQACtAtrG6TGqUQUIbHQOkLPaQEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto polo y pantalón \nTela algodón y Jean \nAmericano, licrado \nTalla S M L resortado \nRef 2965 \nmayor 73.000\nDetal 92.000",
+      "created_at": "2025-11-13T02:33:01+00:00"
+    },
+    {
+      "id": "f8606ad7-ccf7-4528-8bd3-c4df9f947ca3",
+      "title": "Conjunto pantalones y camisa",
+      "price": 83000,
+      "sku": "0690",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgs9pFTvGchvtL4C_gnmMYZF_VYQPhwACsQtrG6TGqUQ253GeRHROsgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgtBpFTvGTIyox3q9aInR0Kw8AAGWcG0AArILaxukxqlEE3gyGN-qB-0BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgtFpFTvGOcbKyYrl34jmd7Ff1tKv3AACswtrG6TGqUSaqllMQ2CokQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgs5pFTvG9Lm3opTv54zThBRAXOAPywACsAtrG6TGqUR_o9TGIq4JpgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgs9pFTvGchvtL4C_gnmMYZF_VYQPhwACsQtrG6TGqUQ253GeRHROsgEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto pantalones y camisa \nTela dril amaricano con perla\nTalla S M L \nREF 0690\nmayor 64.000\nDetal 83.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "f092180e-ef1d-45e0-a309-ffc6e5b11509",
+      "title": "Vestido corto licrado",
+      "price": 71000,
+      "sku": "8330",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgslpFTtsakpsVGehM4HFoqd6HejHJAACrAtrG6TGqUR030wzzd_AZwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgsppFTtsTH3gng6krdRPVgAB4M0Oc3UAAq0LaxukxqlEXqMzovDp2KwBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgstpFTtshTh04t9xAQw5oyiqmbA_-wACrgtrG6TGqUT776VwFFXREgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgsxpFTtsVawzkM3HYSsM4Fm7Rfr0agACrwtrG6TGqUQEBfcLJkY0IQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgslpFTtsakpsVGehM4HFoqd6HejHJAACrAtrG6TGqUR030wzzd_AZwEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido corto licrado \nEstilo americano \nTalla S M L \nRef 8330 \nmayor 52.000\nDetal 71.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "b1bd3e8d-d393-4252-8363-e579b69eaeba",
+      "title": "Conjunto chaqueta y pantalón",
+      "price": 74000,
+      "sku": "0229",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgsNpFTs0mD2XYFJDcTualSJx1ZVejgACqAtrG6TGqUSdLPXngKVGwgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgsRpFTs0r0RNtlYtA5jY2OaHHeixXwACqQtrG6TGqUS5Ua4HuoYVlgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgsVpFTs0YsYaxktGEX-g0VOWfw4j6wACqgtrG6TGqUQOzfxghSoAAWwBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgsZpFTs06KTAHQNs8QLO1SXv9IH5swACqwtrG6TGqUS_2AQ9iWHnLgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgsNpFTs0mD2XYFJDcTualSJx1ZVejgACqAtrG6TGqUSdLPXngKVGwgEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto chaqueta y pantalón \nTela poliéster algodón  licrado \nTalla SM y Lxl \nRef 0229\nmayor 55.000\nDetal 74.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "f0214423-e893-4165-8fea-e90244fd458d",
+      "title": "Conjunto chaqueta y pantalón",
+      "price": 75000,
+      "sku": "0001",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgrdpFTq63__OHlgR-DQMRXTXXVpaogACogtrG6TGqUQZWCOB4vEsxAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrhpFTq6pHyHjOB6kFEAATlMT8IX4X8AAqMLaxukxqlEQ4HBVvIbeqUBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrlpFTq641OPGfE7bKzs6nN74XHfxAACpAtrG6TGqURGjVWA_ktplwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrppFTq6FT0S2j6d4qwEvHJHkYrUeAACpQtrG6TGqUSsAAI2IubaxAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrtpFTq6-4-TNUgti3rAel3uSPUXBwACpgtrG6TGqUTBS0lLxqgTfwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgrdpFTq63__OHlgR-DQMRXTXXVpaogACogtrG6TGqUQZWCOB4vEsxAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto chaqueta y pantalón \nTela poliéster galleta licrado \nTalla SM y Lxl \nRef 0001 \nmayor 56.000\nDetal 75.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "8a8b50b9-7e32-4c97-99dc-ebc7657dcd32",
+      "title": "Vestido largo floral",
+      "price": 69000,
+      "sku": "1507",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgrJpFTqK7VugTMjV0qJK_HSnDlX2NQACnQtrG6TGqUSxUMzO6u1uqAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrNpFTqKX-Xz70XYktynCFCCbbPFeQACngtrG6TGqUTWG--gXVcd5AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrRpFTqKPpenx6MPAyEqK-uflVTv8QACnwtrG6TGqUSqWH7GVynllQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrVpFTqKx6PgZ4-5bqrwWNJjeGBARAACoAtrG6TGqUSGCG4HNhe26QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgrZpFTqKYNe4SgJe424G8_ggqobC8QACoQtrG6TGqUTonyxipm-DIAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgrJpFTqK7VugTMjV0qJK_HSnDlX2NQACnQtrG6TGqUSxUMzO6u1uqAEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo floral \nTela liviana velo \nRef 1507 \nTalla Sm ml Lxl\nmayor 50.000\nDetal 69.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "ff942937-1793-463d-b6c1-126d0f9a1ebf",
+      "title": "Buso en hilo tejido",
+      "price": 74000,
+      "sku": "STICHT",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgqxpFTpESOPPoJCV3YMW9ofH3JEJnAACmQtrG6TGqUT5SHm0ZdYzRwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgq1pFTpEWdavzeE97inf6xqZ1347hgACmgtrG6TGqUTXva5xtsNk5wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgq5pFTpEUuBopCnUUmy2U2fIgjNPAAObC2sbpMapRPpCiYRXT8thAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgq9pFTpE5B99DUY368pAC0wIRJ4fCgACnAtrG6TGqUTk7d1Br4DbggEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgqxpFTpESOPPoJCV3YMW9ofH3JEJnAACmQtrG6TGqUT5SHm0ZdYzRwEAAwIAA3kAAzYE.jpg",
+      "description": "Buso en hilo tejido \nTalla única ajusta a todas \nRef Sticht \nmayor 55.000\nDetal 74.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "f1081bef-5197-4713-a06e-abdb55a0378f",
+      "title": "Dúo Buso y chaleco",
+      "price": 80000,
+      "sku": "1138",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgqZpFToDEIq4ovmjWxcyNhbPjYEdPgAClAtrG6TGqUS1o9hgbYeGkgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqdpFToDWPqQ3atUtX_tX7DjYCAv7wAClQtrG6TGqURm5jujd1b-TwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqhpFToDYO5Nfw5udQ5Ifg3p4HmQEwAClgtrG6TGqUQMdc4PZSR2MAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqlpFToDtup5xRmSNQzQRQr2ykbQ-gAClwtrG6TGqUTOTrkbwGeGKQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqppFToDXtc0eiLIQ-ypvI3XM6RKYQACmAtrG6TGqUTJCvUDLGfcyQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgqZpFToDEIq4ovmjWxcyNhbPjYEdPgAClAtrG6TGqUS1o9hgbYeGkgEAAwIAA3kAAzYE.jpg",
+      "description": "Dúo Buso y chaleco \nTela muy suave y fina \nTalla única\nRef 1138\nmayor 61.000\nDetal 80.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "1cfb5662-b331-4e12-aa9f-617ba8230e75",
+      "title": "Vestido largo satinado",
+      "price": 77000,
+      "sku": "8745",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgp9pFTnKBah2mPhuZ4p79H5614s4JwACjgtrG6TGqUTo5jVM-dY5XwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqBpFTnKPFhWf6Z2rdxAx_CJQ2LKLwACjwtrG6TGqUTvhVDaZQdNGQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqFpFTnKm4SVIZCIcVkmLD5ZSX5t3AACkAtrG6TGqUT3RyPMnw7dogEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqJpFTnKx6iRjjRWGZAKoVdcOp_a9QACkQtrG6TGqUSHhXniMZgZ2QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqNpFTnKDWVNiiFZclbj4_l4Xv_oagACkgtrG6TGqUTa5siy2YYniAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgqRpFTnK_kmBFsmyyp8c7XY7MLM1QQACkwtrG6TGqUToxC8WQzQbpgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgp9pFTnKBah2mPhuZ4p79H5614s4JwACjgtrG6TGqUTo5jVM-dY5XwEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo satinado \nCalidad americano \nRef 8745\nTalla Sm y Lxl \nmayor 58.000\nDetal 77.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "54b9613c-fe27-4e10-a3fe-43f27d1291db",
+      "title": "Conjunto chaqueta y pantalón",
+      "price": 91000,
+      "sku": "7749",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgplpFTSJ-lgEdRsuuY4gM9i97l-qrQACiQtrG6TGqUTu82LYDA2RjgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgpppFTSJ8opnwfa7vhxgJhtlueRtnwACiAtrG6TGqUQ0-6UJJ5A3xQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgptpFTSJjdIL7haJ-m791N5br9oEBAACigtrG6TGqUQkRPxv-Xs6CgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgpxpFTSJUAPtmZ1w6mp-PI9F-l6ltgACiwtrG6TGqUTiWM8uK-L1MwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgplpFTSJ-lgEdRsuuY4gM9i97l-qrQACiQtrG6TGqUTu82LYDA2RjgEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto chaqueta y pantalón \nTela hilo premium fino \nTalla única ajusta S a Xl \nRef 7749 \nmayor 72.000\nDetal 91.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "064e435e-96ad-4413-90bf-cdae7fdfa413",
+      "title": "Conjunto 3 piezas",
+      "price": 95000,
+      "sku": "1152",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgpNpFTRV9AvPrx6XTNZld4mZDzExcAAChQtrG6TGqUR2bzXhxXNRrQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgpRpFTRVbyqDpQgwlbTouFnDmCPxrAAChAtrG6TGqUTotfN89r_FIAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgpVpFTRVxPtwEfqui7EinSSEYvN3UAAChgtrG6TGqURROI5ppA-q4gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgpZpFTRVuP6AK2HN_A1fQUtfEQ17jQAChwtrG6TGqURdrg0ECZvwSwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgpNpFTRV9AvPrx6XTNZld4mZDzExcAAChQtrG6TGqUR2bzXhxXNRrQEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto 3 piezas \nEsqueleto , buso y pantalón \nTalla única ajusta S a Xl \nRef 1152 \nmayor 76.000\nDetal 95.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "636b712e-e3b9-403e-85cf-da48616253c6",
+      "title": "Blusa en velo licrado AMÉRICAN",
+      "price": 75000,
+      "sku": "0629",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgo1pFTQFaIqwk7URSXQJ1sWrU7_2lQACgQtrG6TGqUTXAAEW5E4ef2ABAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgo5pFTQFQn-ZgN8l9C1prERhuJugtwACgAtrG6TGqUQwZAwQorl1ZgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgo9pFTQFFbeBGO1A9Vjo4muxYA35jgACggtrG6TGqUR5PGL79BJi0QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgpBpFTQFSCJwVZWmB0SJvGpZdXt2cgACgwtrG6TGqUREZ1sdYZk_AQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgo1pFTQFaIqwk7URSXQJ1sWrU7_2lQACgQtrG6TGqUTXAAEW5E4ef2ABAAMCAAN5AAM2BA.jpg",
+      "description": "Blusa en velo licrado AMÉRICAN \nTalla única ajusta S M L \nRef 0629 \nmayor 56.000\nDetal 75.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "873dd8d6-fe87-427b-9a37-18fef37c6076",
+      "title": "Deportivo en algodón suave",
+      "price": 76000,
+      "sku": "0331",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgoZpFTMuy_gXWyCYZ6xlKnvN7gTSaAACewtrG6TGqUQk9srUAtNebAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgodpFTMugokcZmLDMpd2rTZ7jlpkWQACfAtrG6TGqURTAVtVEHEZYQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgohpFTMufF7BpkYK9VtEaICxDIKz1QACfQtrG6TGqURBjDJziDGMcwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgolpFTMuypvxGrSr1Edl7Xzny64STAACfgtrG6TGqUQ_438jef8HaAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgoppFTMuLKdyyAABi8Z8xznMlvRdVAkAAn8LaxukxqlEJnc1ECkFsgkBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgoZpFTMuy_gXWyCYZ6xlKnvN7gTSaAACewtrG6TGqUQk9srUAtNebAEAAwIAA3kAAzYE.jpg",
+      "description": "Deportivo en algodón suave \nTalla Sm y Lxl \nEstilo cargo \nRef 0331\nmayor 57.00\nDetal 76.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "87f94b1f-010b-43b4-81e6-b81363191361",
+      "title": "Buso en hilo premium",
+      "price": 54000,
+      "sku": "A20",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgntpFTLqV8qXeBy0otFTgEwdWCNU3AACcQtrG6TGqURC6J9HDQzGjgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnxpFTLqelQNY04vUuGETmugzm-ZfAACcgtrG6TGqUTsdZHp0TBtIwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgn1pFTLq08xS0aAhdnqQRxwZ_i3WnQACcwtrG6TGqUQwpiTCmkHS0QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgn5pFTLq0iJPtmqjW-8q3EU-b8E9ewACdAtrG6TGqUS1LR3C3geCkQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgn9pFTLqCbwHLbBog841YBbOPwe7ggACdQtrG6TGqUReywWkmnmoBQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgoBpFTLq2YUbVHw8qYTPHOUpSkjI4wACdgtrG6TGqUTYpxSN4xHJAwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgoFpFTLq-9Bt6tU0XpRzKgpukl8JhQACdwtrG6TGqUTKC_LloTyTtwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgoJpFTLqkk1jnIfrQ0da-W5jceMLtAACeAtrG6TGqUTsqKmrZ_NZHQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgoNpFTLqKZt_vlk-iPqIm_8sZbH9AAN5C2sbpMapRFSCmZVWnrjAAQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgoRpFTLqjr3xGElJGcWnq8IOiZs5bAACegtrG6TGqUSxNNQCt0zkWwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgntpFTLqV8qXeBy0otFTgEwdWCNU3AACcQtrG6TGqURC6J9HDQzGjgEAAwIAA3kAAzYE.jpg",
+      "description": "Buso en hilo premium \nTalla única ajusta S M L \nRef A20 \nmayor 35.000\nDetal 54.000",
+      "created_at": "2025-11-13T02:31:34+00:00"
+    },
+    {
+      "id": "c26371a7-56f7-4ed5-b0cd-193d712c2b1d",
+      "title": "Vestido largo elegante",
+      "price": 88000,
+      "sku": "2383",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgnVpFTJ25way_NLP35ElIEPKMjcKRAACbAtrG6TGqURm_aitFwEAAeMBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnZpFTJ23lhxJUelKMa-SbGMr7rBjQACbQtrG6TGqUT2kh1Icm5dmgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgndpFTJ2V1jTGeUe8HliMp85UboF-wACbgtrG6TGqURHTYjzZCnkJAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnhpFTJ2L6BrYkjAVS1ibNks__s0NAACbwtrG6TGqURXxXAzxuJ3FwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnlpFTJ2J4tFaZ2-oroBphfP3VazLgACcAtrG6TGqURbV9JucXMjSwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgnVpFTJ25way_NLP35ElIEPKMjcKRAACbAtrG6TGqURm_aitFwEAAeMBAAMCAAN5AAM2BA.jpg",
+      "description": "Vestido largo elegante \nTalla SM Ml Lxl \nForrado, semilicrado \nRef 2383\nMayor 69.000\nDetal 88.000",
+      "created_at": "2025-11-13T02:31:33+00:00"
+    },
+    {
+      "id": "223d6e72-4727-40c6-bbc2-bffc83afaebc",
+      "title": "Hermoso vestido largo acuarela",
+      "price": 74000,
+      "sku": "1505",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgm9pFTIu69ByCoFECtDot439503k3QACaAtrG6TGqUS6xQo4QoWzBgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnBpFTIuTYOGoGX325kE9w_hdJYSqQACaQtrG6TGqUSjuQzRV1MVawEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnFpFTIuL7O0sWH-BLt7BlfV9I6b8wACagtrG6TGqUSKy5x9_rZcOwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgnJpFTIukGMkFl5xk6GJVq1OUchkTwACawtrG6TGqUR2ou_1bfMjvAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgm9pFTIu69ByCoFECtDot439503k3QACaAtrG6TGqUS6xQo4QoWzBgEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo acuarela \nVelos con forro, estilo americano \nTalla SM Ml Lxl resortado \nRef 1505 \nmayor 55.000\nDetal 74.000",
+      "created_at": "2025-11-13T02:31:33+00:00"
+    },
+    {
+      "id": "fbd7f164-cfa3-4759-be1d-9403cee5588e",
+      "title": "Vestido largo unicolor",
+      "price": 70000,
+      "sku": "2312",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgmppFTHdATXUHmDiOvrmIOhqGdqRqAACZAtrG6TGqUSDZZYRO8cowgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmtpFTHdTwLZn1sEQudO7YVjI4O99gACZQtrG6TGqUQ2n4VqY0pDSwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmxpFTHdrHhl0eMUgjjFdz_Oufj-TQACZgtrG6TGqUTmgfiyz1YXxAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgm1pFTHdMfoeBYt-Y92zOBBbres0ewACZwtrG6TGqUQzmibaq_0DnwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgmppFTHdATXUHmDiOvrmIOhqGdqRqAACZAtrG6TGqUSDZZYRO8cowgEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo unicolor \nTela seda Durazo suave \nTalla SM Ml Lxl \nRef 2312 \nmayor 51.000\nDetal 70.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "dc81a984-b110-42f5-9251-d311a92b7dbb",
+      "title": "Enterizo corto en dril suave",
+      "price": 70000,
+      "sku": "7163",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgmRpFTGC4QENf1sKRnmuKDVsKARuqgACYgtrG6TGqUQn4_ebHIaQsQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmVpFTGCe3BS8tmicH8iUla4KU_ydgACYAtrG6TGqUTTyQTy2k6fnAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmZpFTGCmNzZZ-9bKPM5i5z90KTNuwACXwtrG6TGqUTBnToeSbyXmwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmdpFTGC8XMXk3mC-FVek_DFirD_1wACYQtrG6TGqUSjKEmIbStgeAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmhpFTGCpBVzk2hVTLTDQsADaAJqogACYwtrG6TGqUSC2CjQ8r9SVwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgmRpFTGC4QENf1sKRnmuKDVsKARuqgACYgtrG6TGqUQn4_ebHIaQsQEAAwIAA3kAAzYE.jpg",
+      "description": "Enterizo corto en dril suave \nTalla SM Ml Lxl \nRef 7163 \nmayor 51.000\nDetal 70.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "794d995f-d66e-4a82-8be0-754c11769e73",
+      "title": "Conjunto falda short y blusa",
+      "price": 71000,
+      "sku": "1497",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgl5pFTFS0Kt-u-Zrv4Kpp_JEN10fEQACWgtrG6TGqUQwx-vHxySmjwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgl9pFTFSHFthiY45Ij5K_MjJdXxe6gACWwtrG6TGqUTb4lEPqe9R7wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmBpFTFSgcBlKiLrN9pcZPghzqjvxQACXAtrG6TGqUTIiVC3DLAHpgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmFpFTFSBD4Y4GR6pjxmeScGf4U_QAACXQtrG6TGqUSxGwyFZA6NMAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgmJpFTFSTOvoviTINBT9_Xdf0bEWpgACXgtrG6TGqUTA2Hfq9RZWTwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgl5pFTFS0Kt-u-Zrv4Kpp_JEN10fEQACWgtrG6TGqUQwx-vHxySmjwEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto falda short y blusa\nTela bordada \nTalla SM Ml Lxl \nRef 1497 \nmayor 52.000\nDetal 71.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "fc8b13e9-2ae3-4d6b-9ca3-ce4fbb728dfe",
+      "title": "Enterizo largo en estraple",
+      "price": 71000,
+      "sku": "2266",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACglZpFTEdeiXHobmsXM1jGDVJP_hvFgACUwtrG6TGqUQC3pM5KjNOowEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgldpFTEdJW87fiA8YucYE6tZK9RSSgACVAtrG6TGqURkNc0-yIemmAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglhpFTEdIIsAAf4ZxXnmPQX5fmroetAAAlULaxukxqlEFpi7fgkhc3UBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgllpFTEdvN8L3aPEAAEc6CjF-K1CXUIAAlYLaxukxqlElJV9g4Z-F7kBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglppFTEdNvoyVr1_Vy9Gj9rGyll1oQACVwtrG6TGqUSTLKsTaE-w-QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgltpFTEdENiI27wvAAHaqTMOyoddQrUAAlgLaxukxqlEPr6_TCmGo_4BAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglxpFTEdjZFplPikWPffLEUBV-zuagACWQtrG6TGqUSgyjoHxRzcygEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACglZpFTEdeiXHobmsXM1jGDVJP_hvFgACUwtrG6TGqUQC3pM5KjNOowEAAwIAA3kAAzYE.jpg",
+      "description": "Enterizo largo en estraple \nTalla SM y Lxl \nTela poliéster americano \nRef 2266 \nmayor 52.000\nDetal 71.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "7c1c363d-0a0f-4089-9614-1a971ee1d337",
+      "title": "Conjunto falda short y blusa",
+      "price": 68000,
+      "sku": "2308",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgk9pFTDpZnwTT2Bu-2po9_-E8lFnpwACTQtrG6TGqUT-4LwkkSm2dAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglBpFTDpTlcBmmOWkjP5nIzy46GW3AACTgtrG6TGqUSu0mJMRv2LSgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglFpFTDpePV8tK-o4civxyL_UOblIQACUAtrG6TGqURQYHsunKe1oAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglJpFTDp_xxwXD-ksLbiQQjw7lu_2wACTwtrG6TGqUQMuvtp7T7ocgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglNpFTDphUZ0Fy0LiQzNHJxJMPeqawACUQtrG6TGqUQkZtHl1xGJYQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACglRpFTDpBat-2fGm0PHYpITZY_CEoQACUgtrG6TGqUQD_s6_GB5oIwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgk9pFTDpZnwTT2Bu-2po9_-E8lFnpwACTQtrG6TGqUT-4LwkkSm2dAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto falda short y blusa \nTela licrada algodón y Rib \nTalla SM Ml Lxl \nRef 2308 \nmayor 49.000\nDetal 68.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "9b624b51-06e1-4b10-b925-a0adbe407314",
+      "title": "Vestido corto acuarela",
+      "price": 61000,
+      "sku": "2315",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgkdpFTCvgx8U9Xg4VSFzmWWGpLqBrAACRgtrG6TGqUSD2JYNxZIKRQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkhpFTCvJkR8r-hqPnwlknl8IJLVxQACRwtrG6TGqUSfqHyXTUFj9QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgklpFTCvBwgGYpkGHS4xnh4DdeJe-QACSAtrG6TGqUSXAhQeU5j-gwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkppFTCvAYFB4HXWZslmPbzAon8EHwACSQtrG6TGqUQaCJbOZq_RZgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgktpFTCvRIdkh5u2HgetjP6NPZ2UBgACSgtrG6TGqUSZld-tM_f8dwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkxpFTCv2_18XwABY66YsZwAATyGvq-VAAJLC2sbpMapRDTgXVLC_n46AQADAgADeQADNgQ.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgk1pFTCv15eBxzfw9XBIjilpf37OJgACTAtrG6TGqUSXcjU9b5JnrwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgkdpFTCvgx8U9Xg4VSFzmWWGpLqBrAACRgtrG6TGqUSD2JYNxZIKRQEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido corto acuarela \nTela Chifon fino \nRef 2315 \nTalla SM y Lxl \nmayor 42.000\nDetal 61.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "731044b8-3960-4bf2-9d4a-b3f7dfdbf6de",
+      "title": "Enterizo largo unicolor",
+      "price": 68000,
+      "sku": "2255",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgkFpFS_bCc7PFs68GkRGMPnUNa_p9gACQQtrG6TGqURMca8Z1ouIcwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkJpFS_biOEkn6gKLo7Zr6ysyZCXXgACQgtrG6TGqUS-m2hOtfquuAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkNpFS_bMAStf3VSuGemTJ4Dp38NOQACQwtrG6TGqUTVUH2yRId5MQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkRpFS_bk1MF6YmPw0yAYdB68a9qVwACRAtrG6TGqUSH6NS2JY1qigEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgkVpFS_bO68T5351X8RPBP6m_gjPEgACRQtrG6TGqURWdaiAupFhfwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgkFpFS_bCc7PFs68GkRGMPnUNa_p9gACQQtrG6TGqURMca8Z1ouIcwEAAwIAA3kAAzYE.jpg",
+      "description": "Enterizo largo unicolor \nTela suave y fresca \nTalla SM Ml Lxl \nRef 2255 \nmayor 49.000\nDetal 68.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "6a42c34f-f7bf-48ed-aed2-081f628a8826",
+      "title": "Vestido largo estampado",
+      "price": 75000,
+      "sku": "2311",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgjtpFS-jD3_yvTghhWxNCVYm57O-YwACPAtrG6TGqUQ1aY4_V-7SKwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjxpFS-jh9EWLZB_o-GMCD-DjWSMYQACPQtrG6TGqUQTXMOpjRd4-gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgj1pFS-jxVJb2xJNsFEvJd-CHyCAfwACPgtrG6TGqURkaTo9JNlCSQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgj5pFS-jJzsJv_8AARQuDWf4CSc2V70AAj8LaxukxqlE04qcnnk32PUBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgj9pFS-j0Ug5Fk6I8eFxSUPIZbK4twACQAtrG6TGqUQ--7_7mwK53AEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgjtpFS-jD3_yvTghhWxNCVYm57O-YwACPAtrG6TGqUQ1aY4_V-7SKwEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo estampado \nTela poliéster durazno \nTalla SM Ml Lxl \nRef 2311 \nmayor 56.000\nDetal 75.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "ee1ce155-7d88-49e9-bcb5-9a763c4dbe5c",
+      "title": "Vestido largo floral",
+      "price": 71000,
+      "sku": "1503",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgjRpFS9w_Osbjy1xfQMlV3oc0aHQcgACNgtrG6TGqURHcwo1ye9O2gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjVpFS9wkbxIycwsi_Y-3ue0BMcxYQACNwtrG6TGqUSe73rX64M94AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjZpFS9wS3eYBad8nhZRkUFq6LfsTwACOAtrG6TGqUTmTi6jQmA_kAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjdpFS9wAAFPPKbOuivTIWD5SV9kXwEAAjkLaxukxqlEl8KCotyOzuQBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjhpFS9w4ViVO2WemVyNPBS9xzOAuAACOgtrG6TGqUR8Gktetw80oQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjlpFS9w3--b1BPzMGxds_3O2c1rWwACOwtrG6TGqUSjcWd7CvONawEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgjRpFS9w_Osbjy1xfQMlV3oc0aHQcgACNgtrG6TGqURHcwo1ye9O2gEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo floral \nTalla SM Ml Lxl resortado \nRef 1503 \nmayor 52.000\nDetal 71.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "56b3ee7e-69c4-4869-9956-8e5df7c084a8",
+      "title": "Vestido largo en satin",
+      "price": 103000,
+      "sku": "7550",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgi9pFS82CxVTgNIGlZZDXtIaKVZcgAACMgtrG6TGqUTR958D3DWU_AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjBpFS82IiH_ksOtaSFaJs8x0bj3EgACMwtrG6TGqURJ_xmqv5nEQAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjFpFS82bDrbGhvPHYfDzU98kYHIWQACNAtrG6TGqURYgXv0flA85QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgjJpFS82XyWu_zhRrdCW42WF9BBk6AACNQtrG6TGqURtWTmWcoes1QEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgi9pFS82CxVTgNIGlZZDXtIaKVZcgAACMgtrG6TGqUTR958D3DWU_AEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo en satin \nTalla SM Ml Lxl \nRef 7550\nAmericano \nmayor 84.000\nDetal 103.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "eb80bee8-1166-4462-8b1d-5e09f362611e",
+      "title": "Vestido largo con cinturón",
+      "price": 75000,
+      "sku": "1521",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgiZpFS77FphDcM1zdl_ES7Z9kDHHSgACKwtrG6TGqUSGZY-CUj1ZQwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgidpFS777HnXwrQ_9u-qDohUWAzP5AACKgtrG6TGqUQ4bss3OTOf7AEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgihpFS774r3sgT6Gtk8qnUMo7BglHAACLAtrG6TGqUT8dVX45xDCBwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgilpFS77n2I81w48xmWzlhKDim3NdAACLQtrG6TGqUSvnikjR4CSJQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgippFS77J7R49ZWC95DKOlvDZN2t5wACLgtrG6TGqUTgj3dy0G026gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgitpFS77fXJDucnTR41iM0ppob4xAwACLwtrG6TGqUTOAhwz_COaeAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgixpFS77j88p3Bo3T310tZ87C9joMAACMAtrG6TGqUQ5B3bzMV3t3wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgi1pFS77N9bH9GS-hi5SU2NiNjelaQACMQtrG6TGqUQW3wwnoDZXqgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgiZpFS77FphDcM1zdl_ES7Z9kDHHSgACKwtrG6TGqUSGZY-CUj1ZQwEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo con cinturón \nTela liviana poliéster con velo\nTalla SM Ml Lxl \nRef 1521 \nmayor 56.000\nDetal 75.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "d93a5ae6-63ce-4819-8e8a-e873afeca77f",
+      "title": "Vestido largo en satin con copa",
+      "price": 93000,
+      "sku": "7553",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACgh1pFS68Z48md3fFpMn_EKr9peQE_QACIgtrG6TGqUS61GrsShIqFgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgh5pFS68WLEpa3g4GPraWHgzNt-mxQACIwtrG6TGqUSY3aHCfy6fCQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgh9pFS68XRvm7agLcbl4c4uIEYOLmgACJQtrG6TGqUS9mClx-TOsYgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgiBpFS68D80yrxWDEl7HKDPLOjdmigACJAtrG6TGqUR8vT0DLR9qmwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgiFpFS68oArLQZupibQEoAv-K11YpAACJwtrG6TGqUS2FRQYJ6oJVgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgiJpFS68wR4-Ts925JH5FKUvCpI31gACJgtrG6TGqUTXO7YBozVxgAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgiNpFS686Brgpbl0cnZD15FVmf0cWgACKQtrG6TGqUQ8fdFK8RZYGAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgiRpFS68CjuEmhfPD8PgHBMY-QyOJgACKAtrG6TGqUQWQAeKsjmkzQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACgh1pFS68Z48md3fFpMn_EKr9peQE_QACIgtrG6TGqUS61GrsShIqFgEAAwIAA3kAAzYE.jpg",
+      "description": "Vestido largo en satin con copa \nCalidad americano, horma precioso \nRef 7553 \nmayor 74.000\nDetal 93.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "50756fce-cd8c-4f9e-9527-9e574c2017e5",
+      "title": "Vestido largo en satin",
+      "price": 109000,
+      "sku": "7552",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACghRpFS57r2LcPBkDvVDSlhTp4qbScAACGgtrG6TGqUT8AAHCFNgI65IBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghVpFS57TFk628YWBE3-PVS5VRoFqQACGwtrG6TGqUQlGtzZgX78DQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghZpFS57lBbK0LlbDldWKvO8C-3fLgACHAtrG6TGqUShAo-UEMH7ywEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghdpFS57M0AUC0PZ9gaRvSudY3wreAACHQtrG6TGqUR7edq2m7o-NAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghhpFS57dxsloECFFBP2tnkW0BVjHgACHgtrG6TGqUSstpinW4cBMwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghlpFS57g0JhJOqUZWBzZW-Y3_-fKgACHwtrG6TGqUQCVbOyr9jcuAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghppFS57g3n95skZvwlFA5hq9t2GpwACIAtrG6TGqUScVLZEitRXYwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACghtpFS57jaLFa-BI_j4CDC5YkaveeAACIQtrG6TGqUTZadT-lY0GpAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACghRpFS57r2LcPBkDvVDSlhTp4qbScAACGgtrG6TGqUT8AAHCFNgI65IBAAMCAAN5AAM2BA.jpg",
+      "description": "Vestido largo en satin \nCorte sirena 🧜‍♀️ horma increíble \nTalla SM Ml Lxl \nRef 7552 \nmayor 90.000\nDetal 109.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "22edad4d-9dd7-45d7-b37c-4ab29427118f",
+      "title": "Conjunto pantalon y blusa",
+      "price": 81000,
+      "sku": "7605",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACggxpFS3UrN74nENdK6jlsPrbi56aRQACFgtrG6TGqUT-SJXQirDosAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACggtpFS3UOqhBJBLb7Trb_N0inIistQACGAtrG6TGqUQ5pTEbJn-UEwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgg1pFS3UO5owfo2ejDdU7m2r9IT2NAACFwtrG6TGqURbn3SFeHxHCQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACggxpFS3UrN74nENdK6jlsPrbi56aRQACFgtrG6TGqUT-SJXQirDosAEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto pantalon y blusa \nTela Lino 68 \nTalla SM Ml Lxl \nDetalles con Shakiras \nRef 7605 \nmayor 62.000\nDetal 81.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
+      "id": "16e8fed7-3c4f-430c-ab26-1cd19eca2120",
+      "title": "Conjunto pantalon y blusa",
+      "price": 81000,
+      "sku": "7606",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACggtpFS3UOqhBJBLb7Trb_N0inIistQACGAtrG6TGqUQ5pTEbJn-UEwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACggxpFS3UrN74nENdK6jlsPrbi56aRQACFgtrG6TGqUT-SJXQirDosAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgg1pFS3UO5owfo2ejDdU7m2r9IT2NAACFwtrG6TGqURbn3SFeHxHCQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACgg5pFS3UayoTZGSGNqliyvJP76R7RwACGQtrG6TGqUTuYnc7YxKUQQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACggtpFS3UOqhBJBLb7Trb_N0inIistQACGAtrG6TGqUQ5pTEbJn-UEwEAAwIAA3kAAzYE.jpg",
+      "description": "Conjunto pantalon y blusa \nTela Lino 68 \nTalla SM Ml Lxl \nDetalles con Shakiras \nRef 7606\nMayor 62.000\nDetal 81.000",
+      "created_at": "2025-11-13T02:30:10+00:00"
+    },
+    {
       "id": "7738955c-121d-4801-9456-f5fd05cc444c",
       "title": "Hermos vestido largo en tela satinada",
       "price": 63000,
