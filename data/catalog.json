@@ -1,6 +1,59 @@
 {
   "products": [
     {
+      "id": "d659b38b-e35f-4bde-92d8-b036738466e0",
+      "title": "Talla SM",
+      "price": 65000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwAChctpJ6ewZ6d0EWcogGQF2sRzuijm4AACEgtrG-MOQUV0e5VhH8RoowEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwAChctpJ6ewZ6d0EWcogGQF2sRzuijm4AACEgtrG-MOQUV0e5VhH8RoowEAAwIAA3kAAzYE.jpg",
+      "description": "Talla SM\nPrecio 65.000",
+      "created_at": "2025-11-28T03:48:30+00:00"
+    },
+    {
+      "id": "b34ba0d2-ec1b-4a13-b1c7-7308121f1f32",
+      "title": "Talla SM",
+      "price": 65000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwAChclpJ6d2Rv_akdUl8mIRUHnLZ9RNOwACEQtrG-MOQUWZsHLATTvQjQEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwAChclpJ6d2Rv_akdUl8mIRUHnLZ9RNOwACEQtrG-MOQUWZsHLATTvQjQEAAwIAA3kAAzYE.jpg",
+      "description": "Talla SM\nPrecio 65.000",
+      "created_at": "2025-11-28T03:48:30+00:00"
+    },
+    {
+      "id": "c8c72c4a-e777-4877-a4a6-906e7be86281",
+      "title": "Talla SM",
+      "price": 55000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwAChcZpJ6bajgLxFdZNGHazB26a4SLAgwACEAtrG-MOQUXwsh6CsqBeXgEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwAChcZpJ6bajgLxFdZNGHazB26a4SLAgwACEAtrG-MOQUXwsh6CsqBeXgEAAwIAA3kAAzYE.jpg",
+      "description": "Talla SM\nPrecio 55.000",
+      "created_at": "2025-11-28T03:48:30+00:00"
+    },
+    {
+      "id": "70079d54-cdf0-4f7d-af66-f9b039a253d1",
+      "title": "Talla SM",
+      "price": 69000,
+      "sku": null,
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwAChcNpJ6aGK3opyWItQgAB2zD53Fu4Xv8AAg4LaxvjDkFF_bXBPBKSy6EBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChcRpJ6ad3MeBa5q3LbnxBN2FyBVA_AACDwtrG-MOQUWNKvlveCo8LwEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwAChcNpJ6aGK3opyWItQgAB2zD53Fu4Xv8AAg4LaxvjDkFF_bXBPBKSy6EBAAMCAAN5AAM2BA.jpg",
+      "description": "Talla SM\nPrecio 69.000",
+      "created_at": "2025-11-28T03:48:30+00:00"
+    },
+    {
       "id": "658d5347-8cdb-4057-81b1-fbef6827a7df",
       "title": "Será una gran semana 🙏🏻",
       "price": 64000,
