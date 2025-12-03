@@ -1,6 +1,67 @@
 {
   "products": [
     {
+      "id": "6842d5b2-b97b-41ed-acd3-cc23933f41be",
+      "title": "Hermosas camisas satinadas",
+      "price": 49000,
+      "sku": "61564",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACh45pMG0td2WRzIQrsH8GmO405NPkjAACTQ1rGyfmgUVLICQqryXg3wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh49pMG0tqZG6T6tfyUwYXq3tfXHaCwACTA1rGyfmgUWahBgahZcRIgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh5BpMG0tSjshiB8HFPBem75fwisFEgACTg1rGyfmgUUxkxgBx1ES3QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh5FpMG0tucK3IOj0lg4ZkiYbMIz-iAACTw1rGyfmgUWSrgAB3eOpSMsBAAMCAAN5AAM2BA.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACh45pMG0td2WRzIQrsH8GmO405NPkjAACTQ1rGyfmgUVLICQqryXg3wEAAwIAA3kAAzYE.jpg",
+      "description": "Hermosas camisas satinadas\nTallas SM ML y lxl \nRef 61564\nMayor 38.000\nDetal 49.000\nBodega Barranquilla",
+      "created_at": "2025-12-03T17:10:28+00:00"
+    },
+    {
+      "id": "881d1746-8b6c-4243-8392-cb236185c716",
+      "title": "Hermos vestido largo estampado",
+      "price": 72000,
+      "sku": "62954",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwACh4lpMGy04Yw1cYDFlX7XvP8f5A8YfQACSA1rGyfmgUVd8WMXim0bqAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4ppMGy09_70TgP_sTKgy0QmcI6-iQACSQ1rGyfmgUWLRjxvgPuCEQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4tpMGy0_nDv2qHGD-fThbFFdn_p5QACSg1rGyfmgUVa-69BjHtX0gEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4xpMGy0HTgtAkRF1wNYPVpjnyyR3wACSw1rGyfmgUXSfuv7hn4y9AEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwACh4lpMGy04Yw1cYDFlX7XvP8f5A8YfQACSA1rGyfmgUVd8WMXim0bqAEAAwIAA3kAAzYE.jpg",
+      "description": "Hermos vestido largo estampado \nTalla SM Ml Lxl \nRef 62954\nMayor 55.000\nDetal 72.000\nBodega Barranquilla",
+      "created_at": "2025-12-03T17:10:28+00:00"
+    },
+    {
+      "id": "cf6f15b3-345f-4ee1-bc9f-ea1c018b374e",
+      "title": "Hermoso vestido largo estampado",
+      "price": 75000,
+      "sku": "Y302",
+      "category": "General",
+      "images": [
+        "images/AgACAgEAAx0CXkx8pwAChc1pJ6fqEGCP_9hKiX2VDyjquH-I7QACEwtrG-MOQUVKE8Z5dTbZ8wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChc5pJ6gIUDrd6nNacdXE9avS1eOk3AACFAtrG-MOQUUnN_97yXrY9QEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChc9pJ6ghRNyWmOMWode2VW7dWcnXRQACFQtrG-MOQUV3zYQvlPhbmgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdBpJ6hiUSADRXsyMxSuykbMo47lCQACFgtrG-MOQUXNV_4t6flXPQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdFpJ6jIIzuVYWXliHXSsAgVVXc5oAACFwtrG-MOQUXY1Ia0SRPHsgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdJpJ6jI6kEQqifmXX1F8-QzwpW4nwACGAtrG-MOQUXvUcqF3bA_0wEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdNpJ6lO9nLhqLr4dmU5vUEy0Ae-pgACGQtrG-MOQUUDSZ6GOAxWNwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdRpJ6l3tTsYy_bwi740HhVjAsOnnwACGgtrG-MOQUWnzEAb8wX1ywEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdVpJ6m0VmFWtDq2psIZNPmgTRHeGgACGwtrG-MOQUWxfA0_n-4eWQEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdZpJ6oqqhQlpQS3QCe88LkedkhO0AACHAtrG-MOQUVYTYltA98AAYYBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChddpJ6p-7iCY7C7wKrOySWU1TihZUQACHQtrG-MOQUXjkkraxP55qwEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwAChdhpJ6rm-rmIC40KaZgjvfDLJtgHvAACHwtrG-MOQUVFUmS316g9hgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4NpMGyBSydCl2ZoAAHU5yZhiB4WUngAAkMNaxsn5oFFrYgqflRmsWgBAAMCAAN5AAM2BA.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4RpMGyBTxjhpve2kl9VIr1Qcw_NHgACRA1rGyfmgUWRVAxQVSCeFgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4VpMGyBIgS12SIkDKYSajgFKc2GWQACRQ1rGyfmgUUqZ7CPQ7YmAgEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4ZpMGyBeaz_eRcWDTIgB2eHNzDlrQACRg1rGyfmgUU36PmjAxkoMAEAAwIAA3kAAzYE.jpg",
+        "images/AgACAgEAAx0CXkx8pwACh4dpMGyBCJRKqCHSqDVsqPzh8bEqiAACRw1rGyfmgUVv6zjZJM4QfAEAAwIAA3kAAzYE.jpg"
+      ],
+      "image": "images/AgACAgEAAx0CXkx8pwAChc1pJ6fqEGCP_9hKiX2VDyjquH-I7QACEwtrG-MOQUVKE8Z5dTbZ8wEAAwIAA3kAAzYE.jpg",
+      "description": "Hermoso vestido largo estampado \nRef Y302\nTallas SM ML y lxl \nMayor 58.000\nDetal 75.000\nBodega Barranquilla",
+      "created_at": "2025-11-28T03:48:30+00:00"
+    },
+    {
       "id": "d659b38b-e35f-4bde-92d8-b036738466e0",
       "title": "Talla SM",
       "price": 65000,
